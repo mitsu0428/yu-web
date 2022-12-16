@@ -40,7 +40,10 @@ export default function Home() {
           <BasicSubTitle>My Information</BasicSubTitle>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://www.instagram.com/user__mi2/?hl=ja">
+              <BasicLink
+                href="https://www.instagram.com/user__mi2/?hl=ja"
+                target="_blank"
+              >
                 Instagram
                 <FaInstagram size={100} color={"#595959"} />
               </BasicLink>
@@ -48,14 +51,17 @@ export default function Home() {
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://www.linkedin.com/in/mitsuhiro-okada?original_referer=">
+              <BasicLink
+                href="https://www.linkedin.com/in/mitsuhiro-okada?original_referer="
+                target="_blank"
+              >
                 LinkedIn <FaLinkedin size={100} color={"#595959"} />
               </BasicLink>
             </BasicButton>
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://github.com/mitsu0428">
+              <BasicLink href="https://github.com/mitsu0428" target="_blank">
                 GitHub <FaGithubAlt size={100} color={"#595959"} />
               </BasicLink>
             </BasicButton>
@@ -65,7 +71,7 @@ export default function Home() {
           <BasicSubTitle>Webサイト</BasicSubTitle>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://sorette.jp">
+              <BasicLink href="https://sorette.jp" target="_blank">
                 sorette
                 <FaLinux size={100} color={"#595959"} />
               </BasicLink>
@@ -73,7 +79,7 @@ export default function Home() {
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://csvhikakun.com">
+              <BasicLink href="https://csvhikakun.com" target="_blank">
                 csvひかくん
                 <FaLinux size={100} color={"#595959"} />
               </BasicLink>
@@ -81,7 +87,7 @@ export default function Home() {
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://www.cosmictheta.space">
+              <BasicLink href="https://www.cosmictheta.space" target="_blank">
                 Cosmittheta
                 <FaLinux size={100} color={"#595959"} />
               </BasicLink>
@@ -89,7 +95,7 @@ export default function Home() {
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://pharcyde.tokyo">
+              <BasicLink href="https://pharcyde.tokyo" target="_blank">
                 Pharcyde
                 <FaLinux size={100} color={"#595959"} />
               </BasicLink>
@@ -97,7 +103,7 @@ export default function Home() {
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://kajikazi.jp">
+              <BasicLink href="https://kajikazi.jp" target="_blank">
                 Kajikazi
                 <FaLinux size={100} color={"#595959"} />
               </BasicLink>
@@ -111,7 +117,10 @@ export default function Home() {
           </TitleContainer>
           <CardContainer>
             <BasicButton>
-              <BasicLink href="https://www.instagram.com/kagurazaka_map/?hl=ja">
+              <BasicLink
+                href="https://www.instagram.com/kagurazaka_map/?hl=ja"
+                target="_blank"
+              >
                 神楽坂マップ(kagurazaka_map)
                 <FaLinux size={100} color={"#595959"} />
               </BasicLink>
