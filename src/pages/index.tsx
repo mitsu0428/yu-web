@@ -40,17 +40,24 @@ export default function Home() {
           <BasicSubTitle>My Information</BasicSubTitle>
           <CardContainer>
             <BasicButton>
-              Instagram <FaInstagram size={100} color={"#595959"} />
+              <BasicLink href="https://www.instagram.com/user__mi2/?hl=ja">
+                Instagram
+                <FaInstagram size={100} color={"#595959"} />
+              </BasicLink>
             </BasicButton>
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              LinkedIn <FaLinkedin size={100} color={"#595959"} />
+              <BasicLink href="https://www.linkedin.com/in/mitsuhiro-okada?original_referer=">
+                LinkedIn <FaLinkedin size={100} color={"#595959"} />
+              </BasicLink>
             </BasicButton>
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              GitHub <FaGithubAlt size={100} color={"#595959"} />
+              <BasicLink href="https://github.com/mitsu0428">
+                GitHub <FaGithubAlt size={100} color={"#595959"} />
+              </BasicLink>
             </BasicButton>
           </CardContainer>
         </BasicContainer>
@@ -58,32 +65,56 @@ export default function Home() {
           <BasicSubTitle>Webサイト</BasicSubTitle>
           <CardContainer>
             <BasicButton>
-              sorette
-              <FaLinux size={100} color={"#595959"} />
+              <BasicLink href="https://sorette.jp">
+                sorette
+                <FaLinux size={100} color={"#595959"} />
+              </BasicLink>
             </BasicButton>
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              csvひかくん
-              <FaLinux size={100} color={"#595959"} />
+              <BasicLink href="https://csvhikakun.com">
+                csvひかくん
+                <FaLinux size={100} color={"#595959"} />
+              </BasicLink>
             </BasicButton>
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              Cosmittheta
-              <FaLinux size={100} color={"#595959"} />
+              <BasicLink href="https://www.cosmictheta.space">
+                Cosmittheta
+                <FaLinux size={100} color={"#595959"} />
+              </BasicLink>
             </BasicButton>
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              Pharcyde
-              <FaLinux size={100} color={"#595959"} />
+              <BasicLink href="https://pharcyde.tokyo">
+                Pharcyde
+                <FaLinux size={100} color={"#595959"} />
+              </BasicLink>
             </BasicButton>
           </CardContainer>
           <CardContainer>
             <BasicButton>
-              Kajikazi
-              <FaLinux size={100} color={"#595959"} />
+              <BasicLink href="https://kajikazi.jp">
+                Kajikazi
+                <FaLinux size={100} color={"#595959"} />
+              </BasicLink>
+            </BasicButton>
+          </CardContainer>
+        </BasicContainer>
+        <BasicContainer>
+          <TitleContainer>
+            <BasicSubTitle>Instagram/SNS メディア</BasicSubTitle>
+            <BasicText>神楽坂マップ(kagurazaka_map)</BasicText>
+          </TitleContainer>
+          <CardContainer>
+            <BasicButton>
+              <BasicLink href="https://www.instagram.com/kagurazaka_map/?hl=ja">
+                神楽坂マップ(kagurazaka_map)
+                <FaLinux size={100} color={"#595959"} />
+              </BasicLink>
             </BasicButton>
           </CardContainer>
         </BasicContainer>
@@ -130,6 +161,10 @@ const BasicButton = styled.button`
     background-color: #fff;
     color: #595959;
   }
+`;
+
+const BasicLink = styled.a`
+  width: 100%;
 `;
 
 const TitleContainer = styled.div`
