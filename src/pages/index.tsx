@@ -70,14 +70,6 @@ export default function Home() {
               </BasicLink>
             </BasicButton>
           </CardContainer>
-          <CardContainer>
-            <BasicButton>
-              <BasicLink href="https://kajikazi.jp" target="_blank">
-                Kajikazi
-                <FaLinux size={80} color={"#595959"} />
-              </BasicLink>
-            </BasicButton>
-          </CardContainer>
         </BasicContainer>
         <BasicHr />
         <BasicContainer>
