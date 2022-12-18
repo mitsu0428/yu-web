@@ -1,17 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
-import { FaGithubAlt, FaLinkedin, FaInstagram, FaLinux } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaLinux } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Okada Mitsuhiroのポートフォリオサイト</title>
-        <meta
-          name="description"
-          content="Okada Mitsuhiroのポートフォリオサイト"
-        />
+        <title>mi2のポートフォリオサイト</title>
+        <meta name="description" content="mi2のポートフォリオサイト" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -25,19 +22,13 @@ export default function Home() {
           <BasicText>SNS運用/知り合い紹介できます</BasicText>
           <MyInformation>
             <BasicLink
-              href="https://www.instagram.com/user__mi2/?hl=ja"
+              href="https://www.instagram.com/mi2__user/?hl=ja"
               target="_blank"
             >
               <FaInstagram size={30} color={"#595959"} />
             </BasicLink>
-            <BasicLink
-              href="https://www.linkedin.com/in/mitsuhiro-okada?original_referer="
-              target="_blank"
-            >
-              <FaLinkedin size={30} color={"#595959"} />
-            </BasicLink>
-            <BasicLink href="https://github.com/mitsu0428" target="_blank">
-              <FaGithubAlt size={30} color={"#595959"} />
+            <BasicLink href="https://twitter.com/mi2__user" target="_blank">
+              <FaTwitter size={30} color={"#595959"} />
             </BasicLink>
           </MyInformation>
         </BasicContainer>
@@ -108,7 +99,7 @@ export default function Home() {
         </BasicContainer>
       </main>
 
-      <BasicFooter>© 2022 mitsuhiro okada</BasicFooter>
+      <BasicFooter>© 2022 mi2</BasicFooter>
     </div>
   );
 }
