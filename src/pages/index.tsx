@@ -21,8 +21,8 @@ export default function Home() {
             <BasicTitle>mi2</BasicTitle>
             <BasicText>#information</BasicText>
           </CardContainer>
-          <BasicText>Webサイト/小規模なの作れます...</BasicText>
-          <BasicText>SNS運用/知り合い紹介できます...</BasicText>
+          <BasicText>Webサイト/小規模なの作れます</BasicText>
+          <BasicText>SNS運用/知り合い紹介できます</BasicText>
           <MyInformation>
             <BasicLink
               href="https://www.instagram.com/user__mi2/?hl=ja"
