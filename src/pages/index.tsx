@@ -1,16 +1,21 @@
 import Head from "next/head";
 import styled from "styled-components";
+import SeoSettings from "./components/SeoSettings";
 import { FaTwitter, FaInstagram, FaLinux } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>mi2のポートフォリオサイト</title>
-        <meta name="description" content="mi2のポートフォリオサイト" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <SeoSettings
+        pageTitle={"mi2のポートフォリオサイト"}
+        pageDescription={
+          "mitsuhiro-okadaのポートフォリオサイトです。普段は、フロントエンジニアをしています。|Webサイト/SNS運用"
+        }
+        pagePath={"https://mitsuhiro-okada.com"}
+        pageImg={"https://mitsuhiro-okada.com"}
+        pageImgWidth={1280}
+        pageImgHeight={960}
+      />
       <main>
         <BasicContainer>
           <CardContainerTop>
