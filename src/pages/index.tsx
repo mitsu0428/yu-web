@@ -18,10 +18,10 @@ export default function Home() {
       />
       <main>
         <BasicContainer>
-          <CardContainerTop>
+          <CardContainer>
             <BasicTitle>mi2</BasicTitle>
             <BasicText>#information</BasicText>
-          </CardContainerTop>
+          </CardContainer>
           <BasicText>Webサイト/小規模なの作れます</BasicText>
           <BasicText>SNS運用/知り合い紹介できます</BasicText>
           <MyInformation>
@@ -186,24 +186,24 @@ const MyInformation = styled.span`
   text-align: center;
 `;
 
-const CardContainerTop = styled.div`
-  width: 100%;
-  max-width: 500px;
-  height: 100%;
-  margin: 10px;
-  text-align: center;
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(108, 155, 210, 0.2);
-`;
-
 const CardContainer = styled.div`
   width: 100%;
-  max-width: 500px;
   height: 100%;
   margin: 10px;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(108, 155, 210, 0.2);
+  @media screen and (min-width: 480px) {
+    /* 画面サイズが480pxからはここを読み込む */
+    max-width: 300px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* 画面サイズが768pxから1024pxまではここを読み込む */
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1024px) {
+    /* 画面サイズが1024pxからはここを読み込む */
+    max-width: 500px;
+  }
 `;
