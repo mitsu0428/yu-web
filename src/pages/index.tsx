@@ -188,22 +188,11 @@ const MyInformation = styled.span`
 
 const CardContainer = styled.div`
   width: 100%;
+  max-width: 450px;
   height: 100%;
   margin: 10px;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(108, 155, 210, 0.2);
-  @media screen and (min-width: 480px) {
-    /* 画面サイズが480pxからはここを読み込む */
-    width: 300px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* 画面サイズが768pxから1024pxまではここを読み込む */
-    width: 350px;
-  }
-  @media screen and (min-width: 1024px) {
-    /* 画面サイズが1024pxからはここを読み込む */
-    width: 400px;
-  }
 `;
