@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styled from "styled-components";
 import { FaTwitter, FaInstagram, FaLinux } from "react-icons/fa";
 
@@ -14,10 +13,10 @@ export default function Home() {
 
       <main>
         <BasicContainer>
-          <CardContainer>
+          <CardContainerTop>
             <BasicTitle>mi2</BasicTitle>
             <BasicText>#information</BasicText>
-          </CardContainer>
+          </CardContainerTop>
           <BasicText>Webサイト/小規模なの作れます</BasicText>
           <BasicText>SNS運用/知り合い紹介できます</BasicText>
           <MyInformation>
@@ -106,14 +105,17 @@ export default function Home() {
 
 const BasicTitle = styled.h1`
   color: #595959;
+  text-align: center;
 `;
 
 const BasicSubTitle = styled.h2`
   color: #595959;
+  text-align: center;
 `;
 
 const BasicText = styled.p`
   color: #595959;
+  text-align: center;
 `;
 
 const BasicContainer = styled.div`
@@ -122,6 +124,7 @@ const BasicContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 `;
 
 const BasicButton = styled.button`
@@ -136,6 +139,7 @@ const BasicButton = styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  text-align: center;
   &:hover {
     background-color: #fff;
     color: #595959;
@@ -177,13 +181,24 @@ const MyInformation = styled.span`
   text-align: center;
 `;
 
+const CardContainerTop = styled.div`
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(108, 155, 210, 0.2);
+`;
+
 const CardContainer = styled.div`
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   height: 100%;
   margin: 10px;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(108, 155, 210, 0.2);
 `;
