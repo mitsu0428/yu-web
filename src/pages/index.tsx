@@ -196,14 +196,14 @@ const CardContainer = styled.div`
   box-shadow: 0 4px 15px rgba(108, 155, 210, 0.2);
   @media screen and (min-width: 480px) {
     /* 画面サイズが480pxからはここを読み込む */
-    max-width: 300px;
+    width: 300px;
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* 画面サイズが768pxから1024pxまではここを読み込む */
-    max-width: 450px;
+    width: 350px;
   }
   @media screen and (min-width: 1024px) {
     /* 画面サイズが1024pxからはここを読み込む */
-    max-width: 500px;
+    width: 400px;
   }
 `;
