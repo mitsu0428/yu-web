@@ -1,9 +1,10 @@
+import React from "react";
 import styled from "styled-components";
 import SeoSettings from "./components/SeoSettings";
-import { FaTwitter, FaInstagram, FaLinux } from "react-icons/fa";
 import FooterComponents from "./components/FooterComponents";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <SeoSettings
@@ -16,7 +17,7 @@ export default function Home() {
         pageImgWidth={1280}
         pageImgHeight={960}
       />
-      <main>
+      <Main>
         <Container>
           <Card>
             <Title>mi2</Title>
@@ -45,7 +46,6 @@ export default function Home() {
             <Button>
               <URL href="https://sorette.jp" target="_blank">
                 sorette
-                <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
           </Card>
@@ -53,7 +53,6 @@ export default function Home() {
             <Button>
               <URL href="https://csvhikakun.com" target="_blank">
                 csvひかくん
-                <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
           </Card>
@@ -61,7 +60,6 @@ export default function Home() {
             <Button>
               <URL href="https://www.cosmictheta.space" target="_blank">
                 Cosmittheta
-                <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
           </Card> */}
@@ -69,7 +67,6 @@ export default function Home() {
             <Button>
               <URL href="https://pharcyde.tokyo" target="_blank">
                 Pharcyde
-                <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
           </Card>
@@ -77,7 +74,6 @@ export default function Home() {
             <Button>
               <URL href="https://kajikazi.jp" target="_blank">
                 Kajikazi
-                <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
           </Card> */}
@@ -95,30 +91,36 @@ export default function Home() {
                 target="_blank"
               >
                 神楽坂マップ
-                <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
           </Card>
         </Container>
         <FooterComponents />
-      </main>
+      </Main>
     </div>
   );
-}
+};
+
+export default Home;
+
+const Main = styled.main``;
 
 const Title = styled.h1`
   color: #595959;
   text-align: center;
+  font-size: 24px;
 `;
 
 const Subtitle = styled.h2`
   color: #595959;
   text-align: center;
+  font-size: 16px;
 `;
 
 const Text = styled.p`
   color: #595959;
   text-align: center;
+  font-size: 14px;
 `;
 
 const Container = styled.div`
@@ -131,8 +133,9 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
+  margin-top: 10px;
+  padding: 20px 20px;
   width: 100%;
-  min-width: 200px;
   height: 100%;
   border: none;
   border-radius: 8px;
@@ -143,15 +146,14 @@ const Button = styled.button`
   cursor: pointer;
   transition: 0.3s;
   text-align: center;
-  &:hover {
-    background-color: #fff;
-    color: #595959;
-  }
 `;
 
 const URL = styled.a`
   width: 100%;
   margin-left: 10px;
+  &:hover {
+    color: #595959;
+  }
 `;
 
 const Hr = styled.hr`
@@ -167,9 +169,12 @@ const Hr = styled.hr`
 `;
 
 const SnsArea = styled.span`
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   margin-top: 10px;
-  margin-left: 10px;
-  width: 100%;
 `;
 
 const Card = styled.div`
