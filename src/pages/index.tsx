@@ -1,7 +1,7 @@
-import Head from "next/head";
 import styled from "styled-components";
 import SeoSettings from "./components/SeoSettings";
 import { FaTwitter, FaInstagram, FaLinux } from "react-icons/fa";
+import FooterComponents from "./components/FooterComponents";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <SeoSettings
         pageTitle={"mi2のポートフォリオサイト"}
         pageDescription={
-          "mitsuhiro-okadaのポートフォリオサイトです。普段は、フロントエンジニアをしています。|Webサイト/SNS運用"
+          "okada mitsuhiroのポートフォリオサイトです。普段は、フロントエンジニアをしています。 | Webサイト作成 | SNS運用"
         }
         pagePath={"https://mitsuhiro-okada.com"}
         pageImg={"https://mitsuhiro-okada.com"}
@@ -17,113 +17,111 @@ export default function Home() {
         pageImgHeight={960}
       />
       <main>
-        <BasicContainer>
+        <Container>
           <CardContainer>
-            <BasicTitle>mi2</BasicTitle>
-            <BasicText>#information</BasicText>
+            <Title>mi2</Title>
+            <Text>#information</Text>
           </CardContainer>
-          <BasicText>Webサイト/小規模なの作れます</BasicText>
-          <BasicText>SNS運用/知り合い紹介できます</BasicText>
+          <Text>Webサイト | LP作成 | SNS運用</Text>
           <MyInformation>
-            <BasicLink
+            <URL
               href="https://www.instagram.com/mi2__user/?hl=ja"
               target="_blank"
             >
               <FaInstagram size={30} color={"#595959"} />
-            </BasicLink>
-            <BasicLink href="https://twitter.com/mi2__user" target="_blank">
+            </URL>
+            <URL href="https://twitter.com/mi2__user" target="_blank">
               <FaTwitter size={30} color={"#595959"} />
-            </BasicLink>
+            </URL>
           </MyInformation>
-        </BasicContainer>
-        <BasicHr />
-        <BasicContainer>
+        </Container>
+        <Hr />
+        <Container>
           <CardContainer>
-            <BasicSubTitle>Webサイト</BasicSubTitle>
-            <BasicText>#portfolio</BasicText>
+            <Subtitle>Webサイト</Subtitle>
+            <Text>#portfolio</Text>
           </CardContainer>
           <CardContainer>
-            <BasicButton>
-              <BasicLink href="https://sorette.jp" target="_blank">
+            <Button>
+              <URL href="https://sorette.jp" target="_blank">
                 sorette
                 <FaLinux size={80} color={"#595959"} />
-              </BasicLink>
-            </BasicButton>
+              </URL>
+            </Button>
           </CardContainer>
           <CardContainer>
-            <BasicButton>
-              <BasicLink href="https://csvhikakun.com" target="_blank">
+            <Button>
+              <URL href="https://csvhikakun.com" target="_blank">
                 csvひかくん
                 <FaLinux size={80} color={"#595959"} />
-              </BasicLink>
-            </BasicButton>
+              </URL>
+            </Button>
           </CardContainer>
           {/* <CardContainer>
-            <BasicButton>
-              <BasicLink href="https://www.cosmictheta.space" target="_blank">
+            <Button>
+              <URL href="https://www.cosmictheta.space" target="_blank">
                 Cosmittheta
                 <FaLinux size={80} color={"#595959"} />
-              </BasicLink>
-            </BasicButton>
+              </URL>
+            </Button>
           </CardContainer> */}
           <CardContainer>
-            <BasicButton>
-              <BasicLink href="https://pharcyde.tokyo" target="_blank">
+            <Button>
+              <URL href="https://pharcyde.tokyo" target="_blank">
                 Pharcyde
                 <FaLinux size={80} color={"#595959"} />
-              </BasicLink>
-            </BasicButton>
+              </URL>
+            </Button>
           </CardContainer>
           {/* <CardContainer>
-            <BasicButton>
-              <BasicLink href="https://kajikazi.jp" target="_blank">
+            <Button>
+              <URL href="https://kajikazi.jp" target="_blank">
                 Kajikazi
                 <FaLinux size={80} color={"#595959"} />
-              </BasicLink>
-            </BasicButton>
+              </URL>
+            </Button>
           </CardContainer> */}
-        </BasicContainer>
-        <BasicHr />
-        <BasicContainer>
+        </Container>
+        <Hr />
+        <Container>
           <CardContainer>
-            <BasicSubTitle>Instagram/SNS</BasicSubTitle>
-            <BasicText>#media</BasicText>
+            <Subtitle>Instagram/SNS</Subtitle>
+            <Text>#media</Text>
           </CardContainer>
           <CardContainer>
-            <BasicButton>
-              <BasicLink
+            <Button>
+              <URL
                 href="https://www.instagram.com/kagurazaka_map/?hl=ja"
                 target="_blank"
               >
                 神楽坂マップ
                 <FaLinux size={80} color={"#595959"} />
-              </BasicLink>
-            </BasicButton>
+              </URL>
+            </Button>
           </CardContainer>
-        </BasicContainer>
+        </Container>
+        <FooterComponents />
       </main>
-
-      <BasicFooter>© 2022 mi2</BasicFooter>
     </div>
   );
 }
 
-const BasicTitle = styled.h1`
+const Title = styled.h1`
   color: #595959;
   text-align: center;
 `;
 
-const BasicSubTitle = styled.h2`
+const Subtitle = styled.h2`
   color: #595959;
   text-align: center;
 `;
 
-const BasicText = styled.p`
+const Text = styled.p`
   color: #595959;
   text-align: center;
 `;
 
-const BasicContainer = styled.div`
+const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -132,7 +130,7 @@ const BasicContainer = styled.div`
   text-align: center;
 `;
 
-const BasicButton = styled.button`
+const Button = styled.button`
   width: 100%;
   min-width: 200px;
   height: 100%;
@@ -151,11 +149,11 @@ const BasicButton = styled.button`
   }
 `;
 
-const BasicLink = styled.a`
+const URL = styled.a`
   width: 100%;
 `;
 
-const BasicHr = styled.hr`
+const Hr = styled.hr`
   border-width: 0 0 1px;
   border-image: linear-gradient(
       90deg,
@@ -165,16 +163,6 @@ const BasicHr = styled.hr`
     )
     0 0 100%;
   border-style: solid;
-`;
-
-const BasicFooter = styled.footer`
-  width: 100%;
-  height: 100px;
-  color: #595959;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 `;
 
 const MyInformation = styled.span`
