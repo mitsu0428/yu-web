@@ -18,12 +18,12 @@ export default function Home() {
       />
       <main>
         <Container>
-          <CardContainer>
+          <Card>
             <Title>mi2</Title>
             <Text>#information</Text>
-          </CardContainer>
+          </Card>
           <Text>Webサイト | LP作成 | SNS運用</Text>
-          <MyInformation>
+          <SnsArea>
             <URL
               href="https://www.instagram.com/mi2__user/?hl=ja"
               target="_blank"
@@ -33,62 +33,62 @@ export default function Home() {
             <URL href="https://twitter.com/mi2__user" target="_blank">
               <FaTwitter size={30} color={"#595959"} />
             </URL>
-          </MyInformation>
+          </SnsArea>
         </Container>
         <Hr />
         <Container>
-          <CardContainer>
+          <Card>
             <Subtitle>Webサイト</Subtitle>
             <Text>#portfolio</Text>
-          </CardContainer>
-          <CardContainer>
+          </Card>
+          <Card>
             <Button>
               <URL href="https://sorette.jp" target="_blank">
                 sorette
                 <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
-          </CardContainer>
-          <CardContainer>
+          </Card>
+          <Card>
             <Button>
               <URL href="https://csvhikakun.com" target="_blank">
                 csvひかくん
                 <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
-          </CardContainer>
-          {/* <CardContainer>
+          </Card>
+          {/* <Card>
             <Button>
               <URL href="https://www.cosmictheta.space" target="_blank">
                 Cosmittheta
                 <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
-          </CardContainer> */}
-          <CardContainer>
+          </Card> */}
+          <Card>
             <Button>
               <URL href="https://pharcyde.tokyo" target="_blank">
                 Pharcyde
                 <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
-          </CardContainer>
-          {/* <CardContainer>
+          </Card>
+          {/* <Card>
             <Button>
               <URL href="https://kajikazi.jp" target="_blank">
                 Kajikazi
                 <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
-          </CardContainer> */}
+          </Card> */}
         </Container>
         <Hr />
         <Container>
-          <CardContainer>
+          <Card>
             <Subtitle>Instagram/SNS</Subtitle>
             <Text>#media</Text>
-          </CardContainer>
-          <CardContainer>
+          </Card>
+          <Card>
             <Button>
               <URL
                 href="https://www.instagram.com/kagurazaka_map/?hl=ja"
@@ -98,7 +98,7 @@ export default function Home() {
                 <FaLinux size={80} color={"#595959"} />
               </URL>
             </Button>
-          </CardContainer>
+          </Card>
         </Container>
         <FooterComponents />
       </main>
@@ -151,6 +151,7 @@ const Button = styled.button`
 
 const URL = styled.a`
   width: 100%;
+  margin-left: 10px;
 `;
 
 const Hr = styled.hr`
@@ -165,16 +166,13 @@ const Hr = styled.hr`
   border-style: solid;
 `;
 
-const MyInformation = styled.span`
+const SnsArea = styled.span`
+  margin-top: 10px;
+  margin-left: 10px;
   width: 100%;
-  max-width: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 `;
 
-const CardContainer = styled.div`
+const Card = styled.div`
   width: 100%;
   height: 100%;
   margin: 10px;
