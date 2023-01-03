@@ -1,29 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import SeoSettings from "./components/SeoSettings";
+import HomeSeoSettings from "./components/HomeSeoSettings";
 import FooterComponents from "./components/FooterComponents";
 import { FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Home = () => {
   return (
     <div>
-      <SeoSettings
-        pageTitle={"mi2のポートフォリオサイト"}
-        pageDescription={
-          "okada mitsuhiroのポートフォリオサイトです。普段は、フロントエンジニアをしています。 | Webサイト作成 | SNS運用"
-        }
-        pagePath={"https://mitsuhiro-okada.com"}
-        pageImg={"https://mitsuhiro-okada.com"}
-        pageImgWidth={1280}
-        pageImgHeight={960}
-      />
+      <HomeSeoSettings />
       <Main>
         <Container>
           <Card>
-            <Title>mi2</Title>
-            <Text>#information</Text>
+            <Title>mi2のページ</Title>
+            <Text>Webサイト | LP制作 | SNS運用などご連絡下さい。</Text>
           </Card>
-          <Text>Webサイト | LP作成 | SNS運用</Text>
           <SnsArea>
             <URL
               href="https://www.instagram.com/mi2__user/?hl=ja"
@@ -31,18 +21,29 @@ const Home = () => {
             >
               <FaInstagram size={30} color={"#595959"} />
             </URL>
+            <CustomText>Instagram</CustomText>
+
             <URL href="https://twitter.com/mi2__user" target="_blank">
               <FaTwitter size={30} color={"#595959"} />
             </URL>
+            <CustomText>Twitter</CustomText>
           </SnsArea>
         </Container>
         <Hr />
         <Container>
           <Card>
-            <Subtitle>Webサイト</Subtitle>
-            <Text>#portfolio</Text>
+            <Subtitle>Webサイト | LP制作</Subtitle>
           </Card>
           <Card>
+            <Text>Hayato Kajiwara #portfolio</Text>
+            <Button>
+              <URL href="https://kajikazi.com" target="_blank">
+                kajikazi
+              </URL>
+            </Button>
+          </Card>
+          <Card>
+            <Text>sorette | それって需要あるの?を聞く掲示板</Text>
             <Button>
               <URL href="https://sorette.jp" target="_blank">
                 sorette
@@ -50,6 +51,7 @@ const Home = () => {
             </Button>
           </Card>
           <Card>
+            <Text>csvひかくん | CSV比較ツール</Text>
             <Button>
               <URL href="https://csvhikakun.com" target="_blank">
                 csvひかくん
@@ -64,27 +66,21 @@ const Home = () => {
             </Button>
           </Card> */}
           <Card>
+            <Text>Pharcyde Menu | Barのメニュー</Text>
             <Button>
               <URL href="https://pharcyde.tokyo" target="_blank">
                 Pharcyde
               </URL>
             </Button>
           </Card>
-          {/* <Card>
-            <Button>
-              <URL href="https://kajikazi.jp" target="_blank">
-                Kajikazi
-              </URL>
-            </Button>
-          </Card> */}
         </Container>
         <Hr />
         <Container>
           <Card>
-            <Subtitle>Instagram/SNS</Subtitle>
-            <Text>#media</Text>
+            <Subtitle>Instagram | SNS運用</Subtitle>
           </Card>
           <Card>
+            <Text>kagurazaka_map | 神楽坂エリアのランチ紹介</Text>
             <Button>
               <URL
                 href="https://www.instagram.com/kagurazaka_map/?hl=ja"
@@ -107,53 +103,60 @@ const Main = styled.main``;
 
 const Title = styled.h1`
   color: #595959;
-  text-align: center;
-  font-size: 24px;
+  text-align: left;
+  font-size: 32px;
+  margin-top: 16px;
 `;
 
 const Subtitle = styled.h2`
   color: #595959;
-  text-align: center;
-  font-size: 16px;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 16px;
 `;
 
 const Text = styled.p`
   color: #595959;
-  text-align: center;
-  font-size: 14px;
+  text-align: left;
+  font-size: 16px;
+`;
+
+const CustomText = styled.p`
+  color: #595959;
+  text-align: left;
+  font-size: 16px;
+  margin-top: 16px;
 `;
 
 const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 16px;
 `;
 
 const Button = styled.button`
-  margin-top: 10px;
-  padding: 20px 20px;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 8px;
-  background-color: #595959;
+  margin-top: 8px;
+  width: 200px;
   color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
-  text-align: center;
-`;
+  &:hover {
+    background-color: #000;
+    }
+  }
+  `;
 
 const URL = styled.a`
   width: 100%;
-  margin-left: 10px;
-  &:hover {
-    color: #595959;
-  }
+  color: #595959;
 `;
 
 const Hr = styled.hr`
@@ -171,20 +174,19 @@ const Hr = styled.hr`
 const SnsArea = styled.span`
   display: flex;
   width: 300px;
-  justify-content: center;
-  align-items: center;
+  justify-content: left  align-items: center;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 16px;
+  text-align: center;
 `;
 
 const Card = styled.div`
   width: 100%;
   height: 100%;
-  margin: 10px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(108, 155, 210, 0.2);
+  margin-top: 16px;
   @media screen and (max-width: 480px) {
     /* 画面サイズが480まではここを読み込む */
     width: 350px;
