@@ -12,7 +12,7 @@ const Home = () => {
         <Container>
           <Card>
             <Title>mi2のページ</Title>
-            <Text>Webサイト | LP制作 | SNS運用などご連絡下さい。</Text>
+            <Text>Webサイト | LP制作 | SNS運用</Text>
           </Card>
           <SnsArea>
             <URL
