@@ -15,18 +15,21 @@ const Home = () => {
             <Text>Webサイト | LP制作 | SNS運用</Text>
           </Card>
           <SnsArea>
-            <URL
-              href="https://www.instagram.com/mi2__user/?hl=ja"
-              target="_blank"
-            >
-              <FaInstagram size={30} color={"#595959"} />
-            </URL>
-            <CustomText>Instagram</CustomText>
-
-            <URL href="https://twitter.com/mi2__user" target="_blank">
-              <FaTwitter size={30} color={"#595959"} />
-            </URL>
-            <CustomText>Twitter</CustomText>
+            <ContainerMin>
+              <URL
+                href="https://www.instagram.com/mi2__user/?hl=ja"
+                target="_blank"
+              >
+                <FaInstagram size={30} color={"#595959"} />
+              </URL>
+              <CustomText>Instagram</CustomText>
+            </ContainerMin>
+            <ContainerMin>
+              <URL href="https://twitter.com/mi2__user" target="_blank">
+                <FaTwitter size={30} color={"#595959"} />
+              </URL>
+              <CustomText>Twitter</CustomText>
+            </ContainerMin>
           </SnsArea>
         </Container>
         <Hr />
@@ -136,6 +139,14 @@ const Container = styled.div`
   flex-direction: column;
   text-align: center;
   margin-top: 16px;
+`;
+
+const ContainerMin = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Button = styled.button`
