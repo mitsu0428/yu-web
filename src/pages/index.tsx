@@ -176,7 +176,7 @@ const Container = styled.div`
 
 const URL = styled.a`
   width: 100%;
-  color: white;
+  color: #595959;
 `;
 
 const Hr = styled.hr`
