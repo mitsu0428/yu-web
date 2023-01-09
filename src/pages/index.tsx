@@ -11,7 +11,7 @@ const Home = () => {
       <Main>
         <Title>mi2のページ</Title>
         <TitleContainer>
-          <Text>Webサイト | LP制作 | SNS運用</Text>
+          <Subtitle>Webサイト | LP制作 | SNS運用</Subtitle>
         </TitleContainer>
         <Container>
           <SnsArea>
@@ -109,13 +109,12 @@ const TitleContainer = styled.div`
   width: 100%;
   align-items: center;
   margin-top: 32px;
-  margin-left: 8px;
 `;
 
 const Title = styled.h1`
   color: #595959;
   margin-top: 32px;
-  margin-left: 8px;
+  margin-left: 16px;
   font-size: 24px;
   font-weight: 1200;
   @media (max-width: 768px) {
@@ -129,7 +128,7 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   color: #595959;
   margin-top: 32px;
-  margin-left: 8px;
+  margin-left: 16px;
   font-size: 22px;
   font-weight: 800;
   @media (max-width: 768px) {
@@ -177,7 +176,7 @@ const Container = styled.div`
 
 const URL = styled.a`
   width: 100%;
-  color: #595959;
+  color: white;
 `;
 
 const Hr = styled.hr`
@@ -209,6 +208,8 @@ const CardContainer = styled.div`
   cursor: pointer;
   transition: 1s;
 
+  width: 300px;
+  height: 100px;
   &:hover {
     background-color: #f5f5f5;
   }
@@ -218,6 +219,7 @@ const CardButton = styled.button`
   display: none;
   align-self: flex-end;
   width: 100%;
+  border-radius: 4px;
 
   ${CardContainer}:hover & {
     display: block;
