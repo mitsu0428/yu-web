@@ -9,13 +9,13 @@ const Home = () => {
     <div>
       <HomeSeoSettings />
       <Main>
+        <Title>mi2のページ</Title>
+        <TitleContainer>
+          <Text>Webサイト | LP制作 | SNS運用</Text>
+        </TitleContainer>
         <Container>
-          <Card>
-            <Title>mi2のページ</Title>
-            <Text>Webサイト | LP制作 | SNS運用</Text>
-          </Card>
           <SnsArea>
-            <ContainerMin>
+            <Container>
               <URL
                 href="https://www.instagram.com/mi2__user/?hl=ja"
                 target="_blank"
@@ -23,76 +23,76 @@ const Home = () => {
                 <FaInstagram size={30} color={"#595959"} />
               </URL>
               <CustomText>Instagram</CustomText>
-            </ContainerMin>
-            <ContainerMin>
+            </Container>
+            <Container>
               <URL href="https://twitter.com/mi2__user" target="_blank">
                 <FaTwitter size={30} color={"#595959"} />
               </URL>
               <CustomText>Twitter</CustomText>
-            </ContainerMin>
+            </Container>
           </SnsArea>
         </Container>
         <Hr />
+        <TitleContainer>
+          <Subtitle>Webサイト | LP制作</Subtitle>
+        </TitleContainer>
         <Container>
-          <Card>
-            <Subtitle>Webサイト | LP制作</Subtitle>
-          </Card>
-          <Card>
-            <Text>Hayato Kajiwara #portfolio</Text>
-            <Button>
+          <CardContainer>
+            <Text>Hayato Kajiwara</Text>
+            <CardButton>
               <URL href="https://kajikazi.com" target="_blank">
                 kajikazi
               </URL>
-            </Button>
-          </Card>
-          <Card>
-            <Text>sorette | それって需要あるの?を聞く掲示板</Text>
-            <Button>
+            </CardButton>
+          </CardContainer>
+          <CardContainer>
+            <Text>sorette - それって需要あるの?を聞く掲示板</Text>
+            <CardButton>
               <URL href="https://sorette.jp" target="_blank">
                 sorette
               </URL>
-            </Button>
-          </Card>
-          <Card>
-            <Text>csvひかくん | CSV比較ツール</Text>
-            <Button>
+            </CardButton>
+          </CardContainer>
+          <CardContainer>
+            <Text>csvひかくん - CSV比較ツール</Text>
+            <CardButton>
               <URL href="https://csvhikakun.com" target="_blank">
                 csvひかくん
               </URL>
-            </Button>
-          </Card>
-          {/* <Card>
-            <Button>
-              <URL href="https://www.cosmictheta.space" target="_blank">
-                Cosmittheta
-              </URL>
-            </Button>
-          </Card> */}
-          <Card>
-            <Text>Pharcyde Menu | Barのメニュー</Text>
-            <Button>
+            </CardButton>
+          </CardContainer>
+          <CardContainer>
+            <Text>Pharcyde Menu - Barのメニュー</Text>
+            <CardButton>
               <URL href="https://pharcyde.tokyo" target="_blank">
                 Pharcyde
               </URL>
-            </Button>
-          </Card>
+            </CardButton>
+          </CardContainer>
+          {/* <CardContainer>
+            <CardButton>
+              <URL href="https://www.cosmictheta.space" target="_blank">
+                Cosmittheta
+              </URL>
+            </CardButton>
+          </CardContainer> */}
         </Container>
         <Hr />
+        <TitleContainer>
+          <Subtitle>Instagram | SNS運用</Subtitle>
+        </TitleContainer>
         <Container>
-          <Card>
-            <Subtitle>Instagram | SNS運用</Subtitle>
-          </Card>
-          <Card>
+          <CardContainer>
             <Text>kagurazaka_map | 神楽坂エリアのランチ紹介</Text>
-            <Button>
+            <CardButton>
               <URL
                 href="https://www.instagram.com/kagurazaka_map/?hl=ja"
                 target="_blank"
               >
                 神楽坂マップ
               </URL>
-            </Button>
-          </Card>
+            </CardButton>
+          </CardContainer>
         </Container>
         <FooterComponents />
       </Main>
@@ -104,66 +104,76 @@ export default Home;
 
 const Main = styled.main``;
 
+const TitleContainer = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 32px;
+  margin-left: 8px;
+`;
+
 const Title = styled.h1`
   color: #595959;
-  text-align: left;
-  font-size: 32px;
-  margin-top: 16px;
+  margin-top: 32px;
+  margin-left: 8px;
+  font-size: 24px;
+  font-weight: 1200;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 const Subtitle = styled.h2`
   color: #595959;
-  text-align: left;
-  font-size: 24px;
-  margin-top: 16px;
+  margin-top: 32px;
+  margin-left: 8px;
+  font-size: 22px;
+  font-weight: 800;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 const Text = styled.p`
   color: #595959;
-  text-align: left;
-  font-size: 16px;
+  font-size: 18px;
+
+  font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const CustomText = styled.p`
   color: #595959;
-  text-align: left;
-  font-size: 16px;
-  margin-top: 16px;
+
+  font-size: 18px;
+  font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: left;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  text-align: center;
   margin-top: 16px;
 `;
-
-const ContainerMin = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
-
-const Button = styled.button`
-  margin-top: 8px;
-  width: 200px;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover {
-    background-color: #000;
-    }
-  }
-  `;
 
 const URL = styled.a`
   width: 100%;
@@ -185,29 +195,31 @@ const Hr = styled.hr`
 const SnsArea = styled.span`
   display: flex;
   width: 300px;
-  justify-content: left  align-items: center;
+
+  align-items: center;
   flex-direction: row;
   margin-top: 16px;
-  text-align: center;
 `;
 
-const Card = styled.div`
+const CardContainer = styled.div`
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 32px;
+  cursor: pointer;
+  transition: 1s;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+`;
+
+const CardButton = styled.button`
+  display: none;
+  align-self: flex-end;
   width: 100%;
-  height: 100%;
-  text-align: center;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-top: 16px;
-  @media screen and (max-width: 480px) {
-    /* 画面サイズが480まではここを読み込む */
-    width: 350px;
-  }
-  @media screen and (min-width: 481px) and (max-width: 1023px) {
-    /* 画面サイズが481pxから1023pxまではここを読み込む */
-    width: 400px;
-  }
-  @media screen and (min-width: 1024px) {
-    /* 画面サイズが1024pxからはここを読み込む */
-    width: 450px;
+
+  ${CardContainer}:hover & {
+    display: block;
   }
 `;
