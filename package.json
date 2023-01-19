@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "lint": "next lint"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
@@ -27,21 +26,6 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
-    "@types/gtag.js": "^0.0.12",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged; jest"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --write './src/**/*.js'",
-      "prettier --write './__tests__/**/*.js'",
-      "eslint --fix './src/**/*.js'",
-      "eslint --fix './__tests__/**/*.js'"
-    ]
+    "@types/gtag.js": "^0.0.12"
   }
 }

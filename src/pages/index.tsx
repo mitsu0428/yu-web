@@ -3,6 +3,7 @@ import styled from "styled-components";
 import HomeSeoSettings from "./components/HomeSeoSettings";
 import FooterComponents from "./components/FooterComponents";
 import { FaTwitter, FaInstagram } from "react-icons/fa";
+import Button from "./components/common/Button";
 
 const Home = () => {
   return (
@@ -38,36 +39,16 @@ const Home = () => {
         </TitleContainer>
         <Container>
           <CardContainer>
-            <Text>Hayato Kajiwara</Text>
-            <CardButton>
-              <URL href="https://kajikazi.com" target="_blank">
-                kajikazi
-              </URL>
-            </CardButton>
+            <Button title="Hayato Kajiwara" url="https://kajikazi.com"></Button>
           </CardContainer>
           <CardContainer>
-            <Text>sorette - それって需要あるの?を聞く掲示板</Text>
-            <CardButton>
-              <URL href="https://sorette.jp" target="_blank">
-                sorette
-              </URL>
-            </CardButton>
+            <Button title="sorette掲示板" url="https://sorette.jp"></Button>
           </CardContainer>
           <CardContainer>
-            <Text>csvひかくん - CSV比較ツール</Text>
-            <CardButton>
-              <URL href="https://csvhikakun.com" target="_blank">
-                csvひかくん
-              </URL>
-            </CardButton>
+            <Button title="CSV比較ツール" url="https://csvhikakun.com"></Button>
           </CardContainer>
           <CardContainer>
-            <Text>Pharcyde Menu - Barのメニュー</Text>
-            <CardButton>
-              <URL href="https://pharcyde.tokyo" target="_blank">
-                Pharcyde
-              </URL>
-            </CardButton>
+            <Button title="Pharcyde Menu" url="https://pharcyde.tokyo"></Button>
           </CardContainer>
           {/* <CardContainer>
             <CardButton>
@@ -83,15 +64,10 @@ const Home = () => {
         </TitleContainer>
         <Container>
           <CardContainer>
-            <Text>kagurazaka_map | 神楽坂エリアのランチ紹介</Text>
-            <CardButton>
-              <URL
-                href="https://www.instagram.com/kagurazaka_map/?hl=ja"
-                target="_blank"
-              >
-                神楽坂マップ
-              </URL>
-            </CardButton>
+            <Button
+              title="神楽坂マップ"
+              url="https://www.instagram.com/kagurazaka_map/?hl=ja"
+            ></Button>
           </CardContainer>
         </Container>
         <FooterComponents />
