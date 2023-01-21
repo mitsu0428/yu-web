@@ -90,7 +90,7 @@ const TitleContainer = styled.div`
 const Title = styled.h1`
   color: #595959;
   margin-top: 32px;
-  margin-left: 16px;
+  margin-left: 32px;
   font-size: 24px;
   font-weight: 1200;
   @media (max-width: 768px) {
@@ -104,7 +104,7 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   color: #595959;
   margin-top: 32px;
-  margin-left: 16px;
+  margin-left: 32px;
   font-size: 22px;
   font-weight: 800;
   @media (max-width: 768px) {
@@ -115,22 +115,8 @@ const Subtitle = styled.h2`
   }
 `;
 
-const Text = styled.p`
-  color: #595959;
-  font-size: 18px;
-
-  font-weight: 600;
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-  @media (max-width: 480px) {
-    font-size: 14px;
-  }
-`;
-
 const CustomText = styled.p`
   color: #595959;
-
   font-size: 18px;
   font-weight: 600;
   @media (max-width: 768px) {
