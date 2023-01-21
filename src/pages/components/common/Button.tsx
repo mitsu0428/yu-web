@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
+import Modal from "./Modal";
 
 type Props = {
   title: string;
@@ -9,16 +10,20 @@ type Props = {
 
 const Button = (props: Props) => {
   const [isClicked, setIsClicked] = React.useState(false);
+
   const onClick = () => {
     setIsClicked(!isClicked);
   };
+
   return (
     <Container>
       <CustomButton onClick={onClick}>{props.title}</CustomButton>
       {isClicked && (
-        <CustomLink href={props.url} target="_blank">
-          {props.title}
-        </CustomLink>
+        <Modal close={onClick}>
+          <CustomLink href={props.url} target="_blank">
+            {props.title}
+          </CustomLink>
+        </Modal>
       )}
     </Container>
   );
@@ -35,7 +40,7 @@ const CustomButton = styled.button`
   width: 300px;
   height: 100px;
   &:hover {
-    background-color: #e0e0e0;
+    background-color: #a260bf;
   }
 `;
 
