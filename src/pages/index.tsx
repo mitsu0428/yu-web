@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import HomeSeoSettings from "./components/HomeSeoSettings";
-import FooterComponents from "./components/FooterComponents";
+import HomeSeoSettings from "./components/libs/HomeSeoSettings";
+import FooterComponents from "./components/libs/FooterComponents";
 import { FaTwitter, FaInstagram } from "react-icons/fa";
 import Button from "./components/common/Button";
 
@@ -14,6 +14,7 @@ const Home = () => {
         <TitleContainer>
           <Subtitle>Webサイト | LP制作 | SNS運用</Subtitle>
         </TitleContainer>
+
         <Container>
           <SnsArea>
             <Container>

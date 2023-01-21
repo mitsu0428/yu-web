@@ -20,7 +20,7 @@ const SeoSettings = ({
 }: Partial<MetaData>) => {
   const defaultTitle = "mi2のポートフォリオサイト";
   const defaultDescription =
-    "mitsuhiro okadaのポートフォリオサイト|Webサイト/小規模なの作れます|SNS運用/知り合い紹介できます";
+    "okada mitsuhiroのポートフォリオサイト | Webサイト, 小規模なの作れます | SNS運用, 知り合い紹介できます";
 
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription ? pageDescription : defaultDescription;
