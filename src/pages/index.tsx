@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import HomeSeoSettings from "./components/libs/HomeSeoSettings";
 import FooterComponents from "./components/libs/FooterComponents";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
 import Button from "./components/common/Button";
+import ImageContainer from "./components/common/ImageContainer";
+import InstagramContainer from "./components/common/InstagramContainer";
+import TwitterContainer from "./components/common/TwitterContainer";
+import LinkedinComtainer from "./components/common/LinkedinComtainer";
 
 const Home = () => {
   return (
@@ -14,23 +17,17 @@ const Home = () => {
         <TitleContainer>
           <Subtitle>Webサイト | LP制作 | SNS運用</Subtitle>
         </TitleContainer>
-
         <Container>
+          <ImageContainer />
           <SnsArea>
             <Container>
-              <URL
-                href="https://www.instagram.com/mi2__user/?hl=ja"
-                target="_blank"
-              >
-                <FaInstagram size={30} color={"#595959"} />
-              </URL>
-              <CustomText>Instagram</CustomText>
+              <LinkedinComtainer />
             </Container>
             <Container>
-              <URL href="https://twitter.com/mi2__user" target="_blank">
-                <FaTwitter size={30} color={"#595959"} />
-              </URL>
-              <CustomText>Twitter</CustomText>
+              <InstagramContainer />
+            </Container>
+            <Container>
+              <TwitterContainer />
             </Container>
           </SnsArea>
         </Container>
@@ -116,18 +113,6 @@ const Subtitle = styled.h2`
   }
 `;
 
-const CustomText = styled.p`
-  color: #595959;
-  font-size: 18px;
-  font-weight: 600;
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-  @media (max-width: 480px) {
-    font-size: 14px;
-  }
-`;
-
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -137,12 +122,8 @@ const Container = styled.div`
   margin-top: 16px;
 `;
 
-const URL = styled.a`
-  width: 100%;
-  color: #595959;
-`;
-
 const Hr = styled.hr`
+  margin-top: 32px;
   border-width: 0 0 1px;
   border-image: linear-gradient(
       90deg,

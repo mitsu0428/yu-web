@@ -64,4 +64,5 @@ const CloseButton = styled.button`
   font-size: 16px;
   margin-left: 16px;
   position: absolute;
+  color: #595959;
 `;

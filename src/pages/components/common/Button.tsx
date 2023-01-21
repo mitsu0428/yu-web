@@ -44,8 +44,24 @@ const CustomButton = styled.button`
   }
 `;
 
-const CustomLink = styled(Link)`
-  color: #595959;
+const CustomLink = styled.a`
+  box-shadow: inset 0 0 0 0 #a260bf
+  color: #a260bf
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    box-shadow: inset 300px 0 0 0 #a260bf
+  }
 `;
 
 export default Button;
