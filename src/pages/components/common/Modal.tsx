@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useRef } from "react";
 import styled from "styled-components";
 
@@ -26,6 +27,12 @@ const Modal: React.FC<Props> = ({ close, children }) => {
     <ModalWrapper>
       <ModalContent ref={modalRef}>
         {children}
+        <Image
+          src="/ModalPokemon.gif"
+          width={70}
+          height={70}
+          alt="pokemon modal"
+        />
         <CloseButton onClick={close}>×</CloseButton>
       </ModalContent>
     </ModalWrapper>
