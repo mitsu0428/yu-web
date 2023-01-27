@@ -26,7 +26,7 @@ const Modal: React.FC<Props> = ({ close, children }) => {
   return (
     <ModalWrapper>
       <ModalContent ref={modalRef}>
-        {children}
+        <CustomText>{children}</CustomText>
         <Image
           src="/ModalPokemon.gif"
           width={70}
@@ -62,6 +62,18 @@ const ModalContent = styled.div`
   width: 80vw;
   height: 80vh;
   border-radius: 8px;
+`;
+
+const CustomText = styled.p`
+  color: #595959;
+  font-size: 18px;
+  font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const CloseButton = styled.button`

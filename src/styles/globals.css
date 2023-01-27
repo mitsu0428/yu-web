@@ -16,10 +16,12 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: white dark;
   }
   body {
-    color: black;
-    background: #fff;
+    color: #fff;
+    background: linear-gradient(to bottom, #591943, #d93bce);
+    background-size: 100% 100%;
+    background-attachment: fixed;
   }
 }

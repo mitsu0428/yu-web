@@ -86,7 +86,7 @@ const TitleContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #595959;
+  color: #fff;
   margin-top: 32px;
   margin-left: 32px;
   font-size: 24px;
@@ -100,7 +100,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.h2`
-  color: #595959;
+  color: #fff;
   margin-top: 32px;
   margin-left: 32px;
   font-size: 22px;
@@ -157,15 +157,18 @@ const CardContainer = styled.div`
   &:hover {
     background-color: #f5f5f5;
   }
-`;
 
-const CardButton = styled.button`
-  display: none;
-  align-self: flex-end;
-  width: 100%;
-  border-radius: 4px;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s; /* 追加 */
 
-  ${CardContainer}:hover & {
-    display: block;
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 `;

@@ -6,7 +6,7 @@ function InstagramContainer() {
   return (
     <>
       <URL href="https://www.instagram.com/mi2__user/?hl=ja" target="_blank">
-        <FaInstagram size={30} color={"#595959"} />
+        <FaInstagram size={30} color={"#fff"} />
       </URL>
       <CustomText>Instagram</CustomText>
     </>
@@ -17,11 +17,11 @@ export default InstagramContainer;
 
 const URL = styled.a`
   width: 100%;
-  color: #595959;
+  color: #fff;
 `;
 
 const CustomText = styled.p`
-  color: #595959;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
   @media (max-width: 768px) {

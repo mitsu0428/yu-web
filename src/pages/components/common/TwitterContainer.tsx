@@ -6,7 +6,7 @@ function TwitterContainer() {
   return (
     <>
       <URL href="https://twitter.com/mi2__user" target="_blank">
-        <FaTwitter size={30} color={"#595959"} />
+        <FaTwitter size={30} color={"#fff"} />
       </URL>
       <CustomText>Twitter</CustomText>
     </>
@@ -17,11 +17,11 @@ export default TwitterContainer;
 
 const URL = styled.a`
   width: 100%;
-  color: #595959;
+  color: #fff;
 `;
 
 const CustomText = styled.p`
-  color: #595959;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
   @media (max-width: 768px) {

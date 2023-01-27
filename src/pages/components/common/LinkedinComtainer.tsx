@@ -6,7 +6,7 @@ function LinkedinComtainer() {
   return (
     <>
       <URL href="https://www.linkedin.com/in/mitsuhiro-okada" target="_blank">
-        <FaLinkedin size={30} color={"#595959"} />
+        <FaLinkedin size={30} color={"#fff"} />
       </URL>
       <CustomText>Linkedin</CustomText>
     </>
@@ -17,11 +17,11 @@ export default LinkedinComtainer;
 
 const URL = styled.a`
   width: 100%;
-  color: #595959;
+  color: #fff;
 `;
 
 const CustomText = styled.p`
-  color: #595959;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
   @media (max-width: 768px) {
