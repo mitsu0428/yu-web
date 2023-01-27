@@ -66,13 +66,13 @@ const ModalContent = styled.div`
 
 const CustomText = styled.p`
   color: #595959;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
   }
   @media (max-width: 480px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 
