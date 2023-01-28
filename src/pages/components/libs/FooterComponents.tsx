@@ -23,7 +23,8 @@ const Container = styled.div`
 const Footer = styled.footer`
   width: 100%;
   height: 100px;
-  color: #595959;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
   display: flex;
   justify-content: center;
   align-items: center;

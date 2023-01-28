@@ -22,6 +22,7 @@ const URL = styled.a`
 
 const CustomText = styled.p`
   color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
   font-size: 18px;
   font-weight: 600;
   @media (max-width: 768px) {
@@ -29,23 +30,5 @@ const CustomText = styled.p`
   }
   @media (max-width: 480px) {
     font-size: 14px;
-  }
-`;
-
-const StyledLink = styled.a`
-  box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
-  padding: 0 0.25rem;
-  margin: 0 -0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  font-family: "Poppins", sans-serif;
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 1.5;
-  text-decoration: none;
-
-  &:hover {
-    color: #fff;
-    box-shadow: inset 200px 0 0 0 #54b3d6;
   }
 `;

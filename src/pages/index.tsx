@@ -87,6 +87,7 @@ const TitleContainer = styled.div`
 
 const Title = styled.h1`
   color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
   margin-top: 32px;
   margin-left: 32px;
   font-size: 24px;
@@ -101,6 +102,7 @@ const Title = styled.h1`
 
 const Subtitle = styled.h2`
   color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
   margin-top: 32px;
   margin-left: 32px;
   font-size: 22px;
@@ -138,7 +140,6 @@ const Hr = styled.hr`
 const SnsArea = styled.span`
   display: flex;
   width: 300px;
-
   align-items: center;
   flex-direction: row;
   margin-top: 16px;

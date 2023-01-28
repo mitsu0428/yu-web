@@ -58,6 +58,7 @@ const CustomLink = styled.a`
 
   &:hover {
     color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff;
     padding: 8px 16px 8px 16px;
     border-radius: 8px;
     box-shadow: inset 300px 0 0 0 #a260bf
