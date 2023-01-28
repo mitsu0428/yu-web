@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import HomeSeoSettings from "./components/libs/HomeSeoSettings";
 import FooterComponents from "./components/libs/FooterComponents";
 import Button from "./components/common/Button";
@@ -36,16 +36,16 @@ const Home = () => {
           <Subtitle>Webサイト | LP制作</Subtitle>
         </TitleContainer>
         <Container>
-          <CardContainer>
+          <CardContainer delay="0.5s">
             <Button title="Hayato Kajiwara" url="https://kajikazi.com"></Button>
           </CardContainer>
-          <CardContainer>
+          <CardContainer delay="0.7s">
             <Button title="sorette掲示板" url="https://sorette.jp"></Button>
           </CardContainer>
-          <CardContainer>
+          <CardContainer delay="0.9s">
             <Button title="CSV比較ツール" url="https://csvhikakun.com"></Button>
           </CardContainer>
-          <CardContainer>
+          <CardContainer delay="1.1s">
             <Button title="Pharcyde Menu" url="https://pharcyde.tokyo"></Button>
           </CardContainer>
           {/* <CardContainer>
@@ -61,7 +61,7 @@ const Home = () => {
           <Subtitle>Instagram | SNS運用</Subtitle>
         </TitleContainer>
         <Container>
-          <CardContainer>
+          <CardContainer delay="1.3s">
             <Button
               title="神楽坂マップ"
               url="https://www.instagram.com/kagurazaka_map/?hl=ja"
@@ -145,7 +145,7 @@ const SnsArea = styled.span`
   margin-top: 16px;
 `;
 
-const CardContainer = styled.div`
+const CardContainer = styled.div<{ delay?: string }>`
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -159,10 +159,9 @@ const CardContainer = styled.div`
     background-color: #f5f5f5;
   }
 
-  animation-name: slideIn;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.5s; /* 追加 */
+  animation: slideIn 0.5s ease-in-out;
+  animation-delay: ${({ delay }) => delay || "0s"};
+  animation-fill-mode: both;
 
   @keyframes slideIn {
     from {
