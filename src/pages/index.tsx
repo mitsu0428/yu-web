@@ -16,6 +16,15 @@ const Home = () => {
         <Title>mi2のページ</Title>
         <TitleContainer>
           <Subtitle>Webサイト | LP制作 | SNS運用</Subtitle>
+          <LoremText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </LoremText>
         </TitleContainer>
         <Container>
           <ImageContainer />
@@ -80,6 +89,7 @@ const Main = styled.main``;
 
 const TitleContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   margin-top: 32px;
@@ -171,5 +181,19 @@ const CardContainer = styled.div`
     to {
       transform: translateX(0);
     }
+  }
+`;
+
+const LoremText = styled.p`
+  color: #fff;
+  margin-top: 32px;
+  margin-left: 32px;
+  font-size: 18px;
+  font-weight: 800;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
   }
 `;
