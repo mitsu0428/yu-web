@@ -188,6 +188,8 @@ const LoremText = styled.p`
   color: #fff;
   margin-top: 32px;
   margin-left: 32px;
+  margin-right: 32px;
+  padding: 8px 16px 8px;
   font-size: 18px;
   font-weight: 800;
   @media (max-width: 768px) {

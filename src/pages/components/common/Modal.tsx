@@ -69,8 +69,8 @@ const ModalContent = styled.div`
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 70vw;
-  height: 70vh;
+  width: 80vw;
+  height: 80vh;
   border-radius: 8px;
 `;
 
@@ -101,6 +101,8 @@ const LoremText = styled.p`
   color: #000;
   margin-top: 32px;
   margin-left: 32px;
+  margin-right: 32px;
+  padding: 8px 16px 8px;
   font-size: 18px;
   font-weight: 800;
   @media (max-width: 768px) {
