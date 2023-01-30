@@ -57,13 +57,9 @@ const Home = () => {
           <CardContainer>
             <Button title="Pharcyde Menu" url="https://pharcyde.tokyo"></Button>
           </CardContainer>
-          {/* <CardContainer>
-            <CardButton>
-              <URL href="https://www.cosmictheta.space" target="_blank">
-                Cosmittheta
-              </URL>
-            </CardButton>
-          </CardContainer> */}
+          <CardContainer>
+            <Button title="Cosmittheta coming soon" url=""></Button>
+          </CardContainer>
         </Container>
         <Hr />
         <TitleContainer>
@@ -165,9 +161,6 @@ const CardContainer = styled.div`
 
   width: 300px;
   height: 100px;
-  &:hover {
-    background-color: #f5f5f5;
-  }
 
   animation-name: slideIn;
   animation-duration: 1s;
