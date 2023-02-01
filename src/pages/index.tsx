@@ -13,9 +13,11 @@ const Home = () => {
     <div>
       <HomeSeoSettings />
       <Main>
-        <Title>mi2のページ</Title>
+        <Title>mi2&apos;s pages</Title>
+        <ExplainText>- mi2のページ</ExplainText>
         <TitleContainer>
-          <Subtitle>Webサイト | LP制作 | SNS運用</Subtitle>
+          <Subtitle>Front-end developer & Social Media Marketing</Subtitle>
+          <ExplainText>- Webサイト | LP制作 | SNS運用</ExplainText>
           <LoremText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -42,7 +44,8 @@ const Home = () => {
         </Container>
         <Hr />
         <TitleContainer>
-          <Subtitle>Webサイト | LP制作</Subtitle>
+          <Subtitle>Front-end developer</Subtitle>
+          <ExplainText>- Webサイト | LP制作</ExplainText>
         </TitleContainer>
         <Container>
           <CardContainer>
@@ -63,7 +66,8 @@ const Home = () => {
         </Container>
         <Hr />
         <TitleContainer>
-          <Subtitle>Instagram | SNS運用</Subtitle>
+          <Subtitle>Social Media Marketing</Subtitle>
+          <ExplainText>- Instagram | SNS運用</ExplainText>
         </TitleContainer>
         <Container>
           <CardContainer>
@@ -86,8 +90,8 @@ const Main = styled.main``;
 const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: left;
   width: 100%;
-  align-items: center;
   margin-top: 32px;
 `;
 
@@ -96,13 +100,13 @@ const Title = styled.h1`
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
   margin-top: 32px;
   margin-left: 32px;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 1200;
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 30px;
   }
   @media (max-width: 480px) {
-    font-size: 18px;
+    font-size: 24px;
   }
 `;
 
@@ -111,13 +115,27 @@ const Subtitle = styled.h2`
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
   margin-top: 32px;
   margin-left: 32px;
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 1200;
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 24px;
   }
   @media (max-width: 480px) {
-    font-size: 18px;
+    font-size: 22px;
+  }
+`;
+
+const ExplainText = styled.p`
+  color: #fff;
+  margin-top: 8px;
+  margin-left: 48px;
+  font-size: 16px;
+  font-weight: 800;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    font-size: 12px;
   }
 `;
 
