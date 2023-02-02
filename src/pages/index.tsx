@@ -13,8 +13,10 @@ const Home = () => {
     <div>
       <HomeSeoSettings />
       <Main>
-        <Title>Mitsuhiro Okada</Title>
-        <ExplainText>- mi2のページ</ExplainText>
+        <TitleContainer>
+          <Title>Mitsuhiro Okada</Title>
+          <Subtitle>mi2のページ</Subtitle>
+        </TitleContainer>
         <TitleContainer>
           <VerticalText>
             Front-end developer & Social Media Marketing
@@ -48,6 +50,15 @@ const Home = () => {
         <TitleContainer>
           <Subtitle>Front-end developer</Subtitle>
           <ExplainText>- Webサイト | LP制作</ExplainText>
+          <LoremText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </LoremText>
         </TitleContainer>
         <Container>
           <CardContainer>
@@ -70,6 +81,15 @@ const Home = () => {
         <TitleContainer>
           <Subtitle>Social Media Marketing</Subtitle>
           <ExplainText>- Instagram | SNS運用</ExplainText>
+          <LoremText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </LoremText>
         </TitleContainer>
         <Container>
           <CardContainer>
@@ -99,8 +119,8 @@ const TitleContainer = styled.div`
 const Title = styled.h1`
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
-  margin-top: 48px;
-  margin-left: 48px;
+  margin-top: 32px;
+  margin-left: 32px;
   font-size: 36px;
   font-weight: 1200;
   @media (max-width: 768px) {
@@ -147,7 +167,6 @@ const VerticalText = styled.h2`
 
 const ExplainText = styled.p`
   color: #fff;
-  margin-top: 16px;
   margin-left: 48px;
   font-size: 16px;
   font-weight: 800;

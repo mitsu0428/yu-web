@@ -25,6 +25,10 @@ export default class MyDocument extends Document {
                 href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap"
                 rel="stylesheet"
               />
+              <link
+                href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@700&display=swap"
+                rel="stylesheet"
+              ></link>
             </Head>
             {initialProps.styles}
             {sheet.getStyleElement()}
