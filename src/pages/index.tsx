@@ -13,10 +13,12 @@ const Home = () => {
     <div>
       <HomeSeoSettings />
       <Main>
-        <Title>mi2&apos;s pages</Title>
+        <Title>Mitsuhiro Okada</Title>
         <ExplainText>- mi2のページ</ExplainText>
         <TitleContainer>
-          <Subtitle>Front-end developer & Social Media Marketing</Subtitle>
+          <VerticalText>
+            Front-end developer & Social Media Marketing
+          </VerticalText>
           <ExplainText>- Webサイト | LP制作 | SNS運用</ExplainText>
           <LoremText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -92,14 +94,13 @@ const TitleContainer = styled.div`
   flex-direction: column;
   text-align: left;
   width: 100%;
-  margin-top: 32px;
 `;
 
 const Title = styled.h1`
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
-  margin-top: 32px;
-  margin-left: 32px;
+  margin-top: 48px;
+  margin-left: 48px;
   font-size: 36px;
   font-weight: 1200;
   @media (max-width: 768px) {
@@ -125,9 +126,28 @@ const Subtitle = styled.h2`
   }
 `;
 
+const VerticalText = styled.h2`
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
+  margin-top: 48px;
+  margin-right: 48px;
+  writing-mode: vertical-lr;
+  text-align: center;
+  font-size: 36px;
+  white-space: nowrap;
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+`;
+
 const ExplainText = styled.p`
   color: #fff;
-  margin-top: 8px;
+  margin-top: 16px;
   margin-left: 48px;
   font-size: 16px;
   font-weight: 800;
@@ -197,10 +217,10 @@ const CardContainer = styled.div`
 
 const LoremText = styled.p`
   color: #fff;
-  margin-top: 32px;
-  margin-left: 32px;
-  margin-right: 32px;
-  padding: 8px 16px 8px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 128px;
+  padding: 16px 32px 16px;
   font-size: 18px;
   font-weight: 800;
   @media (max-width: 768px) {

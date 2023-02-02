@@ -17,4 +17,5 @@ export default ImageContainer;
 
 const ImageComponent = styled(Image)`
   border-radius: 50%;
+  border: 1px solid #ccc;
 `;
