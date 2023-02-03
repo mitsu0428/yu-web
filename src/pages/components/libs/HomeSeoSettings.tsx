@@ -3,9 +3,9 @@ import SeoSettings from "../common/SeoSettings";
 const HomeSeoSettings = () => {
   return (
     <SeoSettings
-      pageTitle={"mi2のポートフォリオサイト"}
+      pageTitle={"岡田 光博 | ポートフォリオサイト"}
       pageDescription={
-        "okada mitsuhiroのポートフォリオサイトです。普段は、フロントエンジニアをしています。 | Webサイト作成 | SNS運用"
+        "岡田光博のポートフォリオサイト | フロントエンドエンジニア & DX/テクニカルサポートエンジニア | Webサイト作成 | LP作成 | SNS運用"
       }
       pagePath={"https://mitsuhiro-okada.com"}
       pageImg={"https://mitsuhiro-okada.com"}
