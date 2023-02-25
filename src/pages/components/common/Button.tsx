@@ -32,22 +32,41 @@ const Button = (props: Props) => {
 const Container = styled.div``;
 
 const CustomButton = styled.button`
+  background-color: #eaeaea;
   border: none;
   border-radius: 4px;
+  color: #000000;
   cursor: pointer;
-  transition: 1s;
-  width: 300px;
-  height: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+
   &:hover {
     background-color: #000;
+    color: #ffffff;
   }
 `;
 
 const CustomLink = styled.a`
-  padding: 8px 16px 8px 16px;
-  font-size: 32px;
-  font-weight: 700;
+  background-color: #000000;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-align: center;
   text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 `;
 
 export default Button;

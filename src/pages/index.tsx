@@ -182,20 +182,24 @@ const SnsArea = styled.span`
 `;
 
 const CardContainer = styled.div`
-  border: none;
-  border-radius: 4px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
   margin-top: 32px;
-  cursor: pointer;
-  transition: 1s;
+  padding: 24px;
+  transition: box-shadow 0.3s ease-in-out;
 
   width: 300px;
-  height: 100px;
+  height: 180px;
 
   animation-name: slideIn;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.5s; /* 追加 */
+  animation-delay: 0.5s;
 
   @keyframes slideIn {
     from {
@@ -204,5 +208,21 @@ const CardContainer = styled.div`
     to {
       transform: translateX(0);
     }
+  }
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  & > h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  & > p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
   }
 `;
