@@ -91,7 +91,8 @@ const TitleContainer = styled.div`
 
 const Title = styled.h1`
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
+  text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
+    0 0 42px #0fa;
   margin-top: 32px;
   margin-left: 32px;
   font-size: 36px;
@@ -106,7 +107,8 @@ const Title = styled.h1`
 
 const Subtitle = styled.h2`
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
+  text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
+    0 0 42px #0fa;
   margin-top: 32px;
   margin-left: 32px;
   font-size: 26px;
@@ -123,7 +125,8 @@ const VerticalText = styled.h2`
   position: absolute;
   top: 0;
   right: 0;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
+  text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
+    0 0 42px #0fa;
   margin-top: 48px;
   margin-right: 48px;
   writing-mode: vertical-lr;
