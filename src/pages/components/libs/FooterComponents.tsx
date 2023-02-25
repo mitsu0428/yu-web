@@ -24,7 +24,8 @@ const Footer = styled.footer`
   width: 100%;
   height: 100px;
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa;
+  text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
+    0 0 42px #0fa;
   display: flex;
   justify-content: center;
   align-items: center;
