@@ -127,8 +127,8 @@ const VerticalText = styled.h2`
   right: 0;
   text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
     0 0 42px #0fa;
-  margin-top: 48px;
-  margin-right: 48px;
+  margin-top: 32px;
+  margin-right: 32px;
   writing-mode: vertical-lr;
   text-align: center;
   font-size: 36px;
@@ -143,7 +143,7 @@ const VerticalText = styled.h2`
 
 const ExplainText = styled.p`
   color: #fff;
-  margin-left: 48px;
+  margin-left: 32px;
   font-size: 16px;
   font-weight: 800;
   @media (max-width: 768px) {

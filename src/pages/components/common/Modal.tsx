@@ -87,19 +87,3 @@ const CloseButton = styled.button`
   text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
     0 0 42px #0fa;
 `;
-
-const LoremText = styled.p`
-  color: #000;
-  margin-top: 32px;
-  margin-left: 32px;
-  margin-right: 32px;
-  padding: 8px 16px 8px;
-  font-size: 18px;
-  font-weight: 800;
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-  @media (max-width: 480px) {
-    font-size: 14px;
-  }
-`;

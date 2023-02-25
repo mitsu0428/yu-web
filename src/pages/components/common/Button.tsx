@@ -57,7 +57,7 @@ const CustomLink = styled.a`
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  padding: 8px 16px;
+  padding: 16px 32px 16px 32px;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
