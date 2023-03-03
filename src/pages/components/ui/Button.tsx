@@ -24,7 +24,6 @@ const Button = (props: Props) => {
         <Modal
           close={onClick}
           actionAreaCardProps={{
-            title: props.title,
             description: props.description,
             url: props.url,
             image_path: props.image_path,
