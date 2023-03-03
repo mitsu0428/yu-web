@@ -1,11 +1,13 @@
-import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import Modal from "./Modal";
+import Modal from "../common/Modal";
 
 type Props = {
   title: string;
+  description: string;
   url: string;
+  image_path: string;
+  image_height: number;
 };
 
 const Button = (props: Props) => {
@@ -19,11 +21,16 @@ const Button = (props: Props) => {
     <Container>
       <CustomButton onClick={onClick}>{props.title}</CustomButton>
       {isClicked && (
-        <Modal close={onClick}>
-          <CustomLink href={props.url} target="_blank">
-            {props.title}
-          </CustomLink>
-        </Modal>
+        <Modal
+          close={onClick}
+          actionAreaCardProps={{
+            title: props.title,
+            description: props.description,
+            url: props.url,
+            image_path: props.image_path,
+            image_height: props.image_height,
+          }}
+        />
       )}
     </Container>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import HomeSeoSettings from "./components/libs/HomeSeoSettings";
 import FooterComponents from "./components/libs/FooterComponents";
-import Button from "./components/common/Button";
+import Button from "./components/ui/Button";
 import ImageContainer from "./components/common/ImageContainer";
 import InstagramContainer from "./components/common/InstagramContainer";
 import TwitterContainer from "./components/common/TwitterContainer";
@@ -44,19 +44,49 @@ const Home = () => {
         </TitleContainer>
         <Container>
           <CardContainer>
-            <Button title="Hayato Kajiwara" url="https://kajikazi.com"></Button>
+            <Button
+              title="Hayato Kajiwara"
+              description="Hayato Kajiwara Portfolio"
+              url="https://kajikazi.com"
+              image_path="/images/kajikazi.png"
+              image_height={200}
+            ></Button>
           </CardContainer>
           <CardContainer>
-            <Button title="sorette掲示板" url="https://sorette.jp"></Button>
+            <Button
+              title="sorette掲示板"
+              description="sorette掲示板"
+              url="https://sorette.jp"
+              image_path="/images/sorette.png"
+              image_height={200}
+            ></Button>
           </CardContainer>
           <CardContainer>
-            <Button title="CSV比較ツール" url="https://csvhikakun.com"></Button>
+            <Button
+              title="CSV比較ツール"
+              description="CSV比較ツール"
+              url="https://csvhikakun.com"
+              image_path="/images/csvhikakun.png"
+              image_height={200}
+            ></Button>
           </CardContainer>
           <CardContainer>
-            <Button title="Pharcyde Menu" url="https://pharcyde.tokyo"></Button>
+            <Button
+              title="Pharcyde Menu"
+              url="https://pharcyde.tokyo"
+              description="Pharcyde Menu"
+              image_path="/images/pharcyde.png"
+              image_height={200}
+            ></Button>
           </CardContainer>
           <CardContainer>
-            <Button title="Cosmittheta coming soon" url=""></Button>
+            <Button
+              title="Cosmic Θ"
+              description="Cosmic Θ | Cosmic Theta"
+              url="https://cosmictheta.space"
+              image_path="/images/cosmic_theta.jpg"
+              image_height={200}
+            ></Button>
           </CardContainer>
         </Container>
         <Hr />
@@ -69,6 +99,9 @@ const Home = () => {
             <Button
               title="神楽坂マップ"
               url="https://www.instagram.com/kagurazaka_map/?hl=ja"
+              description="神楽坂マップ"
+              image_path="/images/kagurazaka_map.png"
+              image_height={200}
             ></Button>
           </CardContainer>
         </Container>

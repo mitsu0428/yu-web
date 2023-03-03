@@ -1,13 +1,22 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import styled from "styled-components";
+import ActionAreaCard from "../ui/ActionAreaCard";
 
 type Props = {
   close: (e: any) => void;
-  children: React.ReactNode;
+  actionAreaCardProps: ActionAreaCardProps;
 };
 
-const Modal: React.FC<Props> = ({ close, children }) => {
+type ActionAreaCardProps = {
+  title: string;
+  description: string;
+  url: string;
+  image_path: string;
+  image_height: number;
+};
+
+const Modal: React.FC<Props> = ({ close, actionAreaCardProps }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: any) => {
@@ -23,16 +32,27 @@ const Modal: React.FC<Props> = ({ close, children }) => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   return (
     <ModalWrapper>
       <ModalContent ref={modalRef}>
-        <CustomText>{children}</CustomText>
-        <Image
-          src="/ModalPokemon.gif"
-          width={70}
-          height={70}
-          alt="pokemon modal"
+        <ActionAreaCard
+          title={actionAreaCardProps.title}
+          description={actionAreaCardProps.description}
+          url={actionAreaCardProps.url}
+          image_path={actionAreaCardProps.image_path}
+          image_height={actionAreaCardProps.image_height}
         />
+        <CustomButton>
+          <CustomLink
+            href={actionAreaCardProps.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            More Info...
+          </CustomLink>
+        </CustomButton>
+
         <CloseButton onClick={close}>×</CloseButton>
       </ModalContent>
     </ModalWrapper>
@@ -64,18 +84,6 @@ const ModalContent = styled.div`
   border-radius: 8px;
 `;
 
-const CustomText = styled.p`
-  color: #595959;
-  font-size: 16px;
-  font-weight: 600;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
-  @media (max-width: 480px) {
-    font-size: 12px;
-  }
-`;
-
 const CloseButton = styled.button`
   top: 0;
   right: 0;
@@ -86,4 +94,28 @@ const CloseButton = styled.button`
   color: #595959;
   text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
     0 0 42px #0fa;
+`;
+
+const CustomButton = styled.button`
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin-top: 16px;
+`;
+
+const CustomLink = styled.a`
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 32px 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
 `;
