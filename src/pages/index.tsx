@@ -4,9 +4,9 @@ import HomeSeoSettings from "./components/libs/HomeSeoSettings";
 import FooterComponents from "./components/libs/FooterComponents";
 import Button from "./components/ui/Button";
 import ImageContainer from "./components/common/ImageContainer";
-import InstagramContainer from "./components/common/InstagramContainer";
-import TwitterContainer from "./components/common/TwitterContainer";
-import LinkedinComtainer from "./components/common/LinkedinComtainer";
+import IconsInstagram from "./components/ui/icons/IconsInstagram";
+import IconsTwitter from "./components/ui/icons/IconsTwitter";
+import IconsLinkedin from "./components/ui/icons/IconsLinkedin";
 
 const Home = () => {
   return (
@@ -27,13 +27,13 @@ const Home = () => {
           <ImageContainer />
           <SnsArea>
             <Container>
-              <LinkedinComtainer />
+              <IconsLinkedin />
             </Container>
             <Container>
-              <InstagramContainer />
+              <IconsInstagram />
             </Container>
             <Container>
-              <TwitterContainer />
+              <IconsTwitter />
             </Container>
           </SnsArea>
         </Container>

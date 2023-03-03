@@ -2,7 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import styled from "styled-components";
 
-function InstagramContainer() {
+function IconsInstagram() {
   return (
     <>
       <URL href="https://www.instagram.com/mi2__user/?hl=ja" target="_blank">
@@ -13,7 +13,7 @@ function InstagramContainer() {
   );
 }
 
-export default InstagramContainer;
+export default IconsInstagram;
 
 const URL = styled.a`
   width: 100%;
