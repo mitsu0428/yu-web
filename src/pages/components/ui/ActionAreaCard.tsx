@@ -18,12 +18,14 @@ const ActionAreaCard = (props: Props) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          image={props.image_path}
-          height={props.image_height}
-          alt={props.title}
-        />
+        <Link href={props.url} target="_blank">
+          <CardMedia
+            component="img"
+            image={props.image_path}
+            height={props.image_height}
+            alt={props.title}
+          />
+        </Link>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.title}
