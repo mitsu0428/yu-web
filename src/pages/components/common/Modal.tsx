@@ -9,6 +9,7 @@ type Props = {
 };
 
 type ActionAreaCardProps = {
+  title: string;
   description: string;
   url: string;
   image_path: string;
@@ -36,6 +37,7 @@ const Modal: React.FC<Props> = ({ close, actionAreaCardProps }) => {
     <ModalWrapper>
       <ModalContent ref={modalRef}>
         <ActionAreaCard
+          title={actionAreaCardProps.title}
           description={actionAreaCardProps.description}
           url={actionAreaCardProps.url}
           image_path={actionAreaCardProps.image_path}
