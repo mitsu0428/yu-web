@@ -1,7 +1,11 @@
-import Image from "next/image";
+import Link from "next/link";
 import React, { useRef } from "react";
 import styled from "styled-components";
-import ActionAreaCard from "../ui/ActionAreaCard";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
 
 type Props = {
   close: (e: any) => void;
@@ -16,7 +20,7 @@ type ActionAreaCardProps = {
   image_height: number;
 };
 
-const Modal: React.FC<Props> = ({ close, actionAreaCardProps }) => {
+const Modal = ({ close, actionAreaCardProps }: Props) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: any) => {
@@ -35,26 +39,37 @@ const Modal: React.FC<Props> = ({ close, actionAreaCardProps }) => {
 
   return (
     <ModalWrapper>
-      <ModalContent ref={modalRef}>
-        <ActionAreaCard
-          title={actionAreaCardProps.title}
-          description={actionAreaCardProps.description}
-          url={actionAreaCardProps.url}
-          image_path={actionAreaCardProps.image_path}
-          image_height={actionAreaCardProps.image_height}
-        />
-        <CustomButton>
-          <CustomLink
-            href={actionAreaCardProps.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            More Info...
-          </CustomLink>
-        </CustomButton>
+      {actionAreaCardProps && (
+        <ModalContent ref={modalRef}>
+          <Card sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+              <CustomLink href={actionAreaCardProps.url} target="_blank">
+                <CardMedia
+                  component="img"
+                  image={actionAreaCardProps.image_path}
+                  height={actionAreaCardProps.image_height}
+                  alt={actionAreaCardProps.title}
+                />
+              </CustomLink>
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {actionAreaCardProps.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {actionAreaCardProps.description}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          <CustomButton>
+            <CustomLink href={actionAreaCardProps.url} target="_blank">
+              More Info...
+            </CustomLink>
+          </CustomButton>
 
-        <CloseButton onClick={close}>×</CloseButton>
-      </ModalContent>
+          <CloseButton onClick={close}>×</CloseButton>
+        </ModalContent>
+      )}
     </ModalWrapper>
   );
 };

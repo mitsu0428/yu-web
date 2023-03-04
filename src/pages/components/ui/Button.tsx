@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Modal from "../common/Modal";
+import Modal from "./Modal";
 
 type Props = {
   title: string;
@@ -23,13 +23,15 @@ const Button = (props: Props) => {
       {isClicked && (
         <Modal
           close={onClick}
-          actionAreaCardProps={{
-            title: props.title,
-            description: props.description,
-            url: props.url,
-            image_path: props.image_path,
-            image_height: props.image_height,
-          }}
+          actionAreaCardProps={
+            {
+              title: props.title,
+              description: props.description,
+              url: props.url,
+              image_path: props.image_path,
+              image_height: props.image_height,
+            } as Props
+          }
         />
       )}
     </Container>
