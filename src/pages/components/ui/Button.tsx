@@ -19,7 +19,9 @@ const Button = (props: Props) => {
 
   return (
     <Container>
-      <CustomButton onClick={onClick}>{props.title}</CustomButton>
+      <CustomButton onClick={onClick}>
+        <CustomText>{props.title}</CustomText>
+      </CustomButton>
       {isClicked && (
         <Modal
           close={onClick}
@@ -41,10 +43,10 @@ const Button = (props: Props) => {
 const Container = styled.div``;
 
 const CustomButton = styled.button`
-  background-color: #eaeaea;
+  background-color: #000000;
+  color: #000000;
   border: none;
   border-radius: 4px;
-  color: #000000;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -58,24 +60,12 @@ const CustomButton = styled.button`
   }
 `;
 
-const CustomLink = styled.a`
-  background-color: #000000;
-  border: none;
-  border-radius: 4px;
+const CustomText = styled.p`
   color: #ffffff;
-  cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  padding: 16px 32px 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-  width: 100%;
-
-  &:hover {
-    background-color: #ffffff;
-    color: #000000;
-  }
+  margin: 0;
+  padding: 0;
 `;
 
 export default Button;

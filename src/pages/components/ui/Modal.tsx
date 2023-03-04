@@ -5,7 +5,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, colors } from "@mui/material";
 
 type Props = {
   close: (e: any) => void;
@@ -66,7 +66,6 @@ const Modal = ({ close, actionAreaCardProps }: Props) => {
               More Info...
             </CustomLink>
           </CustomButton>
-
           <CloseButton onClick={close}>×</CloseButton>
         </ModalContent>
       )}
@@ -93,9 +92,13 @@ const ModalContent = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  width: 80vw;
-  height: 80vh;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  padding: 16px;
   border-radius: 8px;
 `;
 
@@ -112,9 +115,10 @@ const CloseButton = styled.button`
 `;
 
 const CustomButton = styled.button`
+  background-color: #000000;
+  color: #000000;
   border: none;
   border-radius: 4px;
-  color: #000000;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -123,9 +127,9 @@ const CustomButton = styled.button`
 `;
 
 const CustomLink = styled.a`
+  color: #ffffff;
   border: none;
   border-radius: 4px;
-  color: #000000;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
