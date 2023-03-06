@@ -66,7 +66,7 @@ const Home = () => {
               title="zin-international"
               description="zin-international"
               url="https://mitsuhiro-okada.com"
-              image_path="gopher.webp"
+              image_path="/images/gopher.png"
               image_height={200}
             ></Button>
           </CardContainer>
