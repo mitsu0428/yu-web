@@ -45,19 +45,37 @@ const Home = () => {
         <Container>
           <CardContainer>
             <Button
-              title="Hayato Kajiwara"
-              description="Hayato Kajiwara Portfolio"
-              url="https://kajikazi.com"
-              image_path="/images/kajikazi.png"
+              title="sorette掲示板"
+              description="sorette掲示板"
+              url="https://sorette.jp"
+              image_path="/images/sorette.png"
               image_height={200}
             ></Button>
           </CardContainer>
           <CardContainer>
             <Button
-              title="sorette掲示板"
-              description="sorette掲示板"
-              url="https://sorette.jp"
-              image_path="/images/sorette.png"
+              title="Cosmic Θ"
+              description="Cosmic Θ | Cosmic Theta"
+              url="https://mitsuhiro-okada.com"
+              image_path="/images/cosmic_theta.jpg"
+              image_height={200}
+            ></Button>
+          </CardContainer>
+          <CardContainer>
+            <Button
+              title="zin-international"
+              description="zin-international"
+              url="https://mitsuhiro-okada.com"
+              image_path="gopher.webp"
+              image_height={200}
+            ></Button>
+          </CardContainer>
+          <CardContainer>
+            <Button
+              title="Hayato Kajiwara"
+              description="Hayato Kajiwara Portfolio"
+              url="https://kajikazi.com"
+              image_path="/images/kajikazi.png"
               image_height={200}
             ></Button>
           </CardContainer>
@@ -76,15 +94,6 @@ const Home = () => {
               url="https://pharcyde.tokyo"
               description="Pharcyde Menu"
               image_path="/images/pharcyde.png"
-              image_height={200}
-            ></Button>
-          </CardContainer>
-          <CardContainer>
-            <Button
-              title="Cosmic Θ"
-              description="Cosmic Θ | Cosmic Theta"
-              url="https://cosmictheta.space"
-              image_path="/images/cosmic_theta.jpg"
               image_height={200}
             ></Button>
           </CardContainer>
