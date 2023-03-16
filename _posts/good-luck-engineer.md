@@ -2,7 +2,7 @@
 title: "自分がちっぽけに見えるあなたに伝えたいエンジニア就職のススメ"
 excerpt: ""
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2023-03-16T05:35:07.322Z"
 author:
   name: Mitsuhiro Okada
   picture: "/assets/blog/authors/mitsuhiro-okada.jpg"

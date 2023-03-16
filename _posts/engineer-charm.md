@@ -2,7 +2,7 @@
 title: "【5つの魅力】平均年収より自分の年収が低いと思ったらエンジニアを目指そう"
 excerpt: ""
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2023-03-16T05:35:07.322Z"
 author:
   name: Mitsuhiro Okada
   picture: "/assets/blog/authors/mitsuhiro-okada.jpg"

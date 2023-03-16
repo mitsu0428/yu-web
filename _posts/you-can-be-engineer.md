@@ -2,7 +2,7 @@
 title: "就活に出遅れた学生こそエンジニアを目指すべき5つの理由"
 excerpt: ""
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2023-03-16T05:35:07.322Z"
 author:
   name: Mitsuhiro Okada
   picture: "/assets/blog/authors/mitsuhiro-okada.jpg"
