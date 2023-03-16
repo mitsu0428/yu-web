@@ -4,7 +4,7 @@ import PostSubTitle from "./post-title";
 function Sns() {
   return (
     <Container>
-      <PostSubTitle {...{ children: "SNS領域" }} />
+      <PostSubTitle {...{ children: "SNS" }} />
     </Container>
   );
 }

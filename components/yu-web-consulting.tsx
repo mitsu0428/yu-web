@@ -4,7 +4,7 @@ import PostSubTitle from "./post-title";
 function Consulting() {
   return (
     <Container>
-      <PostSubTitle {...{ children: "コンサルティング領域" }} />
+      <PostSubTitle {...{ children: "コンサルティング" }} />
     </Container>
   );
 }
