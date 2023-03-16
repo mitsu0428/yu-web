@@ -5,6 +5,7 @@ import Intro from "../components/intro";
 import Consulting from "../components/yu-web-consulting";
 import It from "../components/yu-web-it";
 import Sns from "../components/yu-web-sns";
+import Divider from "../components/divider";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
@@ -26,9 +27,11 @@ export default function Index({ allPosts }: Props) {
         </Head>
         <Container>
           <Intro />
+          <Divider />
           <Consulting />
           <It />
           <Sns />
+          <Divider />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
