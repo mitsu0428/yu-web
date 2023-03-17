@@ -110,8 +110,7 @@ const CloseButton = styled.button`
   margin-left: 16px;
   position: absolute;
   color: #595959;
-  text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
-    0 0 42px #0fa;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
 `;
 
 const CustomButton = styled.button`

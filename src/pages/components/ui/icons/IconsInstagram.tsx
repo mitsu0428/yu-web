@@ -22,8 +22,7 @@ const URL = styled.a`
 
 const CustomText = styled.p`
   color: #fff;
-  text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
-    0 0 42px #0fa;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
   font-size: 18px;
   font-weight: 600;
   @media (max-width: 768px) {
