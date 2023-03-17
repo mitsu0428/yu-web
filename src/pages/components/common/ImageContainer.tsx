@@ -5,7 +5,7 @@ import styled from "styled-components";
 const ImageContainer = () => {
   return (
     <ImageComponent
-      src="/images/mitsuhiro-okada.jpg"
+      src="/images/mitsuhiro-okada.png"
       alt="Mitsuhiro Okada"
       width={300}
       height={300}
