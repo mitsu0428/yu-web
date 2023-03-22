@@ -39,16 +39,16 @@ const ProgressBarContainer = styled.div`
   transform: translate(-50%, -50%);
   width: 300px;
   height: 5px;
-  background-color: #ccc;
+  border-radius: 8px;
 `;
 
 const ProgressBar = styled.div<{ progress: number }>`
   width: ${({ progress }) => progress}%;
   height: 100%;
-  background-color: #932e40;
-  box-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff;
   transition: width 0.1s linear;
   position: relative;
+  border-radius: 8px;
 `;
 
 const ProgressText = styled.div`
@@ -58,6 +58,5 @@ const ProgressText = styled.div`
   right: 0;
   text-align: center;
   color: #fff;
-  text-shadow: 0 0 7px #932e40, 0 0 10px #932e40, 0 0 21px #932e40,
-    0 0 42px #0fa;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
 `;
