@@ -1,4 +1,3 @@
-import { CMS_NAME } from "../lib/constants";
 import Link from "next/link";
 
 const Intro = () => {
@@ -8,7 +7,7 @@ const Intro = () => {
         結う -web
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        事業紹介 <Link href="/about">結う -web</Link> | {CMS_NAME}.
+        <Link href="/about"> 事業紹介 結う -web</Link>
       </h4>
     </section>
   );
