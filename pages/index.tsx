@@ -8,8 +8,7 @@ import Sns from "../components/yu-web-sns";
 import Divider from "../components/divider";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
-import Head from "next/head";
-import { CMS_NAME } from "../lib/constants";
+import HomeSeoSettings from "../components/common-seo-setting";
 import Post from "../interfaces/post";
 
 type Props = {
@@ -20,9 +19,7 @@ export default function Index({ allPosts }: Props) {
   return (
     <>
       <Layout>
-        <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
-        </Head>
+        <HomeSeoSettings />
         <Container>
           <Intro />
           <Divider />

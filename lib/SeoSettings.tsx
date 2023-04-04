@@ -19,7 +19,8 @@ const SeoSettings = ({
   pageImgHeight,
 }: Partial<MetaData>) => {
   const defaultTitle = "結う -web";
-  const defaultDescription = "";
+  const defaultDescription =
+    "あなたとwebという2本の糸をわたしという1本の糸で結う。Web制作やSNS運用等のトータルブランディングを行う、web brandingのパートナーです。";
 
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription ? pageDescription : defaultDescription;

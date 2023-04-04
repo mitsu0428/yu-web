@@ -4,7 +4,7 @@ excerpt: ""
 coverImage: "/assets/blog/preview/cover.jpg"
 date: "2023-03-16T05:35:07.322Z"
 author:
-  name: Mitsuhiro Okada
+  name: 結う -web
   picture: "/assets/blog/authors/mitsuhiro-okada.jpg"
 ogImage:
   url: "/assets/blog/engineer-charm/cover.jpg"
