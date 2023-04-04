@@ -10,6 +10,7 @@ import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import HomeSeoSettings from "../components/common-seo-setting";
 import Post from "../interfaces/post";
+import AvatarMembers from "../components/avatar-members";
 
 type Props = {
   allPosts: Post[];
@@ -26,6 +27,7 @@ export default function Index({ allPosts }: Props) {
           <Consulting />
           <It />
           <Sns />
+          <AvatarMembers />
           <Divider />
           <MoreStories posts={allPosts} />
         </Container>
