@@ -43,7 +43,10 @@ const Modal = ({ close, actionAreaCardProps }: Props) => {
         <ModalContent ref={modalRef}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
-              <CustomLink href={actionAreaCardProps.url} target="_blank">
+              <CustomLink
+                href={actionAreaCardProps.url}
+                target="_blank"
+              >
                 <CardMedia
                   component="img"
                   image={actionAreaCardProps.image_path}
@@ -52,17 +55,27 @@ const Modal = ({ close, actionAreaCardProps }: Props) => {
                 />
               </CustomLink>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                >
                   {actionAreaCardProps.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                >
                   {actionAreaCardProps.description}
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
           <CustomButton>
-            <CustomLink href={actionAreaCardProps.url} target="_blank">
+            <CustomLink
+              href={actionAreaCardProps.url}
+              target="_blank"
+            >
               More Info...
             </CustomLink>
           </CustomButton>
@@ -93,7 +106,7 @@ const ModalContent = styled.div`
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(3px);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 100%;
   max-width: 600px;
@@ -109,8 +122,6 @@ const CloseButton = styled.button`
   font-size: 16px;
   margin-left: 16px;
   position: absolute;
-  color: #595959;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
 `;
 
 const CustomButton = styled.button`

@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
           <>
             <Head>
               <link
-                href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap"
+                href="https://fonts.googleapis.com/css2?family=Abel&family=Zen+Old+Mincho&display=swap"
                 rel="stylesheet"
               />
               <link

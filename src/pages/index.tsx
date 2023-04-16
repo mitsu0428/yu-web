@@ -21,16 +21,24 @@ const Home = () => {
           <VerticalText>
             Front-end developer & Social Media Marketing
           </VerticalText>
-          <ExplainText>- Webサイト | LP制作 | SNS運用</ExplainText>
+          <ExplainText>結う -webにて、</ExplainText>
+          <ExplainText>・WebサイトやLPの作成</ExplainText>
+          <ExplainText>・SNSの運用代行</ExplainText>
+          <ExplainText>・店舗のトータルブランディング</ExplainText>
+          <ExplainText>などをしています。</ExplainText>
+          <ExplainText>
+            お仕事の依頼は、Instagram又は、Linkedinよりご連絡ください。
+          </ExplainText>
         </TitleContainer>
+        <Hr />
         <Container>
           <ImageContainer />
           <SnsArea>
             <Container>
-              <IconsLinkedin />
+              <IconsInstagram />
             </Container>
             <Container>
-              <IconsInstagram />
+              <IconsLinkedin />
             </Container>
             <Container>
               <IconsTwitter />
@@ -40,7 +48,7 @@ const Home = () => {
         <Hr />
         <TitleContainer>
           <Subtitle>Front-end developer</Subtitle>
-          <ExplainText>- Webサイト | LP制作</ExplainText>
+          <ExplainText>- Web領域</ExplainText>
         </TitleContainer>
         <Container>
           <CardContainer>
@@ -88,7 +96,7 @@ const Home = () => {
               image_height={200}
             ></Button>
           </CardContainer>
-          <CardContainer>
+          {/* <CardContainer>
             <Button
               title="Pharcyde Menu"
               url="https://pharcyde.tokyo"
@@ -96,12 +104,12 @@ const Home = () => {
               image_path="/images/pharcyde.png"
               image_height={200}
             ></Button>
-          </CardContainer>
+          </CardContainer> */}
         </Container>
         <Hr />
         <TitleContainer>
           <Subtitle>Social Media Marketing</Subtitle>
-          <ExplainText>- Instagram | SNS運用</ExplainText>
+          <ExplainText>- SNS領域</ExplainText>
         </TitleContainer>
         <Container>
           <CardContainer>
@@ -122,7 +130,9 @@ const Home = () => {
 
 export default Home;
 
-const Main = styled.main``;
+const Main = styled.main`
+  padding: 16px;
+`;
 
 const TitleContainer = styled.div`
   display: flex;
@@ -134,8 +144,6 @@ const TitleContainer = styled.div`
 const Title = styled.h1`
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff;
-  margin-top: 32px;
-  margin-left: 32px;
   font-size: 36px;
   font-weight: 1200;
   @media (max-width: 768px) {
@@ -149,8 +157,7 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff;
-  margin-top: 32px;
-  margin-left: 32px;
+  margin-left: 16px;
   font-size: 26px;
   font-weight: 1200;
   @media (max-width: 768px) {
