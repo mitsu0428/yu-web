@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import Loading from "./components/page/Loading";
 import GoogleTagManager, {
   GoogleTagManagerId,
-} from "./components/common/GoogleTagManager";
+} from "./components/libs/GoogleTagManager";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = React.useState(true);

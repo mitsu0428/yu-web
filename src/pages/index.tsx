@@ -1,55 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-import HomeSeoSettings from "./components/libs/HomeSeoSettings";
-import FooterComponents from "./components/libs/FooterComponents";
+import HeaderComponents from "./components/layout/HeaderComponents";
+import FooterComponents from "./components/layout/FooterComponents";
 import Button from "./components/ui/Button";
-import ImageContainer from "./components/common/ImageContainer";
-import IconsInstagram from "./components/ui/icons/IconsInstagram";
-import IconsTwitter from "./components/ui/icons/IconsTwitter";
-import IconsLinkedin from "./components/ui/icons/IconsLinkedin";
+import TitleContainer from "./components/elements/TitleContainer";
+import FrontDescription from "./components/layout/FrontDescription";
+import SnsArea from "./components/page/SnsArea";
 
 const Home = () => {
   return (
     <div>
-      <HomeSeoSettings />
+      <HeaderComponents />
       <Main>
-        <TitleContainer>
-          <Title>Mitsuhiro Okada</Title>
-          <Subtitle>mi2のページ</Subtitle>
-        </TitleContainer>
-        <TitleContainer>
-          <VerticalText>
-            Front-end developer & Social Media Marketing
-          </VerticalText>
-          <ExplainText>結う -webにて、</ExplainText>
-          <ExplainText>・WebサイトやLPの作成</ExplainText>
-          <ExplainText>・SNSの運用代行</ExplainText>
-          <ExplainText>・店舗のトータルブランディング</ExplainText>
-          <ExplainText>などをしています。</ExplainText>
-          <ExplainText>
-            お仕事の依頼は、Instagram又は、Linkedinよりご連絡ください。
-          </ExplainText>
-        </TitleContainer>
+        <FrontDescription />
         <Hr />
-        <Container>
-          <ImageContainer />
-          <SnsArea>
-            <Container>
-              <IconsInstagram />
-            </Container>
-            <Container>
-              <IconsLinkedin />
-            </Container>
-            <Container>
-              <IconsTwitter />
-            </Container>
-          </SnsArea>
-        </Container>
+        <SnsArea />
         <Hr />
-        <TitleContainer>
-          <Subtitle>Front-end developer</Subtitle>
-          <ExplainText>- Web領域</ExplainText>
-        </TitleContainer>
+        <TitleContainer
+          subtitle="Front-end developer"
+          explainText="- Web領域"
+        />
         <Container>
           <CardContainer>
             <Button
@@ -107,10 +77,10 @@ const Home = () => {
           </CardContainer> */}
         </Container>
         <Hr />
-        <TitleContainer>
-          <Subtitle>Social Media Marketing</Subtitle>
-          <ExplainText>- SNS領域</ExplainText>
-        </TitleContainer>
+        <TitleContainer
+          subtitle="Social Media Marketing"
+          explainText="- SNS領域"
+        />
         <Container>
           <CardContainer>
             <Button
@@ -134,72 +104,6 @@ const Main = styled.main`
   padding: 16px;
 `;
 
-const TitleContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 100%;
-`;
-
-const Title = styled.h1`
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
-  font-size: 36px;
-  font-weight: 1200;
-  @media (max-width: 768px) {
-    font-size: 30px;
-  }
-  @media (max-width: 480px) {
-    font-size: 24px;
-  }
-`;
-
-const Subtitle = styled.h2`
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
-  margin-left: 16px;
-  font-size: 26px;
-  font-weight: 1200;
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
-  @media (max-width: 480px) {
-    font-size: 22px;
-  }
-`;
-
-const VerticalText = styled.h2`
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
-  margin-top: 32px;
-  margin-right: 32px;
-  writing-mode: vertical-lr;
-  text-align: center;
-  font-size: 36px;
-  white-space: nowrap;
-  @media (max-width: 768px) {
-    font-size: 30px;
-  }
-  @media (max-width: 480px) {
-    font-size: 24px;
-  }
-`;
-
-const ExplainText = styled.p`
-  color: #fff;
-  margin-left: 32px;
-  font-size: 16px;
-  font-weight: 800;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
-  @media (max-width: 480px) {
-    font-size: 12px;
-  }
-`;
-
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -220,14 +124,6 @@ const Hr = styled.hr`
     )
     0 0 100%;
   border-style: solid;
-`;
-
-const SnsArea = styled.span`
-  display: flex;
-  width: 300px;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 16px;
 `;
 
 const CardContainer = styled.div`

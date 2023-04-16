@@ -1,0 +1,44 @@
+import React from "react";
+import styled from "styled-components";
+import ImageContainer from "../elements/ImageContainer";
+import IconsInstagram from "../ui/icons/IconsInstagram";
+import IconsTwitter from "../ui/icons/IconsTwitter";
+import IconsLinkedin from "../ui/icons/IconsLinkedin";
+
+function SnsArea() {
+  return (
+    <Container>
+      <ImageContainer />
+      <Sns>
+        <Container>
+          <IconsInstagram />
+        </Container>
+        <Container>
+          <IconsLinkedin />
+        </Container>
+        <Container>
+          <IconsTwitter />
+        </Container>
+      </Sns>
+    </Container>
+  );
+}
+
+export default SnsArea;
+
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 16px;
+`;
+
+const Sns = styled.span`
+  display: flex;
+  width: 300px;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 16px;
+`;

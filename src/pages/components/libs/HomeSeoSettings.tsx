@@ -1,4 +1,4 @@
-import SeoSettings from "../common/SeoSettings";
+import SeoSettings from "./SeoSettings";
 
 const HomeSeoSettings = () => {
   return (
