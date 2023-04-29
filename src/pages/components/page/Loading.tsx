@@ -45,7 +45,7 @@ const ProgressBarContainer = styled.div`
 const ProgressBar = styled.div<{ progress: number }>`
   width: ${({ progress }) => progress}%;
   height: 100%;
-  box-shadow: 0 0 7px #fff, 0 0 10px #fff;
+  box-shadow: 0 0 7px #fff;
   transition: width 0.1s linear;
   position: relative;
   border-radius: 8px;
@@ -58,5 +58,5 @@ const ProgressText = styled.div`
   right: 0;
   text-align: center;
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
+  text-shadow: 0 0 7px #fff;
 `;

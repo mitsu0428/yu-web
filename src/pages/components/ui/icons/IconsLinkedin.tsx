@@ -5,8 +5,14 @@ import styled from "styled-components";
 function LinkedinComtainer() {
   return (
     <>
-      <URL href="https://www.linkedin.com/in/mitsuhiro-okada" target="_blank">
-        <FaLinkedin size={30} color={"#fff"} />
+      <URL
+        href="https://www.linkedin.com/in/mitsuhiro-okada"
+        target="_blank"
+      >
+        <FaLinkedin
+          size={30}
+          color={"#fff"}
+        />
       </URL>
       <CustomText>Linkedin</CustomText>
     </>
@@ -22,7 +28,7 @@ const URL = styled.a`
 
 const CustomText = styled.p`
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
+  text-shadow: 0 0 7px #fff;
   font-size: 18px;
   font-weight: 600;
   @media (max-width: 768px) {

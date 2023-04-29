@@ -5,18 +5,21 @@ function FrontDescription() {
   return (
     <>
       <TitleContainer>
-        <Title>Mitsuhiro Okada</Title>
-        <Subtitle>mi2のページ</Subtitle>
+        <Title>mi2のページ</Title>
+        <Subtitle>Mitsuhiro Okada</Subtitle>
       </TitleContainer>
       <TitleContainer>
         <VerticalText>
           Front-end developer & Social Media Marketing
         </VerticalText>
-        <ExplainText>結う -webにて、</ExplainText>
-        <ExplainText>・WebサイトやLPの作成</ExplainText>
-        <ExplainText>・SNSの運用代行</ExplainText>
-        <ExplainText>・店舗のトータルブランディング</ExplainText>
-        <ExplainText>などをしています。</ExplainText>
+        <ExplainContainer>
+          <ExplainText>結う -webにて、</ExplainText>
+          <ExplainText>・Webサイト/LPの作成</ExplainText>
+          <ExplainText>・ポートフォリオサイトの制作代行</ExplainText>
+          <ExplainText>・SNS運用代行</ExplainText>
+          <ExplainText>・店舗のトータルブランディング</ExplainText>
+          <ExplainText>などをしています。</ExplainText>
+        </ExplainContainer>
       </TitleContainer>
     </>
   );
@@ -25,15 +28,22 @@ function FrontDescription() {
 export default FrontDescription;
 
 const TitleContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: left;
+`;
+
+const ExplainContainer = styled.div`
   width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #fff;
 `;
 
 const Title = styled.h1`
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
+  text-shadow: 0 0 7px #fff;
   font-size: 36px;
   font-weight: 1200;
   @media (max-width: 768px) {
@@ -46,7 +56,7 @@ const Title = styled.h1`
 
 const Subtitle = styled.h2`
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
+  text-shadow: 0 0 7px #fff;
   margin-left: 16px;
   font-size: 26px;
   font-weight: 1200;
@@ -62,7 +72,7 @@ const VerticalText = styled.h2`
   position: absolute;
   top: 0;
   right: 0;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
+  text-shadow: 0 0 7px #fff;
   margin-top: 32px;
   margin-right: 32px;
   writing-mode: vertical-lr;

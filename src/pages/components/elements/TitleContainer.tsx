@@ -26,7 +26,7 @@ const Container = styled.div`
 
 const Subtitle = styled.h2`
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
+  text-shadow: 0 0 7px #fff;
   margin-left: 16px;
   font-size: 26px;
   font-weight: 1200;
