@@ -71,7 +71,7 @@ const CustomText = styled.p`
   ::before {
     content: "▶︎";
     color: #000;
-    margin-right: 8px;
+    margin-right: 4px;
   }
 `;
 

@@ -130,7 +130,7 @@ const CardContainer = styled.div`
   margin-top: 32px;
   padding: 24px;
   transition: box-shadow 0.3s ease-in-out;
-  width: 50%;
+  width: 75%;
   animation-name: slideIn;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
