@@ -6,6 +6,7 @@ import Button from "./components/ui/Button";
 import TitleContainer from "./components/elements/TitleContainer";
 import FrontDescription from "./components/layout/FrontDescription";
 import SnsArea from "./components/page/SnsArea";
+import Achievements from "./components/page/Achievements";
 
 const Home = () => {
   return (
@@ -23,41 +24,33 @@ const Home = () => {
         <Container>
           <CardContainer>
             <Button
-              title="sorette掲示板"
-              description="sorette掲示板"
+              title="sorette"
+              description="sorette"
               url="https://sorette.jp"
               image_path="/images/sorette.png"
               image_height={200}
-            ></Button>
-          </CardContainer>
-          <CardContainer>
+            />
             <Button
-              title="Cosmic Θ"
-              description="Cosmic Θ | Cosmic Theta"
-              url="https://mitsuhiro-okada.com"
-              image_path="/images/cosmic_theta.jpg"
+              title="bar-kaze"
+              description="bar kaze -円山町"
+              url="http://bar-kaze.net"
+              image_path="/images/kaze.png"
               image_height={200}
-            ></Button>
-          </CardContainer>
-          <CardContainer>
+            />
             <Button
               title="zin-international"
               description="zin-international"
               url="https://mitsuhiro-okada.com"
               image_path="/images/gopher.png"
               image_height={200}
-            ></Button>
-          </CardContainer>
-          <CardContainer>
+            />
             <Button
               title="Hayato Kajiwara"
               description="Hayato Kajiwara Portfolio"
               url="https://kajikazi.com"
               image_path="/images/kajikazi.png"
               image_height={200}
-            ></Button>
-          </CardContainer>
-          <CardContainer>
+            />
             <Button
               title="CSV比較ツール"
               description="CSV比較ツール"
@@ -92,6 +85,7 @@ const Home = () => {
             ></Button>
           </CardContainer>
         </Container>
+        <Achievements />
         <FooterComponents />
       </Main>
     </div>
@@ -127,7 +121,6 @@ const Hr = styled.hr`
 `;
 
 const CardContainer = styled.div`
-  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -137,10 +130,7 @@ const CardContainer = styled.div`
   margin-top: 32px;
   padding: 24px;
   transition: box-shadow 0.3s ease-in-out;
-
-  width: 300px;
-  height: 180px;
-
+  width: 50%;
   animation-name: slideIn;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;

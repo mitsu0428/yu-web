@@ -15,9 +15,9 @@ function FrontDescription() {
         <ExplainContainer>
           <ExplainText>結う -webにて、</ExplainText>
           <ExplainText>・Webサイト/LPの作成</ExplainText>
-          <ExplainText>・ポートフォリオサイトの制作代行</ExplainText>
+          <ExplainText>・ポートフォリオ制作代行</ExplainText>
           <ExplainText>・SNS運用代行</ExplainText>
-          <ExplainText>・店舗のトータルブランディング</ExplainText>
+          <ExplainText>・店舗ブランディング</ExplainText>
           <ExplainText>などをしています。</ExplainText>
         </ExplainContainer>
       </TitleContainer>
@@ -35,7 +35,7 @@ const TitleContainer = styled.div`
 `;
 
 const ExplainContainer = styled.div`
-  width: 100%;
+  width: 50%;
   padding: 16px;
   border-radius: 8px;
   border: 1px solid #fff;

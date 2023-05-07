@@ -40,11 +40,12 @@ const Button = (props: Props) => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  padding: 16px;
+`;
 
 const CustomButton = styled.button`
-  background-color: #000000;
-  color: #000000;
+  background-color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -61,11 +62,17 @@ const CustomButton = styled.button`
 `;
 
 const CustomText = styled.p`
-  color: #ffffff;
+  color: #000;
   font-size: 16px;
   font-weight: 600;
   margin: 0;
   padding: 0;
+  text-align: left;
+  ::before {
+    content: "▶︎";
+    color: #000;
+    margin-right: 8px;
+  }
 `;
 
 export default Button;
