@@ -20,12 +20,14 @@ function FrontDescription() {
           <ExplainText>などをしています。</ExplainText>
         </ExplainContainer>
       </TitleContainer>
-      <SlideText>
-        - mitsuhiro okada, front-end developer, Social Media Marketing &
-        branding, #photographer, #design, #web, since 2021 - mitsuhiro okada,
-        front-end developer, Social Media Marketing & branding, #photographer,
-        #design, #web, since 2021
-      </SlideText>
+      <SlideContainer>
+        <SlideText>
+          - mitsuhiro okada, front-end developer, Social Media Marketing &
+          branding, #photographer, #design, #web, since 2021 - mitsuhiro okada,
+          front-end developer, Social Media Marketing & branding, #photographer,
+          #design, #web, since 2021
+        </SlideText>
+      </SlideContainer>
     </>
   );
 }
@@ -75,6 +77,11 @@ const slide = keyframes`
     transform: translateX(-100%);
     opacity: 0;
   }
+`;
+
+const SlideContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
 `;
 
 const SlideText = styled.h2`
