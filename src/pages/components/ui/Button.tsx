@@ -46,18 +46,26 @@ const Container = styled.div`
 
 const CustomButton = styled.button`
   background-color: #ffffff;
+  color: #fff;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
   font-size: 16px;
   font-weight: 600;
   padding: 8px 16px;
-  transition: background-color 0.3s ease-in-out;
   width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 1px solid;
+  outline-color: #878787;
+  transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
 
   &:hover {
-    background-color: #000;
     color: #ffffff;
+    background-color: #878787;
+    outline-color: transparent;
+    outline-offset: 12px;
+    cursor: pointer;
   }
 `;
 
