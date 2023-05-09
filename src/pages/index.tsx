@@ -101,14 +101,12 @@ const Main = styled.main`
 const Container = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin-top: 16px;
+  text-align: left;
 `;
 
 const Hr = styled.hr`
-  margin-top: 32px;
+  margin-top: 16px;
   border-width: 0 0 1px;
   border-image: linear-gradient(
       90deg,
@@ -127,7 +125,6 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  margin-top: 32px;
   padding: 24px;
   transition: box-shadow 0.3s ease-in-out;
   width: 75%;

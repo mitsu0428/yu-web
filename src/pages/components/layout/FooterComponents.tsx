@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import LoadingIndicator from "../ui/icons/LoadingIcon";
 
 const FooterComponents = () => {
   return (
     <Container>
+      <LoadingIndicator />
       <Footer>© 2022 mi2</Footer>
     </Container>
   );
@@ -29,4 +31,5 @@ const Footer = styled.footer`
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 16px;
 `;

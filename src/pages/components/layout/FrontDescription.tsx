@@ -32,6 +32,7 @@ const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  padding: 16px;
 `;
 
 const ExplainContainer = styled.div`

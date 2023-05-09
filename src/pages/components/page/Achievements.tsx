@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import LoadingIndicator from "../ui/icons/LoadingIcon";
 
 function Achievements() {
   return (
@@ -17,6 +18,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  padding: 16px;
 `;
 
 const Subtitle = styled.h2`

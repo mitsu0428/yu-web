@@ -32,7 +32,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 16px;
+  padding: 16px;
 `;
 
 const Sns = styled.span`

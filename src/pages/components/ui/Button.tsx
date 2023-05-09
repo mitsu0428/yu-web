@@ -48,24 +48,19 @@ const CustomButton = styled.button`
   background-color: #ffffff;
   color: #fff;
   border: none;
-  border-radius: 4px;
   font-size: 16px;
   font-weight: 600;
-  padding: 8px 16px;
+  padding: 16px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  outline: none;
-  outline: 1px solid;
-  outline-color: #878787;
   transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
 
   &:hover {
     color: #ffffff;
     background-color: #878787;
-    outline-color: transparent;
-    outline-offset: 12px;
+    border-radius: 8px;
     cursor: pointer;
   }
 `;

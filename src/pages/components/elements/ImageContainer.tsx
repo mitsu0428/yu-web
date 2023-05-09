@@ -33,6 +33,7 @@ const ImageWrapper = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  padding: 16px;
 `;
 
 const ImageComponent = styled(Image)`

@@ -18,10 +18,10 @@ function TitleContainer({ subtitle, explainText }: Props) {
 export default TitleContainer;
 
 const Container = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 100%;
 `;
 
 const Subtitle = styled.h2`
