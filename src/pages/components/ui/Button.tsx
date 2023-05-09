@@ -56,6 +56,7 @@ const CustomButton = styled.button`
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  outline: none;
   outline: 1px solid;
   outline-color: #878787;
   transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
