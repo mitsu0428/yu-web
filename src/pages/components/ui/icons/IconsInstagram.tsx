@@ -9,7 +9,7 @@ function IconsInstagram() {
         href="https://www.instagram.com/mi2__user/?hl=ja"
         target="_blank"
       >
-        <FaInstagram
+        <Icon
           size={30}
           color={"#fff"}
         />
@@ -36,5 +36,12 @@ const CustomText = styled.p`
   }
   @media (max-width: 480px) {
     font-size: 14px;
+  }
+`;
+
+const Icon = styled(FaInstagram)`
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.4);
   }
 `;

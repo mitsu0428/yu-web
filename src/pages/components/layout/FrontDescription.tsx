@@ -1,12 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 function FrontDescription() {
   return (
     <>
       <TitleContainer>
         <Title>mi2のページ</Title>
-        <Subtitle>Mitsuhiro Okada</Subtitle>
       </TitleContainer>
       <TitleContainer>
         <VerticalText>
@@ -21,6 +20,12 @@ function FrontDescription() {
           <ExplainText>などをしています。</ExplainText>
         </ExplainContainer>
       </TitleContainer>
+      <SlideText>
+        - mitsuhiro okada, front-end developer, Social Media Marketing &
+        branding, #photographer, #design, #web, since 2021 - mitsuhiro okada,
+        front-end developer, Social Media Marketing & branding, #photographer,
+        #design, #web, since 2021
+      </SlideText>
     </>
   );
 }
@@ -35,11 +40,49 @@ const TitleContainer = styled.div`
   padding: 16px;
 `;
 
+const Wave = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
 const ExplainContainer = styled.div`
   width: 75%;
   padding: 16px;
   border-radius: 8px;
   border: 1px solid #fff;
+  animation: ${Wave} 3s ease-in-out infinite;
+`;
+
+const slide = keyframes`
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+`;
+
+const SlideText = styled.h2`
+  white-space: nowrap;
+  animation: ${slide} 15s linear infinite;
+  @media (max-width: 768px) {
+    animation: ${slide} 10s linear infinite;
+  }
 `;
 
 const Title = styled.h1`

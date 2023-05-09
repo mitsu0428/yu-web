@@ -9,7 +9,7 @@ function LinkedinComtainer() {
         href="https://www.linkedin.com/in/mitsuhiro-okada"
         target="_blank"
       >
-        <FaLinkedin
+        <Icon
           size={30}
           color={"#fff"}
         />
@@ -36,5 +36,12 @@ const CustomText = styled.p`
   }
   @media (max-width: 480px) {
     font-size: 14px;
+  }
+`;
+
+const Icon = styled(FaLinkedin)`
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.4);
   }
 `;

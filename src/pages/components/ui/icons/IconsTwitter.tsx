@@ -9,7 +9,7 @@ function TwitterContainer() {
         href="https://twitter.com/mi2__user"
         target="_blank"
       >
-        <FaTwitter
+        <Icon
           size={30}
           color={"#fff"}
         />
@@ -36,5 +36,12 @@ const CustomText = styled.p`
   }
   @media (max-width: 480px) {
     font-size: 14px;
+  }
+`;
+
+const Icon = styled(FaTwitter)`
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.4);
   }
 `;
