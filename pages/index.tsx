@@ -2,15 +2,14 @@ import Container from "../components/container";
 import MoreStories from "../components/more-stories";
 import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
-import Consulting from "../components/yu-web-consulting";
-import It from "../components/yu-web-it";
-import Sns from "../components/yu-web-sns";
-import Divider from "../components/divider";
+import Divider from "../components/ui/divider";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import HomeSeoSettings from "../components/common-seo-setting";
 import Post from "../interfaces/post";
 import AvatarMembers from "../components/avatar-members";
+import BusinessList from "../components/business/business-list";
+import BusinessPrice from "../components/business/business-price";
 
 type Props = {
   allPosts: Post[];
@@ -24,9 +23,8 @@ export default function Index({ allPosts }: Props) {
         <Container>
           <Intro />
           <Divider />
-          <Consulting />
-          <It />
-          <Sns />
+          <BusinessList />
+          <BusinessPrice />
           <AvatarMembers />
           <Divider />
           <MoreStories posts={allPosts} />

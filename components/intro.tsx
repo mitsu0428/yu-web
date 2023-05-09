@@ -7,7 +7,7 @@ const Intro = () => {
         結う -web
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        <Link href="/about"> 事業紹介 結う -web</Link>
+        <Link href="/about"> About | 結う -web</Link>
       </h4>
     </section>
   );
