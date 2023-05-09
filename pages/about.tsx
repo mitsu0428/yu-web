@@ -10,11 +10,12 @@ function about() {
       <PostTitle>about</PostTitle>
 
       <p className="text-lg leading-relaxed mb-4">【結う -webの紹介】</p>
+      <p className="text-lg leading-relaxed mb-4">結う -webの公式サイト。</p>
       <p className="text-lg leading-relaxed mb-4">
-        あなたとwebという2本の糸をわたしという1本の糸で結う。
+        あなたとwebの2本糸をわたしという1本の糸で結う。
       </p>
       <p className="text-lg leading-relaxed mb-4">
-        個人に寄り添うweb brandingのパートナーです。
+        個人に寄り添うweb brandingのパートナー。
       </p>
       <p className="text-lg leading-relaxed mb-4">三人寄れば文殊の知恵</p>
       <p className="text-lg leading-relaxed mb-4">

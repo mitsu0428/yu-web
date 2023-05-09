@@ -20,7 +20,7 @@ const SeoSettings = ({
 }: Partial<MetaData>) => {
   const defaultTitle = "結う -web";
   const defaultDescription =
-    "あなたとwebという2本の糸をわたしという1本の糸で結う。Web制作やSNS運用等のトータルブランディングを行う、web brandingのパートナーです。";
+    "結う -webの公式サイトです。Web制作やSNS運用等のトータルブランディングを行う、web brandingのパートナーです。あなたとwebの2本糸をわたしという1本の糸で結わせていただきます。";
 
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription ? pageDescription : defaultDescription;
