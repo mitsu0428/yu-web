@@ -22,6 +22,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin-top: 32px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 16px;
 `;
 
 const Subtitle = styled.h2`

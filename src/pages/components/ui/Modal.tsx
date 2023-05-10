@@ -128,7 +128,7 @@ const CustomButton = styled.button`
   background-color: #000000;
   color: #000000;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -139,7 +139,7 @@ const CustomButton = styled.button`
 const CustomLink = styled.a`
   color: #ffffff;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;

@@ -6,7 +6,6 @@ import Button from "./components/ui/Button";
 import TitleContainer from "./components/elements/TitleContainer";
 import FrontDescription from "./components/layout/FrontDescription";
 import SnsArea from "./components/page/SnsArea";
-import Achievements from "./components/page/Achievements";
 
 const Home = () => {
   return (
@@ -19,7 +18,7 @@ const Home = () => {
         <Hr />
         <TitleContainer
           subtitle="Front-end developer"
-          explainText="- Web領域"
+          explainText="Web領域"
         />
         <Container>
           <CardContainer>
@@ -72,7 +71,7 @@ const Home = () => {
         <Hr />
         <TitleContainer
           subtitle="Social Media Marketing"
-          explainText="- SNS領域"
+          explainText="SNS領域"
         />
         <Container>
           <CardContainer>
@@ -85,7 +84,10 @@ const Home = () => {
             ></Button>
           </CardContainer>
         </Container>
-        <Achievements />
+        <TitleContainer
+          subtitle="Achievements"
+          explainText="Coming soon..."
+        />
         <FooterComponents />
       </Main>
     </div>
@@ -102,7 +104,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  justify-content: center;
 `;
 
 const Hr = styled.hr`
@@ -125,7 +127,7 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  padding: 24px;
+  padding: 16px;
   transition: box-shadow 0.3s ease-in-out;
   width: 75%;
   animation-name: slideIn;

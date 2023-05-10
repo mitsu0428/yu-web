@@ -5,7 +5,7 @@ function FrontDescription() {
   return (
     <>
       <TitleContainer>
-        <Title>mi2のページ</Title>
+        <Title>mi2</Title>
       </TitleContainer>
       <TitleContainer>
         <VerticalText>
@@ -39,7 +39,6 @@ const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 16px;
 `;
 
 const Wave = keyframes`
@@ -55,7 +54,7 @@ const Wave = keyframes`
 `;
 
 const ExplainContainer = styled.div`
-  width: 75%;
+  width: 100%;
   padding: 16px;
   border-radius: 8px;
   border: 1px solid #fff;
@@ -85,6 +84,7 @@ const SlideContainer = styled.div`
 `;
 
 const SlideText = styled.h2`
+  margin-top: 32px;
   white-space: nowrap;
   animation: ${slide} 15s linear infinite;
   @media (max-width: 768px) {

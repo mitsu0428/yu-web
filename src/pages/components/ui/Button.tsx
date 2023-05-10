@@ -41,7 +41,10 @@ const Button = (props: Props) => {
 };
 
 const Container = styled.div`
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 `;
 
 const CustomButton = styled.button`
@@ -51,6 +54,8 @@ const CustomButton = styled.button`
   font-size: 16px;
   font-weight: 600;
   padding: 16px;
+  margin-top: 16px;
+  margin-left: 48px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

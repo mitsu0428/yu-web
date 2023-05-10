@@ -37,10 +37,10 @@ const ImageWrapper = styled.div`
 `;
 
 const ImageComponent = styled(Image)`
-  border-radius: 50%;
+  border-radius: 8px;
   margin: 0 20px;
   margin-top: 16px;
-  // スマホの時は右と左の画像は表示しない
+
   @media (max-width: 480px) {
     &:first-child {
       display: none;
@@ -48,6 +48,12 @@ const ImageComponent = styled(Image)`
     &:last-child {
       display: none;
     }
+  }
+
+  opacity: 0.1;
+  &:hover {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
   }
 `;
 
