@@ -49,12 +49,6 @@ const ImageComponent = styled(Image)`
       display: none;
     }
   }
-
-  opacity: 0.1;
-  &:hover {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-  }
 `;
 
 export default ImageContainer;
