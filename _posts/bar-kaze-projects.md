@@ -29,13 +29,11 @@ ogImage:
 
 ### Web サイト作成
 
-- bar kaze 公式 Web サイトはこちら
-- https://bar-kaze.net/
+- bar kaze 公式 Web サイトは[こちら](https://bar-kaze.net/)
 
 ### SNS 運用
 
-- SNS(instagram)はこちら
-- https://www.instagram.com/barkaze_maruyamacho/
+- SNS(instagram)は[こちら](https://www.instagram.com/barkaze_maruyamacho/)
 
 ### Menu デザイン
 
