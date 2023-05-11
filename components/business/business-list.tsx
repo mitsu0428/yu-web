@@ -6,8 +6,8 @@ import Consulting from "../business/yu-web-consulting";
 const BusinessList = () => {
   return (
     <>
-      <Sns />
       <It />
+      <Sns />
       <Consulting />
     </>
   );
