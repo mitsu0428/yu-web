@@ -4,7 +4,7 @@ import PostSubTitle from "../post-title";
 function Sns() {
   return (
     <Container>
-      <PostSubTitle {...{ children: "SNS" }} />
+      <PostSubTitle {...{ children: "動画マーケティング" }} />
     </Container>
   );
 }
