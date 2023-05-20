@@ -100,6 +100,7 @@ export default function Mail() {
             type="text"
             placeholder="名前"
             className="w-full border-b border-gray-300 bg-transparent mt-1 mb-4 focus:border-white outline-none"
+            value={currentValues.name ?? ""}
             onChange={(e) =>
               setCurrentValues({ ...currentValues, name: e.target.value })
             }
@@ -110,6 +111,7 @@ export default function Mail() {
             type="text"
             placeholder="メールアドレス"
             className="w-full border-b border-gray-300 bg-transparent mt-1 mb-4 focus:border-white outline-none"
+            value={currentValues.mail ?? ""}
             onChange={(e) =>
               setCurrentValues({ ...currentValues, mail: e.target.value })
             }
@@ -117,8 +119,9 @@ export default function Mail() {
         </div>
         <div className="mb-4">
           <textarea
-            placeholder="お問い合わせ&#13; 例）イベント会場として使用したいです。"
+            placeholder="お問い合わせ&#13; 例）LP制作を依頼したいです。"
             className="w-full h-40 border-b border-gray-300 bg-transparent mt-1 mb-4 focus:border-white outline-none resize-none"
+            value={currentValues.message ?? ""}
             onChange={(e) =>
               setCurrentValues({ ...currentValues, message: e.target.value })
             }
