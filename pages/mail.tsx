@@ -14,8 +14,6 @@ export default function Mail() {
   const toast = useToast();
   const router = useRouter();
 
-  const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
   const sendMail = async () => {
     if (currentValues.name === "") {
       toast({
@@ -53,7 +51,6 @@ export default function Mail() {
       return;
     }
 
-    await _sleep(1000);
     await fetch("/api/mail", {
       method: "POST",
       body: `\n名前: ${currentValues.name} \nメールアドレス: ${currentValues.mail} \nお問い合わせ内容: \n${currentValues.message} `,
