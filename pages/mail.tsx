@@ -1,110 +1,143 @@
-/* eslint-disable react/react-in-jsx-scope */
-import { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 
+import { useRouter } from "next/router";
+import { useToast } from "../components/hooks/useToast";
+
 export default function Mail() {
-  const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
-  const [message, setMessage] = useState("");
+  const [currentValues, setCurrentValues] = useState({
+    name: "",
+    mail: "",
+    message: "",
+  });
+
+  const toast = useToast();
+  const router = useRouter();
 
   const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
   const sendMail = async () => {
-    if (name === "") {
-      alert("名前を入力してください。");
+    if (currentValues.name === "") {
+      toast({
+        text: "名前が入力されていません。",
+        type: "error",
+        isDisplay: true,
+      });
       return;
     }
-    if (mail === "") {
-      alert("メールアドレスを入力してください。");
-      return;
-    } else if (mail.indexOf("@") === -1) {
-      alert("有効なメールアドレスを入力してください。");
+
+    if (currentValues.mail === "") {
+      toast({
+        text: "メールアドレスが入力されていません。",
+        type: "error",
+        isDisplay: true,
+      });
       return;
     }
-    if (message === "") {
-      alert("内容を入力してください。");
+
+    if (currentValues.mail.indexOf("@") === -1) {
+      toast({
+        text: "無効なメールアドレスです。",
+        type: "error",
+        isDisplay: true,
+      });
+      return;
+    }
+
+    if (currentValues.message === "") {
+      toast({
+        text: "内容が入力されていません。",
+        type: "error",
+        isDisplay: true,
+      });
       return;
     }
 
     await _sleep(1000);
-
-    alert("お問い合わせを送信しました。");
-
     await fetch("/api/mail", {
       method: "POST",
-      body: `
-        名前: ${name}
-        メールアドレス: ${mail}
-        お問い合わせ内容: ${message}
-      `,
+      body: `\n名前: ${currentValues.name} \nメールアドレス: ${currentValues.mail} \nお問い合わせ内容: \n${currentValues.message} `,
     });
 
-    location.reload();
+    toast({
+      text: "メッセージを送信しました。",
+      type: "normal",
+      isDisplay: true,
+    });
   };
 
+  const hideToast = useCallback(() => {
+    toast({ text: "", type: "", isDisplay: false });
+  }, [toast]);
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      hideToast();
+    };
+
+    const handleBeforeUnload = () => {
+      hideToast();
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    router.events.on("routeChangeStart", handleRouteChange);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [hideToast, router.events]);
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <div className="w-96">
-        <h1 className="text-6xl font-bold">お問い合わせ</h1>
-        <div className="flex flex-col items-start mt-8">
-          <label
-            className="text-2xl font-bold"
-            htmlFor="name"
-          >
-            名前
-          </label>
+    <div className="w-full max-w-800px mx-auto p-4">
+      <div className="w-full max-w-800px mx-auto my-8 p-8 border border-white rounded-lg">
+        <h2 className="relative py-6 pl-4 mb-0 text-2xl font-bold">
+          お問い合わせ
+        </h2>
+        <div className="mb-4">
           <input
-            className="w-full h-10 px-3 mt-2 text-base placeholder-gray-600 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            id="name"
             type="text"
             placeholder="名前"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            className="w-full border-b border-gray-300 bg-transparent mt-1 mb-4 focus:border-white outline-none"
+            onChange={(e) =>
+              setCurrentValues({ ...currentValues, name: e.target.value })
+            }
           />
         </div>
-        <div className="flex flex-col items-start mt-8">
-          <label
-            className="text-2xl font-bold"
-            htmlFor="email"
-          >
-            メールアドレス
-          </label>
+        <div className="mb-4">
           <input
-            className="w-full h-10 px-3 mt-2 text-base placeholder-gray-600 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            id="email"
-            type="email"
+            type="text"
             placeholder="メールアドレス"
-            value={mail}
-            onChange={(e) => setMail(e.target.value)}
+            className="w-full border-b border-gray-300 bg-transparent mt-1 mb-4 focus:border-white outline-none"
+            onChange={(e) =>
+              setCurrentValues({ ...currentValues, mail: e.target.value })
+            }
           />
         </div>
-        <div className="flex flex-col items-start mt-8">
-          <label
-            className="text-2xl font-bold"
-            htmlFor="message"
-          >
-            お問い合わせ内容
-          </label>
+        <div className="mb-4">
           <textarea
-            className="w-full h-40 px-3 mt-2 text-base placeholder-gray-600 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            id="message"
-            placeholder="お問い合わせ内容"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            placeholder="お問い合わせ&#13; 例）イベント会場として使用したいです。"
+            className="w-full h-40 border-b border-gray-300 bg-transparent mt-1 mb-4 focus:border-white outline-none resize-none"
+            onChange={(e) =>
+              setCurrentValues({ ...currentValues, message: e.target.value })
+            }
           />
         </div>
-        <div className="mt-8">
+        <div className="mb-4">
           <button
-            className="w-full h-10 px-3 text-base text-white bg-blue-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            type="button"
             onClick={sendMail}
+            className="inline-block w-full max-w-350px h-12 px-6 my-4 bg-gray-500 border-none rounded-md transition duration-400 cursor-pointer hover:bg-gray-600"
           >
             送信
           </button>
         </div>
-        <div className="mt-8">
-          <Link href="/">ホームに戻る</Link>
-        </div>
       </div>
+      <span className="text-base">
+        <button className="inline-block">
+          <Link href={"/"}>公式サイトに戻る</Link>
+        </button>
+      </span>
     </div>
   );
 }
