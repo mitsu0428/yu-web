@@ -51,10 +51,10 @@ const Home = () => {
               image_height={200}
             />
             <Button
-              title="CSV比較ツール"
-              description="CSV比較ツール"
-              url="https://csvhikakun.com"
-              image_path="/images/csvhikakun.png"
+              title="比較ちゃん"
+              description="比較ちゃん"
+              url="https://hikakuchan.jp/"
+              image_path="/images/hikakuchan.png"
               image_height={200}
             ></Button>
           </CardContainer>
