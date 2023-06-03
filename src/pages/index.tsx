@@ -130,19 +130,6 @@ const CardContainer = styled.div`
   padding: 16px;
   transition: box-shadow 0.3s ease-in-out;
   width: 75%;
-  animation-name: slideIn;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.5s;
-
-  @keyframes slideIn {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
 
   &:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
