@@ -37,7 +37,7 @@ const Container = styled.div`
 
 const Sns = styled.span`
   display: flex;
-  width: 300px;
+  width: 450px;
   align-items: center;
   flex-direction: column;
   margin-top: 16px;

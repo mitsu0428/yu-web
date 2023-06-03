@@ -54,7 +54,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
 `;
 
 const CustomButton = styled(motion.button)`
@@ -65,9 +64,7 @@ const CustomButton = styled(motion.button)`
   font-weight: 600;
   padding: 16px;
   margin-top: 16px;
-  margin-left: 48px;
   border-radius: 8px;
-  width: 100%;
   height: 72px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

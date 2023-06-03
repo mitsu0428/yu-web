@@ -5,7 +5,7 @@ import LoadingIndicator from "../ui/icons/LoadingIcon";
 const FooterComponents = () => {
   return (
     <Container>
-      <LoadingIndicator />
+      {/* <LoadingIndicator /> */}
       <Footer>© 2022 mi2</Footer>
     </Container>
   );
