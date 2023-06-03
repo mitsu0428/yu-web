@@ -23,3 +23,9 @@ https://zenn.dev/taichifukumoto/articles/how-to-use-react-icons
 ```
 https://mui.com
 ```
+
+## animation
+
+```
+https://www.framer.com/motion/
+```
