@@ -58,7 +58,7 @@ const Container = styled.div`
 `;
 
 const CustomButton = styled(motion.button)`
-  background-color: #ffffff;
+  background-color: #fff;
   color: #fff;
   border: none;
   font-size: 16px;
