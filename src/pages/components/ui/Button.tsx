@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
+import { motion } from "framer-motion";
 
 type Props = {
   title: string;
@@ -19,7 +20,16 @@ const Button = (props: Props) => {
 
   return (
     <Container>
-      <CustomButton onClick={onClick}>
+      <CustomButton
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 1,
+          delay: 0.5,
+          ease: [0, 0.71, 0.72, 1.01],
+        }}
+        onClick={onClick}
+      >
         <CustomText>{props.title}</CustomText>
       </CustomButton>
       {isClicked && (
@@ -47,7 +57,7 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const CustomButton = styled.button`
+const CustomButton = styled(motion.button)`
   background-color: #ffffff;
   color: #fff;
   border: none;

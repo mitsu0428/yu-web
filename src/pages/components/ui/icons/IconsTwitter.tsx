@@ -1,33 +1,40 @@
 import React from "react";
 import { FaTwitter } from "react-icons/fa";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 function TwitterContainer() {
   return (
-    <>
-      <URL
-        href="https://twitter.com/mi2__user"
-        target="_blank"
-      >
-        <Icon
-          size={30}
-          color={"#fff"}
-        />
-      </URL>
+    <URL
+      href="https://twitter.com/mi2__user"
+      target="_blank"
+      whileHover={{ scale: 1.2 }}
+      onHoverStart={(e) => {}}
+      onHoverEnd={(e) => {}}
+    >
+      <Icon
+        size={30}
+        color={"#000"}
+      />
       <CustomText>Twitter</CustomText>
-    </>
+    </URL>
   );
 }
 
 export default TwitterContainer;
 
-const URL = styled.a`
+const URL = styled(motion.a)`
   width: 100%;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
 `;
 
 const CustomText = styled.p`
-  color: #fff;
+  color: #000;
   text-shadow: 0 0 7px #fff;
   font-size: 18px;
   font-weight: 600;
@@ -42,6 +49,6 @@ const CustomText = styled.p`
 const Icon = styled(FaTwitter)`
   transition: transform 0.3s ease-in-out;
   &:hover {
-    transform: scale(1.4);
+    transform: scale(1.6);
   }
 `;

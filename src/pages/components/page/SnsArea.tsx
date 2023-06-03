@@ -39,6 +39,6 @@ const Sns = styled.span`
   display: flex;
   width: 300px;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 16px;
 `;
