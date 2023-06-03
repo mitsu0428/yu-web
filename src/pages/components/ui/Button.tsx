@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 type Props = {
   title: string;
   description: string;
+  serviceDescription: string;
   url: string;
   image_path: string;
   image_height: number;
@@ -31,6 +32,7 @@ const Button = (props: Props) => {
         onClick={onClick}
       >
         <CustomText>{props.title}</CustomText>
+        <CustomServiceText>{props.serviceDescription}</CustomServiceText>
       </CustomButton>
       {isClicked && (
         <Modal
@@ -39,6 +41,7 @@ const Button = (props: Props) => {
             {
               title: props.title,
               description: props.description,
+              serviceDescription: props.serviceDescription,
               url: props.url,
               image_path: props.image_path,
               image_height: props.image_height,
@@ -57,15 +60,18 @@ const Container = styled.div`
 `;
 
 const CustomButton = styled(motion.button)`
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
+
   color: #fff;
   border: none;
   font-size: 16px;
-  font-weight: 600;
   padding: 16px;
   margin-top: 16px;
   border-radius: 8px;
   height: 72px;
+
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -83,13 +89,19 @@ const CustomText = styled.p`
   font-size: 16px;
   font-weight: 600;
   margin: 0;
-  padding: 0;
   text-align: left;
   ::before {
     content: "▶︎";
     color: #000;
     margin-right: 4px;
   }
+`;
+
+const CustomServiceText = styled.p`
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 0 0 16px;
 `;
 
 export default Button;

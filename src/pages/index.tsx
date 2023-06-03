@@ -26,6 +26,7 @@ const Home = () => {
             <Button
               title="sorette"
               description="sorette"
+              serviceDescription="あなたの流行りを、みんなの流行りに。"
               url="https://sorette.jp"
               image_path="/images/sorette.png"
               image_height={200}
@@ -33,6 +34,7 @@ const Home = () => {
             <Button
               title="bar-kaze"
               description="bar kaze -円山町"
+              serviceDescription="渋谷, 円山町にあるbar kazeの公式サイト"
               url="http://bar-kaze.net"
               image_path="/images/kaze.png"
               image_height={200}
@@ -40,6 +42,7 @@ const Home = () => {
             <Button
               title="zin-international"
               description="zin-international"
+              serviceDescription="zin-internationalの公式サイト"
               url="https://mitsuhiro-okada.com"
               image_path="/images/gopher.png"
               image_height={200}
@@ -47,6 +50,7 @@ const Home = () => {
             <Button
               title="Hayato Kajiwara"
               description="Hayato Kajiwara Portfolio"
+              serviceDescription="Hayaot Kajiwara Portfolio"
               url="https://kajikazi.com"
               image_path="/images/kajikazi.png"
               image_height={200}
@@ -54,6 +58,7 @@ const Home = () => {
             <Button
               title="比較ちゃん"
               description="比較ちゃん"
+              serviceDescription="様々な比較ができるプチツール"
               url="https://hikakuchan.jp/"
               image_path="/images/hikakuchan.png"
               image_height={200}
@@ -80,6 +85,7 @@ const Home = () => {
               title="神楽坂マップ"
               url="https://www.instagram.com/kagurazaka_map/?hl=ja"
               description="神楽坂マップ"
+              serviceDescription="神楽坂のお店を紹介するインスタグラム"
               image_path="/images/kagurazaka_map.png"
               image_height={200}
             ></Button>

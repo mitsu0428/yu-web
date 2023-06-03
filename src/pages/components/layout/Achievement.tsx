@@ -54,5 +54,7 @@ const StyledUrl = styled(Link)`
   background-color: #fff;
   color: #000;
   border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
   padding: 16px;
 `;
