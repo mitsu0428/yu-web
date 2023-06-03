@@ -6,6 +6,7 @@ import Button from "./components/ui/Button";
 import TitleContainer from "./components/elements/TitleContainer";
 import FrontDescription from "./components/layout/FrontDescription";
 import SnsArea from "./components/page/SnsArea";
+import Achievement from "./components/layout/Achievement";
 
 const Home = () => {
   return (
@@ -86,8 +87,9 @@ const Home = () => {
         </Container>
         <TitleContainer
           subtitle="Achievements"
-          explainText="Coming soon..."
+          explainText="実績"
         />
+        <Achievement />
         <FooterComponents />
       </Main>
     </div>
@@ -121,6 +123,7 @@ const Hr = styled.hr`
 `;
 
 const CardContainer = styled.div`
+  width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -129,7 +132,6 @@ const CardContainer = styled.div`
   font-family: "Roboto", sans-serif;
   padding: 16px;
   transition: box-shadow 0.3s ease-in-out;
-  width: 75%;
 
   &:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
