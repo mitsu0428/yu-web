@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function IconsInstagram() {
   return (
     <URL
-      href="https://www.instagram.com/mi2__user/?hl=ja"
+      href="https://www.instagram.com/mi2__pic/?hl=ja"
       target="_blank"
       whileHover={{ scale: 1.2 }}
       onHoverStart={(e) => {}}
