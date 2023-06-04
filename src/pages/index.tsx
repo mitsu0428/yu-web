@@ -7,11 +7,13 @@ import TitleContainer from "./components/elements/TitleContainer";
 import FrontDescription from "./components/layout/FrontDescription";
 import SnsArea from "./components/page/SnsArea";
 import Achievement from "./components/layout/Achievement";
+import Hamburger from "./components/ui/Hamburger";
 
 const Home = () => {
   return (
     <div>
       <HeaderComponents />
+      <Hamburger />
       <Main>
         <FrontDescription />
         <Hr />
