@@ -72,7 +72,7 @@ export default function Hamburger() {
 
 const StyledNav = styled.nav`
   z-index: 100;
-  position: fixed;
+  position: absolute;
   padding: 16px;
   bottom: 0;
   left: 0;
@@ -85,6 +85,7 @@ const StyledButton = styled(motion.button)`
   opacity: 0.8;
   color: white;
   width: 150px;
+  padding: 8px;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
