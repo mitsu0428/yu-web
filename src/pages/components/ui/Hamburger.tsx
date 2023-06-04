@@ -40,7 +40,7 @@ export default function Hamburger() {
       >
         <StyledLi>
           <StyledLink
-            href="https://www.instagram.com/mi2__user/?hl=ja"
+            href="https://www.instagram.com/mi2__pic/?hl=ja"
             target="_blank"
           >
             <FaInstagram />
