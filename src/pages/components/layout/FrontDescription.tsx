@@ -93,7 +93,6 @@ const SlideText = styled.h2`
 `;
 
 const Title = styled.h1`
-  color: #fff;
   text-shadow: 0 0 7px #fff;
   font-size: 36px;
   font-weight: 1200;
@@ -102,20 +101,6 @@ const Title = styled.h1`
   }
   @media (max-width: 480px) {
     font-size: 24px;
-  }
-`;
-
-const Subtitle = styled.h2`
-  color: #fff;
-  text-shadow: 0 0 7px #fff;
-  margin-left: 16px;
-  font-size: 26px;
-  font-weight: 1200;
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
-  @media (max-width: 480px) {
-    font-size: 22px;
   }
 `;
 
