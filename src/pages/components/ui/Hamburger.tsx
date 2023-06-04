@@ -39,19 +39,28 @@ export default function Hamburger() {
         }}
       >
         <StyledLi>
-          <StyledLink href="https://www.instagram.com/mi2__user/?hl=ja">
+          <StyledLink
+            href="https://www.instagram.com/mi2__user/?hl=ja"
+            target="_blank"
+          >
             <FaInstagram />
             Instagram
           </StyledLink>
         </StyledLi>
         <StyledLi>
-          <StyledLink href="https://www.linkedin.com/in/mitsuhiro-okada">
+          <StyledLink
+            href="https://www.linkedin.com/in/mitsuhiro-okada"
+            target="_blank"
+          >
             <FaLinkedin />
             Linkedin
           </StyledLink>
         </StyledLi>
         <StyledLi>
-          <StyledLink href="https://twitter.com/mi2__user">
+          <StyledLink
+            href="https://twitter.com/mi2__user"
+            target="_blank"
+          >
             <FaTwitter />
             Twitter
           </StyledLink>
