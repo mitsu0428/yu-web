@@ -1,5 +1,4 @@
-// eslint-disable-next-line @next/next/no-head-import-in-document
-import Head from "next/head";
+import React from "react";
 import Document, { DocumentContext } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
@@ -20,16 +19,6 @@ export default class MyDocument extends Document {
         ...initialProps,
         styles: (
           <>
-            <Head>
-              <link
-                href="https://fonts.googleapis.com/css2?family=Abel&family=Zen+Old+Mincho&display=swap"
-                rel="stylesheet"
-              />
-              <link
-                href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@700&display=swap"
-                rel="stylesheet"
-              ></link>
-            </Head>
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>
