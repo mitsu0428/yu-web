@@ -37,6 +37,10 @@ const SeoSettings = ({
         content="width=device-width,initial-scale=1.0,user-scalable=no"
       />
       <meta
+        name="google-site-verification"
+        content="KVyEDEpFxaUT6bvChTTaj6teDWlRcM_8-_xlnVqc9P0"
+      />
+      <meta
         name="description"
         content={description}
       />
