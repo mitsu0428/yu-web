@@ -52,7 +52,7 @@ const Home = () => {
             <Button
               title="Hayato Kajiwara"
               description="Hayato Kajiwara Portfolio"
-              serviceDescription="Hayaot Kajiwara Portfolio"
+              serviceDescription="Hayato Kajiwara Portfolio"
               url="https://kajikazi.com"
               image_path="/images/kajikazi.png"
               image_height={200}
