@@ -11,62 +11,61 @@ import SeoSettings from "./components/libs/SeoSettings";
 
 const Home = () => {
   return (
-    <div>
+    <Main>
       <SeoSettings />
       <Hamburger />
-      <Main>
-        <FrontDescription />
-        <Hr />
-        <SnsArea />
-        <Hr />
-        <TitleContainer
-          subtitle="Front-end developer"
-          explainText="Web領域"
-        />
-        <Container>
-          <CardContainer>
-            <Button
-              title="sorette"
-              description="sorette"
-              serviceDescription="あなたの流行りを、みんなの流行りに。"
-              url="https://sorette.jp"
-              image_path="/images/sorette.png"
-              image_height={200}
-            />
-            <Button
-              title="bar-kaze"
-              description="bar kaze -円山町"
-              serviceDescription="渋谷, 円山町にあるbar kazeの公式サイト"
-              url="http://bar-kaze.net"
-              image_path="/images/kaze.png"
-              image_height={200}
-            />
-            <Button
-              title="zin-international"
-              description="zin-international"
-              serviceDescription="zin-internationalの公式サイト"
-              url="https://mitsuhiro-okada.com"
-              image_path="/images/gopher.png"
-              image_height={200}
-            />
-            <Button
-              title="Hayato Kajiwara"
-              description="Hayato Kajiwara Portfolio"
-              serviceDescription="Hayato Kajiwara Portfolio"
-              url="https://kajikazi.com"
-              image_path="/images/kajikazi.png"
-              image_height={200}
-            />
-            <Button
-              title="比較ちゃん"
-              description="比較ちゃん"
-              serviceDescription="様々な比較ができるプチツール"
-              url="https://hikakuchan.jp/"
-              image_path="/images/hikakuchan.png"
-              image_height={200}
-            ></Button>
-          </CardContainer>
-          {/* <CardContainer>
+      <FrontDescription />
+      <Hr />
+      <SnsArea />
+      <Hr />
+      <TitleContainer
+        subtitle="Front-end developer"
+        explainText="Web領域"
+      />
+      <Container>
+        <CardContainer>
+          <Button
+            title="sorette"
+            description="sorette"
+            serviceDescription="あなたの流行りを、みんなの流行りに。"
+            url="https://sorette.jp"
+            image_path="/images/sorette.png"
+            image_height={200}
+          />
+          <Button
+            title="bar-kaze"
+            description="bar kaze -円山町"
+            serviceDescription="渋谷, 円山町にあるbar kazeの公式サイト"
+            url="http://bar-kaze.net"
+            image_path="/images/kaze.png"
+            image_height={200}
+          />
+          <Button
+            title="zin-international"
+            description="zin-international"
+            serviceDescription="zin-internationalの公式サイト"
+            url="https://mitsuhiro-okada.com"
+            image_path="/images/gopher.png"
+            image_height={200}
+          />
+          <Button
+            title="Hayato Kajiwara"
+            description="Hayato Kajiwara Portfolio"
+            serviceDescription="Hayato Kajiwara Portfolio"
+            url="https://kajikazi.com"
+            image_path="/images/kajikazi.png"
+            image_height={200}
+          />
+          <Button
+            title="比較ちゃん"
+            description="比較ちゃん"
+            serviceDescription="様々な比較ができるプチツール"
+            url="https://hikakuchan.jp/"
+            image_path="/images/hikakuchan.png"
+            image_height={200}
+          ></Button>
+        </CardContainer>
+        {/* <CardContainer>
             <Button
               title="Pharcyde Menu"
               url="https://pharcyde.tokyo"
@@ -75,32 +74,31 @@ const Home = () => {
               image_height={200}
             ></Button>
           </CardContainer> */}
-        </Container>
-        <Hr />
-        <TitleContainer
-          subtitle="Social Media Marketing"
-          explainText="SNS領域"
-        />
-        <Container>
-          <CardContainer>
-            <Button
-              title="神楽坂マップ"
-              url="https://www.instagram.com/kagurazaka_map/?hl=ja"
-              description="神楽坂マップ"
-              serviceDescription="神楽坂のお店を紹介するインスタグラム"
-              image_path="/images/kagurazaka_map.png"
-              image_height={200}
-            ></Button>
-          </CardContainer>
-        </Container>
-        <TitleContainer
-          subtitle="Achievements"
-          explainText="実績"
-        />
-        <Achievement />
-        <FooterComponents />
-      </Main>
-    </div>
+      </Container>
+      <Hr />
+      <TitleContainer
+        subtitle="Social Media Marketing"
+        explainText="SNS領域"
+      />
+      <Container>
+        <CardContainer>
+          <Button
+            title="神楽坂マップ"
+            url="https://www.instagram.com/kagurazaka_map/?hl=ja"
+            description="神楽坂マップ"
+            serviceDescription="神楽坂のお店を紹介するインスタグラム"
+            image_path="/images/kagurazaka_map.png"
+            image_height={200}
+          ></Button>
+        </CardContainer>
+      </Container>
+      <TitleContainer
+        subtitle="Achievements"
+        explainText="実績"
+      />
+      <Achievement />
+      <FooterComponents />
+    </Main>
   );
 };
 
