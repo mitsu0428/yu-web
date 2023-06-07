@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import HeaderComponents from "./components/layout/HeaderComponents";
 import FooterComponents from "./components/layout/FooterComponents";
-import Button from "./components/ui/Button";
-import TitleContainer from "./components/elements/TitleContainer";
 import FrontDescription from "./components/layout/FrontDescription";
-import SnsArea from "./components/page/SnsArea";
 import Achievement from "./components/layout/Achievement";
 import Hamburger from "./components/ui/Hamburger";
+import Button from "./components/ui/Button";
+import TitleContainer from "./components/elements/TitleContainer";
+import SnsArea from "./components/page/SnsArea";
+import SeoSettings from "./components/libs/SeoSettings";
 
 const Home = () => {
   return (
     <div>
-      <HeaderComponents />
+      <SeoSettings />
       <Hamburger />
       <Main>
         <FrontDescription />
