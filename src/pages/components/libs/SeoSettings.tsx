@@ -18,9 +18,9 @@ const SeoSettings = ({
   pageImgWidth,
   pageImgHeight,
 }: Partial<MetaData>) => {
-  const defaultTitle = "岡田 光博 | ポートフォリオサイト";
+  const defaultTitle = "岡田 光博 | 公式ポートフォリオサイト";
   const defaultDescription =
-    "岡田光博のポートフォリオサイト | フロントエンドエンジニア & DX/テクニカルサポートエンジニア | Webサイト作成 | LP作成 | SNS運用";
+    "岡田光博のポートフォリオサイト | 結う -web | フロントエンドエンジニア & DXエンジニア  | Webサイト作成, LP作成, SNS運用";
 
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription ? pageDescription : defaultDescription;
