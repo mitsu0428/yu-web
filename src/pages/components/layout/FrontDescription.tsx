@@ -12,12 +12,11 @@ function FrontDescription() {
           Front-end developer & Social Media Marketing
         </VerticalText>
         <ExplainContainer>
-          <ExplainText>結う -webにて、</ExplainText>
+          <ExplainText>結う -web</ExplainText>
           <ExplainText>・LPの作成</ExplainText>
           <ExplainText>・Portfolio制作</ExplainText>
           <ExplainText>・SNS運用代行</ExplainText>
           <ExplainText>・店舗ブランディング</ExplainText>
-          <ExplainText>などをしています。</ExplainText>
         </ExplainContainer>
       </TitleContainer>
       <SlideContainer>
