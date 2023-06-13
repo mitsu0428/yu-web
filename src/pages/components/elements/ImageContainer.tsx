@@ -30,12 +30,7 @@ const ImageComponent = styled(Image)`
   margin-top: 16px;
 
   @media (max-width: 480px) {
-    &:first-child {
-      display: none;
-    }
-    &:last-child {
-      display: none;
-    }
+    margin: 0 10px;
   }
 `;
 
