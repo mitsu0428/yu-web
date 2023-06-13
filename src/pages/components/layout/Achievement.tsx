@@ -9,7 +9,7 @@ function Achievement() {
         <ExplainContainer>
           <Subtitle>[結う -web] bar kaze</Subtitle>
           <StyledUrl href="https://yu-web.jp/posts/bar-kaze-projects">
-            記事はこちら
+            ▶︎ 記事はこちら
           </StyledUrl>
         </ExplainContainer>
       </TitleContainer>
@@ -49,8 +49,8 @@ const Subtitle = styled.h2`
 const StyledUrl = styled(Link)`
   width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  text-align: left;
   background-color: #fff;
   color: #000;
   border-radius: 8px;
