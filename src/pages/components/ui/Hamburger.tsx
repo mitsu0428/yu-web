@@ -73,6 +73,7 @@ export default function Hamburger() {
 const StyledNav = styled.nav`
   z-index: 100;
   position: absolute;
+  width: 100%;
   padding: 16px;
   bottom: 0;
   left: 0;
@@ -84,7 +85,7 @@ const StyledButton = styled(motion.button)`
   background: #b76cfd;
   opacity: 0.8;
   color: white;
-  width: 150px;
+  width: 50%;
   padding: 8px;
   border-radius: 8px;
   font-size: 16px;
@@ -94,7 +95,7 @@ const StyledButton = styled(motion.button)`
 
 const StyledUl = styled.ul`
   padding: 16px;
-  width: 300px;
+  width: 100%;
   list-style: none;
   background: white;
 `;
