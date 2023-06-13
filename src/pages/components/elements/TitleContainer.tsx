@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import font from "../libs/NextFont";
+import font from "../../../styles/NextFont";
 
 type Props = {
   subtitle: string;

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import useMenuAnimation from "../hooks/useMenuAnimation";
-import font from "../libs/NextFont";
+import font from "../../../styles/NextFont";
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState(false);

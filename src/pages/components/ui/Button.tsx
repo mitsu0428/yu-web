@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
-import font from "../libs/NextFont";
+import font from "../../../styles/NextFont";
 
 type Props = {
   title: string;

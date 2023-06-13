@@ -2,7 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import font from "../../libs/NextFont";
+import font from "../../../../styles/NextFont";
 
 function IconsInstagram() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LoadingIndicator from "../ui/icons/LoadingIcon";
-import font from "../libs/NextFont";
+import font from "../../../styles/NextFont";
 
 const FooterComponents = () => {
   return (
