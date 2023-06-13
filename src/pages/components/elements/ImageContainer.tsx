@@ -6,22 +6,10 @@ const ImageContainer = () => {
   return (
     <ImageWrapper>
       <ImageComponent
-        src="/images/mitsuhiro-2.jpg"
-        alt="Image 1"
-        width={200}
-        height={200}
-      />
-      <ImageComponent
         src="/images/mitsuhiro-1.jpg"
         alt="Mitsuhiro Okada"
         width={300}
         height={300}
-      />
-      <ImageComponent
-        src="/images/mitsuhiro-3.jpg"
-        alt="Image 2"
-        width={200}
-        height={200}
       />
     </ImageWrapper>
   );
