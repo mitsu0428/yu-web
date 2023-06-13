@@ -3,11 +3,6 @@ import { Noto_Sans_JP } from "@next/font/google";
 
 const roboto = Roboto({
   subsets: ["cyrillic-ext", "greek"],
-  weight: "100",
-});
-
-const roboto2 = Roboto({
-  subsets: ["cyrillic-ext", "greek"],
   weight: "300",
 });
 
@@ -24,7 +19,6 @@ const notoSansJP700 = Noto_Sans_JP({
 
 const font = {
   roboto,
-  roboto2,
   notoSansJP400,
   notoSansJP700,
 };

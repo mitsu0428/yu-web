@@ -44,6 +44,7 @@ export default function Hamburger() {
           <StyledLink
             href="https://www.instagram.com/mi2__pic/?hl=ja"
             target="_blank"
+            className={font.roboto.className}
           >
             <FaInstagram />
             Instagram
@@ -54,6 +55,7 @@ export default function Hamburger() {
           <StyledLink
             href="https://www.linkedin.com/in/mitsuhiro-okada"
             target="_blank"
+            className={font.roboto.className}
           >
             <FaLinkedin />
             Linkedin
@@ -64,6 +66,7 @@ export default function Hamburger() {
           <StyledLink
             href="https://twitter.com/mi2__user"
             target="_blank"
+            className={font.roboto.className}
           >
             <FaTwitter />
             Twitter

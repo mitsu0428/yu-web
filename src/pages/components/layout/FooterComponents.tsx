@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import LoadingIndicator from "../ui/icons/LoadingIcon";
+import font from "../libs/NextFont";
 
 const FooterComponents = () => {
   return (
     <Container>
       {/* <LoadingIndicator /> */}
-      <Footer>© 2022 mi2</Footer>
+      <Footer className={font.roboto.className}>© 2022 mi2</Footer>
     </Container>
   );
 };

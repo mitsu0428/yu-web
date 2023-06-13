@@ -11,7 +11,9 @@ function TitleContainer({ subtitle, explainText }: Props) {
   return (
     <Container>
       <Subtitle className={font.roboto.className}>{subtitle}</Subtitle>
-      <ExplainText>{explainText}</ExplainText>
+      <ExplainText className={font.notoSansJP400.className}>
+        {explainText}
+      </ExplainText>
     </Container>
   );
 }

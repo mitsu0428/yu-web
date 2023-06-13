@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
+import font from "../libs/NextFont";
 
 type Props = {
   title: string;
@@ -31,8 +32,12 @@ const Button = (props: Props) => {
         }}
         onClick={onClick}
       >
-        <CustomText>{props.title}</CustomText>
-        <CustomServiceText>{props.serviceDescription}</CustomServiceText>
+        <CustomText className={font.notoSansJP400.className}>
+          {props.title}
+        </CustomText>
+        <CustomServiceText className={font.notoSansJP400.className}>
+          {props.serviceDescription}
+        </CustomServiceText>
       </CustomButton>
       {isClicked && (
         <Modal

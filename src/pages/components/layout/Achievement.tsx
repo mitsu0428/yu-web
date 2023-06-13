@@ -1,14 +1,20 @@
 import Link from "next/link";
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import font from "../libs/NextFont";
 
 function Achievement() {
   return (
     <>
       <TitleContainer>
         <ExplainContainer>
-          <Subtitle>[結う -web] bar kaze</Subtitle>
-          <StyledUrl href="https://yu-web.jp/posts/bar-kaze-projects">
+          <Subtitle className={font.notoSansJP400.className}>
+            [結う -web] bar kaze
+          </Subtitle>
+          <StyledUrl
+            href="https://yu-web.jp/posts/bar-kaze-projects"
+            className={font.notoSansJP400.className}
+          >
             ▶︎ 記事はこちら
           </StyledUrl>
         </ExplainContainer>

@@ -6,18 +6,28 @@ function FrontDescription() {
   return (
     <>
       <TitleContainer>
-        <Title>mi2 | 岡田 光博</Title>
+        <Title className={font.notoSansJP700.className}>mi2 | 岡田 光博</Title>
       </TitleContainer>
       <TitleContainer>
         <VerticalText className={font.roboto.className}>
           Front-end developer & Social Media Marketing
         </VerticalText>
         <ExplainContainer>
-          <ExplainText>結う -web</ExplainText>
-          <ExplainText>・LPの作成</ExplainText>
-          <ExplainText>・Portfolio制作</ExplainText>
-          <ExplainText>・SNS運用代行</ExplainText>
-          <ExplainText>・店舗ブランディング</ExplainText>
+          <ExplainText className={font.notoSansJP400.className}>
+            結う -web
+          </ExplainText>
+          <ExplainText className={font.notoSansJP400.className}>
+            ・LPの作成
+          </ExplainText>
+          <ExplainText className={font.notoSansJP400.className}>
+            ・Portfolio制作
+          </ExplainText>
+          <ExplainText className={font.notoSansJP400.className}>
+            ・SNS運用代行
+          </ExplainText>
+          <ExplainText className={font.notoSansJP400.className}>
+            ・店舗ブランディング
+          </ExplainText>
         </ExplainContainer>
       </TitleContainer>
       <SlideContainer>

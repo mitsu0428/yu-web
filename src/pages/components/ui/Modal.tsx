@@ -60,12 +60,14 @@ const Modal = ({ close, actionAreaCardProps }: Props) => {
                   gutterBottom
                   variant="h5"
                   component="div"
+                  className={font.notoSansJP400.className}
                 >
                   {actionAreaCardProps.title}
                 </Typography>
                 <Typography
                   variant="body2"
                   color="text.secondary"
+                  className={font.notoSansJP400.className}
                 >
                   {actionAreaCardProps.description}
                 </Typography>
