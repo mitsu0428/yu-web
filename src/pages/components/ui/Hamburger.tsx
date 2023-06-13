@@ -18,7 +18,7 @@ export default function Hamburger() {
         whileTap={{ scale: 0.97 }}
         onClick={() => setIsOpen(!isOpen)}
       >
-        Contact
+        Links
         <StyledContainer
           className="arrow"
           style={{ transformOrigin: "50% 55%" }}
@@ -46,6 +46,7 @@ export default function Hamburger() {
             <FaInstagram />
             Instagram
           </StyledLink>
+          <Hr />
         </StyledLi>
         <StyledLi>
           <StyledLink
@@ -55,6 +56,7 @@ export default function Hamburger() {
             <FaLinkedin />
             Linkedin
           </StyledLink>
+          <Hr />
         </StyledLi>
         <StyledLi>
           <StyledLink
@@ -64,6 +66,7 @@ export default function Hamburger() {
             <FaTwitter />
             Twitter
           </StyledLink>
+          <Hr />
         </StyledLi>
       </StyledUl>
     </StyledNav>
@@ -128,4 +131,16 @@ const StyledLink = styled.a`
   svg {
     margin-right: 8px;
   }
+`;
+
+const Hr = styled.hr`
+  border-width: 0 0 0.5px;
+  border-image: linear-gradient(
+      90deg,
+      hsla(0, 0%, 35%, 0),
+      hsla(0, 0%, 35%, 0.5) 15%,
+      hsla(0, 0%, 35%, 0) 35%
+    )
+    0 0 100%;
+  border-style: solid;
 `;
