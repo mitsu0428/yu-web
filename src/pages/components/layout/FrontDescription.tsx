@@ -5,7 +5,7 @@ function FrontDescription() {
   return (
     <>
       <TitleContainer>
-        <Title>mi2</Title>
+        <Title>mi2 | 岡田 光博</Title>
       </TitleContainer>
       <TitleContainer>
         <VerticalText>
