@@ -65,7 +65,7 @@ export default function Hamburger() {
             Twitter
           </StyledLink>
         </StyledLi>
-      </StyledUl>{" "}
+      </StyledUl>
     </StyledNav>
   );
 }
@@ -86,6 +86,7 @@ const StyledButton = styled(motion.button)`
   opacity: 0.8;
   color: white;
   width: 50%;
+  height: 75px;
   padding: 8px;
   border-radius: 8px;
   font-size: 16px;
@@ -96,8 +97,12 @@ const StyledButton = styled(motion.button)`
 const StyledUl = styled.ul`
   padding: 16px;
   width: 100%;
+  height: 200px;
   list-style: none;
   background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 `;
 
 const StyledLi = styled.li`
