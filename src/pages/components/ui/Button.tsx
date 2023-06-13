@@ -100,7 +100,6 @@ const CustomText = styled.p`
 const CustomServiceText = styled.p`
   color: #000;
   font-size: 12px;
-  font-weight: 600;
   margin: 0 0 0 16px;
 `;
 
