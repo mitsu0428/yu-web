@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import font from "../libs/NextFont";
 
 function FrontDescription() {
   return (
@@ -8,7 +9,7 @@ function FrontDescription() {
         <Title>mi2 | 岡田 光博</Title>
       </TitleContainer>
       <TitleContainer>
-        <VerticalText>
+        <VerticalText className={font.roboto.className}>
           Front-end developer & Social Media Marketing
         </VerticalText>
         <ExplainContainer>
@@ -20,7 +21,7 @@ function FrontDescription() {
         </ExplainContainer>
       </TitleContainer>
       <SlideContainer>
-        <SlideText>
+        <SlideText className={font.roboto.className}>
           - mitsuhiro okada, front-end developer, Social Media Marketing &
           branding, #photographer, #design, #web, since 2021 - mitsuhiro okada,
           front-end developer, Social Media Marketing & branding, #photographer,

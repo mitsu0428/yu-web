@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import font from "../libs/NextFont";
 
 type Props = {
   subtitle: string;
@@ -9,7 +10,7 @@ type Props = {
 function TitleContainer({ subtitle, explainText }: Props) {
   return (
     <Container>
-      <Subtitle>{subtitle}</Subtitle>
+      <Subtitle className={font.roboto.className}>{subtitle}</Subtitle>
       <ExplainText>{explainText}</ExplainText>
     </Container>
   );

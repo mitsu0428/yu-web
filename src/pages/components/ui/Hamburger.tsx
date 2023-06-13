@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import useMenuAnimation from "../hooks/useMenuAnimation";
+import font from "../libs/NextFont";
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ export default function Hamburger() {
       <StyledButton
         whileTap={{ scale: 0.97 }}
         onClick={() => setIsOpen(!isOpen)}
+        className={font.roboto.className}
       >
         Links
         <StyledContainer

@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import font from "../libs/NextFont";
 
 const Loading: React.FC = () => {
   const [progress, setProgress] = React.useState(0);
@@ -25,7 +26,9 @@ const Loading: React.FC = () => {
         <LoadingSpinner>
           <LoaderCircle />
         </LoadingSpinner>
-        <LoadingText>Loading... {progress}%</LoadingText>
+        <LoadingText className={font.roboto.className}>
+          Loading... {progress}%
+        </LoadingText>
       </LoadingContent>
     </LoadingWrapper>
   );

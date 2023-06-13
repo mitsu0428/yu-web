@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import font from "../../libs/NextFont";
 
 function LinkedinComtainer() {
   return (
@@ -16,7 +17,7 @@ function LinkedinComtainer() {
         size={30}
         color={"#000"}
       />
-      <CustomText>Linkedin</CustomText>
+      <CustomText className={font.roboto.className}>Linkedin</CustomText>
     </URL>
   );
 }

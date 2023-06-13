@@ -2,6 +2,7 @@ import React from "react";
 import { FaTwitter } from "react-icons/fa";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import font from "../../libs/NextFont";
 
 function TwitterContainer() {
   return (
@@ -16,7 +17,7 @@ function TwitterContainer() {
         size={30}
         color={"#000"}
       />
-      <CustomText>Twitter</CustomText>
+      <CustomText className={font.roboto.className}>Twitter</CustomText>
     </URL>
   );
 }

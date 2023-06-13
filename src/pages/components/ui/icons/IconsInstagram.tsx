@@ -2,6 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import font from "../../libs/NextFont";
 
 function IconsInstagram() {
   return (
@@ -16,7 +17,7 @@ function IconsInstagram() {
         size={30}
         color={"#000"}
       />
-      <CustomText>Instagram</CustomText>
+      <CustomText className={font.roboto.className}>Instagram</CustomText>
     </URL>
   );
 }
