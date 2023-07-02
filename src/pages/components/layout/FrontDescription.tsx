@@ -17,16 +17,16 @@ function FrontDescription() {
             結う -web
           </ExplainText>
           <ExplainText className={font.notoSansJP400.className}>
-            ・LPの作成
+            # LP作成
           </ExplainText>
           <ExplainText className={font.notoSansJP400.className}>
-            ・Portfolio制作
+            # Portfolio制作
           </ExplainText>
           <ExplainText className={font.notoSansJP400.className}>
-            ・SNS運用代行
+            # SNS運用代行
           </ExplainText>
           <ExplainText className={font.notoSansJP400.className}>
-            ・店舗ブランディング
+            # 店舗ブランディング
           </ExplainText>
         </ExplainContainer>
       </TitleContainer>
