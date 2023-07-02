@@ -25,19 +25,19 @@ const Home = () => {
       <Container>
         <CardContainer>
           <Button
-            title="sorette"
-            description="sorette"
-            serviceDescription="あなたの流行りを、みんなの流行りに。"
-            url="https://sorette.jp"
-            image_path="/images/sorette.png"
-            image_height={200}
-          />
-          <Button
             title="bar-kaze"
             description="bar kaze -円山町"
             serviceDescription="渋谷, 円山町にあるbar kazeの公式サイト"
             url="http://bar-kaze.net"
             image_path="/images/kaze.png"
+            image_height={200}
+          />
+          <Button
+            title="sorette"
+            description="sorette"
+            serviceDescription="あなたの流行りを、みんなの流行りに。"
+            url="https://sorette.jp"
+            image_path="/images/sorette.png"
             image_height={200}
           />
           <Button
