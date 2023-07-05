@@ -36,7 +36,7 @@ const BusinessPrice = () => {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-base text-gray-500">
-                ¥10,000 ~ ¥20,000
+                ¥30,000 ~ ¥40,000
               </dd>
             </div>
           </dl>
@@ -65,7 +65,7 @@ const BusinessPrice = () => {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-base text-gray-500">
-                ¥10,000 ~ ¥20,000
+                ¥30,000 ~ ¥40,000
               </dd>
             </div>
           </dl>
@@ -94,7 +94,7 @@ const BusinessPrice = () => {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-base text-gray-500">
-                ¥10,000 ~ ¥20,000
+                ¥30,000 ~ ¥40,000
               </dd>
             </div>
           </dl>
@@ -123,7 +123,7 @@ const BusinessPrice = () => {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-base text-gray-500">
-                ¥20,000 ~ ¥30,000
+                ¥80,000 ~ ¥100,000
               </dd>
             </div>
           </dl>
@@ -152,7 +152,7 @@ const BusinessPrice = () => {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-base text-gray-500">
-                ¥30,000 ~ ¥50,000
+                ¥80,000 ~ ¥100,000
               </dd>
             </div>
           </dl>
