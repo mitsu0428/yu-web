@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "../container";
 import PostSubTitle from "../post-title";
-function It() {
+function Branding() {
   return (
     <Container>
-      <PostSubTitle {...{ children: "Web制作" }} />
+      <PostSubTitle {...{ children: "ブランディング" }} />
     </Container>
   );
 }
 
-export default It;
+export default Branding;

@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "../container";
 import PostSubTitle from "../post-title";
-function Consulting() {
+function Automation() {
   return (
     <Container>
-      <PostSubTitle {...{ children: "コンサルティング" }} />
+      <PostSubTitle {...{ children: "業務効率化・自動化" }} />
     </Container>
   );
 }
 
-export default Consulting;
+export default Automation;
