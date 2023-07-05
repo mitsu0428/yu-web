@@ -1,5 +1,5 @@
 ---
-title: "- 実績 01 (bar kaze) -"
+title: "bar kaze -円山町"
 excerpt: ""
 coverImage: "/assets/blog-bar-kaze/bar-kaze.jpg"
 date: "2023-03-16T05:35:07.322Z"
