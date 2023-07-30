@@ -2,7 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaStickyNote,
+} from "react-icons/fa";
 import useMenuAnimation from "../hooks/useMenuAnimation";
 import font from "../../../styles/NextFont";
 
@@ -20,7 +25,7 @@ export default function Hamburger() {
         onClick={() => setIsOpen(!isOpen)}
         className={font.roboto.className}
       >
-        Links
+        News/Blog
         <StyledContainer
           className="arrow"
           style={{ transformOrigin: "50% 55%" }}
@@ -73,6 +78,17 @@ export default function Hamburger() {
           </StyledLink>
           <Hr />
         </StyledLi>
+        <StyledLi>
+          <StyledLink
+            href="https://note.com/mitsuhiro_3232"
+            target="_blank"
+            className={font.roboto.className}
+          >
+            <FaStickyNote />
+            Note
+          </StyledLink>
+          <Hr />
+        </StyledLi>
       </StyledUl>
     </StyledNav>
   );
@@ -117,7 +133,6 @@ const StyledLi = styled.li`
   display: block;
   transform-origin: -20px 50%;
   color: black;
-  padding: 8px;
 `;
 
 const StyledLink = styled.a`
