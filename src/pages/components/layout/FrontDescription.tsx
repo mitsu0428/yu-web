@@ -14,19 +14,16 @@ function FrontDescription() {
         </VerticalText>
         <ExplainContainer>
           <ExplainText className={font.notoSansJP400.className}>
-            結う -web
+            結う -web / 個人事業主
           </ExplainText>
           <ExplainText className={font.notoSansJP400.className}>
             # LP作成
           </ExplainText>
           <ExplainText className={font.notoSansJP400.className}>
-            # Portfolio制作
+            # チラシ・ポップ作成
           </ExplainText>
           <ExplainText className={font.notoSansJP400.className}>
-            # SNS運用代行
-          </ExplainText>
-          <ExplainText className={font.notoSansJP400.className}>
-            # 店舗ブランディング
+            # ブランディング
           </ExplainText>
         </ExplainContainer>
       </TitleContainer>
@@ -103,7 +100,6 @@ const SlideText = styled.h2`
 `;
 
 const Title = styled.h1`
-  text-shadow: 0 0 7px #fff;
   font-size: 36px;
   font-weight: 1200;
   @media (max-width: 768px) {
