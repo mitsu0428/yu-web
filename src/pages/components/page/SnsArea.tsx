@@ -32,7 +32,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 16px;
+  overflow: hidden;
+  padding: 8px;
 `;
 
 const Sns = styled.span`
@@ -42,4 +43,5 @@ const Sns = styled.span`
   flex-direction: row;
   margin-top: 16px;
   width: 100%;
+  min-width: 300px;
 `;
