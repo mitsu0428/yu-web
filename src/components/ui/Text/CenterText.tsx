@@ -24,7 +24,7 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.h2`
-  width: 200px;
+  width: 100%;
   text-align: center;
   color: #fff;
   font-weight: 1200;

@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import * as Achievements from "../ui/Achievement";
 
 export const Component = () => {
   return (
     <Wrapper>
-      <Title>Pharcyde</Title>
-      <Video
-        src="/achievements/pharcyde.mov"
-        autoPlay
-        muted
-        loop
+      <Achievements.Component
+        title="Pharcyde"
+        explainText="bar, restaurant"
+        imagePath="/achievements/pharcyde.mov"
       />
     </Wrapper>
   );
@@ -21,7 +20,7 @@ const Wrapper = styled.div`
   border-radius: 8px;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   overflow: hidden;
 `;
 
@@ -36,11 +35,4 @@ const Title = styled.h2`
   @media (max-width: 480px) {
     font-size: 22px;
   }
-`;
-
-const Video = styled.video`
-  width: 200px;
-  height: 100%;
-  object-fit: cover;
-  margin-left: 32px;
 `;

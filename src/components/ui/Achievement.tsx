@@ -10,26 +10,36 @@ type Props = {
 };
 
 export const Component = ({ title, explainText, imagePath }: Props) => {
+  const isMovie = imagePath.match(/mov$/);
   return (
     <Wrapper>
       <SubWrapper>
         <Title className={font.roboto.className}>{title}</Title>
         <ExplainText className={font.notoSansJP400.className}>
           {explainText}
-          <Hr />
         </ExplainText>
       </SubWrapper>
-      <StyledImage
-        src={imagePath}
-        alt={title}
-        width={450}
-        height={300}
-      />
+      {isMovie ? (
+        <StyledVideo
+          src="/achievements/pharcyde.mov"
+          autoPlay
+          muted
+          loop
+        />
+      ) : (
+        <StyledImage
+          src={imagePath}
+          alt={title}
+          width={450}
+          height={300}
+        />
+      )}
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  width: 100%;
   display: flex;
   padding: 32px;
   flex-direction: column;
@@ -45,6 +55,13 @@ const SubWrapper = styled.div`
 
 const StyledImage = styled(Image)`
   border-radius: 8px;
+`;
+
+const StyledVideo = styled.video`
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 32px;
 `;
 
 const Title = styled.h2`
@@ -70,16 +87,4 @@ const ExplainText = styled.p`
   @media (max-width: 480px) {
     font-size: 12px;
   }
-`;
-
-const Hr = styled.hr`
-  border-width: 0 0 1px;
-  border-image: linear-gradient(
-      90deg,
-      hsla(0, 0%, 35%, 0),
-      hsla(0, 0%, 35%, 0.5) 50%,
-      hsla(0, 0%, 35%, 0) 100%
-    )
-    0 0 100%;
-  border-style: solid;
 `;

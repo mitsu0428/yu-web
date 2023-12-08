@@ -23,7 +23,7 @@ const Home = () => {
         subtitle="# Front-End & Web"
         explainText="Web制作, LP制作, フロントエンド開発"
       />
-      <CenterText.Component text="Web/LP制作 領域" />
+      <CenterText.Component text="Webサイト/LP制作 領域" />
       <WebAchievements.Component />
       <Hr />
 
