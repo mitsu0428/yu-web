@@ -6,7 +6,8 @@ import * as Footer from "../components/layout/Footer";
 import * as TitleWrapper from "../components/ui/TitleWrapper";
 import * as CenterText from "../components/ui/Text/CenterText";
 import * as Menu from "../components/ui/Menu";
-import * as Achievements from "../components/features/Achievements";
+import * as WebAchievements from "../components/features/WebAchievements";
+import * as BrandingAchievements from "../components/features/BrandingAchievements";
 
 import Button from "../components/ui/Button";
 
@@ -23,6 +24,7 @@ const Home = () => {
         explainText="Web制作, LP制作, フロントエンド開発"
       />
       <CenterText.Component text="Web/LP制作 領域" />
+      <WebAchievements.Component />
       <Hr />
 
       <TitleWrapper.Component
@@ -30,9 +32,9 @@ const Home = () => {
         explainText="ブランディング支援, デザイン, 撮影"
       />
       <CenterText.Component text="撮影/レタッチ 領域" />
-      <Achievements.Component />
-
+      <BrandingAchievements.Component />
       <Hr />
+
       <Footer.Component />
     </Main>
   );
