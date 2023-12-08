@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import * as SNS from "../features/SNS";
 import LoadingIndicator from "../ui/icons/LoadingIcon";
 import font from "../../styles/NextFont";
 
@@ -9,7 +8,6 @@ export const Component = () => {
     <Footer className={font.roboto.className}>
       <LoadingIndicator />
       (c) 2023 YU WEB, All Right Resereved
-      <SNS.Component />
     </Footer>
   );
 };
