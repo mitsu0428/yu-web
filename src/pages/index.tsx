@@ -4,6 +4,7 @@ import * as SeoSettings from "../components/libs/SeoSettings";
 import * as Headings from "../components/layout/Headings";
 import * as Footer from "../components/layout/Footer";
 import * as TitleWrapper from "../components/ui/TitleWrapper";
+import * as Text from "../components/ui/Text/DefaultText";
 import * as CenterText from "../components/ui/Text/CenterText";
 import * as Menu from "../components/ui/Menu";
 import * as WebAchievements from "../components/features/WebAchievements";
@@ -12,12 +13,22 @@ import * as BrandingAchievements from "../components/features/BrandingAchievemen
 import Button from "../components/ui/Button";
 
 const Home = () => {
+  const newsTexts = [
+    "2021.10.10 something",
+    "2021.10.10 something",
+    "2021.10.10 something",
+    "2021.10.10 something",
+  ];
+
   return (
     <Main>
       <SeoSettings.Component />
       <Menu.Component />
       <Headings.Component />
       <Hr />
+
+      <TitleWrapper.Component subtitle="# News" />
+      <Text.Component texts={newsTexts} />
 
       <TitleWrapper.Component
         subtitle="# Front-End & Web"

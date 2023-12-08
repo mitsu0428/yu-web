@@ -4,16 +4,18 @@ import font from "../../styles/NextFont";
 
 type Props = {
   subtitle: string;
-  explainText: string;
+  explainText?: string;
 };
 
 export const Component = ({ subtitle, explainText }: Props) => {
   return (
     <Container>
       <Subtitle className={font.roboto.className}>{subtitle}</Subtitle>
-      <ExplainText className={font.notoSansJP400.className}>
-        {explainText}
-      </ExplainText>
+      {explainText && (
+        <ExplainText className={font.notoSansJP400.className}>
+          {explainText}
+        </ExplainText>
+      )}
       <Hr />
     </Container>
   );
@@ -25,12 +27,11 @@ const Container = styled.div`
   flex-direction: column;
   text-align: left;
   border-radius: 8px;
-  padding: 16px;
+  padding: 8px;
 `;
 
 const Subtitle = styled.h2`
   color: #fff;
-  text-shadow: 0 0 7px #fff;
   margin-left: 16px;
   font-size: 26px;
   font-weight: 1200;
