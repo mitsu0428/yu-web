@@ -27,6 +27,7 @@ export const Component = () => {
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
+  border-radius: 8px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
