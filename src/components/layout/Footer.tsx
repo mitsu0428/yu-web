@@ -16,7 +16,7 @@ export const Component = () => {
 
 const Footer = styled.footer`
   width: 100%;
-  height: 100px;
+  height: 200px;
   color: #fff;
   text-shadow: 0 0 7px #fff;
   display: flex;

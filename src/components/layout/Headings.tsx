@@ -5,30 +5,34 @@ import font from "../../styles/NextFont";
 
 export const Component = () => {
   return (
-    <>
-      <TitleContainer>
+    <Wrapper>
+      <TitleWrapper>
         <Logo.Component />
         <Title className={font.notoSansJP700.className}>結う -web</Title>
-        <ExplainText className={font.notoSansJP400.className}>
+        <Description className={font.notoSansJP400.className}>
           寄り添いを大切にするWebブランディングのパートナー
-        </ExplainText>
+        </Description>
         <VerticalText className={font.roboto.className}>
           Front-end developer & Social Media Marketing
         </VerticalText>
-      </TitleContainer>
-      <SlideContainer>
+      </TitleWrapper>
+      <Slider>
         <SlideText className={font.roboto.className}>
           - mitsuhiro okada, front-end developer, Social Media Marketing &
           branding, #photographer, #design, #web, since 2021 - mitsuhiro okada,
           front-end developer, Social Media Marketing & branding, #photographer,
           #design, #web, since 2021
         </SlideText>
-      </SlideContainer>
-    </>
+      </Slider>
+    </Wrapper>
   );
 };
 
-const TitleContainer = styled.div`
+const Wrapper = styled.div`
+  height: 200px;
+`;
+
+const TitleWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -52,7 +56,7 @@ const slide = keyframes`
   }
 `;
 
-const SlideContainer = styled.div`
+const Slider = styled.div`
   width: 100%;
   overflow: hidden;
 `;
@@ -96,7 +100,7 @@ const VerticalText = styled.h2`
   }
 `;
 
-const ExplainText = styled.p`
+const Description = styled.p`
   color: #fff;
   margin-left: 32px;
   font-weight: 800;
