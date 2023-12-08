@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as SNS from "../page/SnsArea";
+import * as SNS from "../features/SNS";
 import LoadingIndicator from "../ui/icons/LoadingIcon";
 import font from "../../styles/NextFont";
 

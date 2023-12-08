@@ -3,7 +3,8 @@ import styled from "styled-components";
 import * as SeoSettings from "../components/libs/SeoSettings";
 import * as Headings from "../components/layout/Headings";
 import * as Footer from "../components/layout/Footer";
-import * as TitleWrapper from "../components/elements/TitleWrapper";
+import * as TitleWrapper from "../components/ui/TitleWrapper";
+import * as CenterText from "../components/ui/Text/CenterText";
 import * as Menu from "../components/ui/Menu";
 
 import Button from "../components/ui/Button";
@@ -17,7 +18,7 @@ const Home = () => {
       <Hr />
 
       <TitleWrapper.Component
-        subtitle="# Front-end developer"
+        subtitle="# FrontEnd / Web Design"
         explainText="Web制作, LP制作, フロントエンド開発"
       />
 
@@ -27,6 +28,7 @@ const Home = () => {
         subtitle="# Branding"
         explainText="ブランディング支援, デザイン, 撮影"
       />
+      <CenterText.Component text="撮影" />
 
       <Hr />
       <Footer.Component />

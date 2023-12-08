@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import React from "react";
 import type { AppProps } from "next/app";
-import Loading from "../components/page/Loading";
+import Loading from "../components/features/Loading";
 import GoogleTagManager, {
   GoogleTagManagerId,
 } from "../components/libs/GoogleTagManager";

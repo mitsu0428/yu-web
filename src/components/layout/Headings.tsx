@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import * as Logo from "../elements/Logo";
+import * as Logo from "../ui/Logo";
 import font from "../../styles/NextFont";
 
 export const Component = () => {
