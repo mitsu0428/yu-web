@@ -10,12 +10,12 @@ export const Component = () => {
         <Logo.Component />
         <Title className={font.notoSansJP700.className}>結う -web</Title>
         <VerticalText className={font.roboto.className}>
-          Front-end developer & Social Media Marketing
+          Front-End & Web & Branding
         </VerticalText>
       </TitleWrapper>
       <Slider>
         <SlideText className={font.roboto.className}>
-          Front-end , Social Media Marketing & branding,
+          Web & Branding & Social Media Marketing,
           寄り添いを大切にするWebブランディングのパートナー, #photographer,
           #design, #web, since 2021 - mitsuhiro okada, front-end developer,
           Social Media Marketing & branding, #photographer, #design, #web, since

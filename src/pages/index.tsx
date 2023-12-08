@@ -18,17 +18,17 @@ const Home = () => {
       <Hr />
 
       <TitleWrapper.Component
-        subtitle="# FrontEnd / Web Design"
+        subtitle="# Front-End & Web"
         explainText="Web制作, LP制作, フロントエンド開発"
       />
-
+      <CenterText.Component text="Web/LP制作" />
       <Hr />
 
       <TitleWrapper.Component
         subtitle="# Branding"
         explainText="ブランディング支援, デザイン, 撮影"
       />
-      <CenterText.Component text="撮影" />
+      <CenterText.Component text="撮影/レタッチ" />
 
       <Hr />
       <Footer.Component />
