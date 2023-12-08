@@ -1,27 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import * as SNS from "../page/SnsArea";
 import LoadingIndicator from "../ui/icons/LoadingIcon";
 import font from "../../styles/NextFont";
 
 export const Component = () => {
   return (
-    <Container>
-      <Footer className={font.roboto.className}>
-        <LoadingIndicator />
-        (c) 2023 YU WEB, All Right Resereved
-      </Footer>
-    </Container>
+    <Footer className={font.roboto.className}>
+      <LoadingIndicator />
+      (c) 2023 YU WEB, All Right Resereved
+      <SNS.Component />
+    </Footer>
   );
 };
-
-const Container = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-`;
 
 const Footer = styled.footer`
   width: 100%;

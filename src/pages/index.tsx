@@ -3,11 +3,10 @@ import styled from "styled-components";
 import * as SeoSettings from "../components/libs/SeoSettings";
 import * as Headings from "../components/layout/Headings";
 import * as Footer from "../components/layout/Footer";
+import * as TitleWrapper from "../components/elements/TitleWrapper";
 import * as Menu from "../components/ui/Menu";
 
 import Button from "../components/ui/Button";
-import * as TitleWrapper from "../components/elements/TitleWrapper";
-import SnsArea from "../components/page/SnsArea";
 
 const Home = () => {
   return (
@@ -19,17 +18,16 @@ const Home = () => {
 
       <TitleWrapper.Component
         subtitle="# Front-end developer"
-        explainText=" Web制作, デザイン, フロントエンド開発"
+        explainText="Web制作, LP制作, フロントエンド開発"
       />
 
       <Hr />
 
       <TitleWrapper.Component
-        subtitle="# Social Media Marketing"
-        explainText="撮影, デザイン, ブランディング支援"
+        subtitle="# Branding"
+        explainText="ブランディング支援, デザイン, 撮影"
       />
 
-      <SnsArea />
       <Hr />
       <Footer.Component />
     </Main>
