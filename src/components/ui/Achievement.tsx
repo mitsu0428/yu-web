@@ -29,7 +29,6 @@ export const Component = ({ title, explainText, imagePath }: Props) => {
 
 const Wrapper = styled.div`
   display: flex;
-  width: 100%;
   padding: 32px;
   flex-direction: column;
   justify-content: center;

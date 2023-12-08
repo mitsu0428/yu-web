@@ -8,8 +8,8 @@ export const Component = () => {
       <StyledImage
         src="/yu-logo/logo-tate.png"
         alt="結う -web 公式ロゴ"
-        width={50}
-        height={50}
+        width={60}
+        height={60}
       />
     </Wrapper>
   );
