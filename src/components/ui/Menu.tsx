@@ -97,7 +97,7 @@ export const Component = () => {
 const StyledNav = styled.nav`
   z-index: 100;
   position: fixed;
-  width: 100%;
+  width: 200px;
   padding: 16px;
   bottom: 0;
   right: 0;
@@ -132,6 +132,7 @@ const StyledUl = styled.ul`
 const StyledLi = styled.li`
   display: block;
   transform-origin: -20px 50%;
+  text-align: left;
   color: black;
 `;
 
