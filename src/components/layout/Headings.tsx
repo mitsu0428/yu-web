@@ -9,19 +9,17 @@ export const Component = () => {
       <TitleWrapper>
         <Logo.Component />
         <Title className={font.notoSansJP700.className}>結う -web</Title>
-        <Description className={font.notoSansJP400.className}>
-          寄り添いを大切にするWebブランディングのパートナー
-        </Description>
         <VerticalText className={font.roboto.className}>
           Front-end developer & Social Media Marketing
         </VerticalText>
       </TitleWrapper>
       <Slider>
         <SlideText className={font.roboto.className}>
-          - mitsuhiro okada, front-end developer, Social Media Marketing &
-          branding, #photographer, #design, #web, since 2021 - mitsuhiro okada,
-          front-end developer, Social Media Marketing & branding, #photographer,
-          #design, #web, since 2021
+          Front-end , Social Media Marketing & branding,
+          寄り添いを大切にするWebブランディングのパートナー, #photographer,
+          #design, #web, since 2021 - mitsuhiro okada, front-end developer,
+          Social Media Marketing & branding, #photographer, #design, #web, since
+          2021
         </SlideText>
       </Slider>
     </Wrapper>
@@ -29,14 +27,17 @@ export const Component = () => {
 };
 
 const Wrapper = styled.div`
-  height: 200px;
+  width: 100%;
 `;
 
 const TitleWrapper = styled.div`
-  width: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const slide = keyframes`
@@ -73,8 +74,10 @@ const SlideText = styled.h2`
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 1200;
+  margin-right: 64px;
   @media (max-width: 768px) {
     font-size: 22px;
+    margin-right: 0;
   }
   @media (max-width: 480px) {
     font-size: 20px;

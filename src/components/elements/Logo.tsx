@@ -21,13 +21,11 @@ const Wrapper = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  padding: 16px;
 `;
 
 const StyledImage = styled(Image)`
   border-radius: 8px;
   margin: 0 20px;
-  margin-top: 16px;
 
   @media (max-width: 480px) {
     margin: 0 10px;
