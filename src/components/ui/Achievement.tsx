@@ -12,17 +12,19 @@ type Props = {
 export const Component = ({ title, explainText, imagePath }: Props) => {
   return (
     <Wrapper>
+      <SubWrapper>
+        <Title className={font.roboto.className}>{title}</Title>
+        <ExplainText className={font.notoSansJP400.className}>
+          {explainText}
+          <Hr />
+        </ExplainText>
+      </SubWrapper>
       <StyledImage
         src={imagePath}
         alt={title}
         width={450}
         height={300}
       />
-      <Title className={font.roboto.className}>{title}</Title>
-      <ExplainText className={font.notoSansJP400.className}>
-        {explainText}
-        <Hr />
-      </ExplainText>
     </Wrapper>
   );
 };
@@ -35,6 +37,10 @@ const Wrapper = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+`;
+
+const SubWrapper = styled.div`
+  width: 100%;
 `;
 
 const StyledImage = styled(Image)`

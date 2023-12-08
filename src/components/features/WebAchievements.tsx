@@ -4,11 +4,13 @@ import styled from "styled-components";
 export const Component = () => {
   return (
     <Wrapper>
-      <h2>Pharcyde</h2>
-      <p>ready to show...</p>
-      <br />
-      <h2>bar kaze</h2>
-      <p>ready to show...</p>
+      <Title>Pharcyde</Title>
+      <Video
+        src="/achievements/pharcyde.mov"
+        autoPlay
+        muted
+        loop
+      />
     </Wrapper>
   );
 };
@@ -19,6 +21,26 @@ const Wrapper = styled.div`
   border-radius: 8px;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
+`;
+
+const Title = styled.h2`
+  color: #fff;
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 700;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+  @media (max-width: 480px) {
+    font-size: 22px;
+  }
+`;
+
+const Video = styled.video`
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 32px;
 `;
