@@ -18,9 +18,9 @@ export const Component = ({
   pageImgWidth,
   pageImgHeight,
 }: Partial<MetaData>) => {
-  const defaultTitle = "岡田 光博 | 公式ポートフォリオサイト";
+  const defaultTitle = "結う -web | yu web";
   const defaultDescription =
-    "岡田光博のポートフォリオサイト | 結う -web | フロントエンドエンジニア & DXエンジニア  | Webサイト作成, LP作成, SNS運用";
+    "結う -webは、寄り添いを大切にするWebブランディングのパートナーです。";
 
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription ? pageDescription : defaultDescription;
