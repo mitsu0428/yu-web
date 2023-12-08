@@ -28,12 +28,12 @@ const Text = styled.h2`
   text-align: center;
   color: #fff;
   font-weight: 1200;
-  font-size: 18px;
+  font-size: 20px;
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 18px;
   }
   @media (max-width: 480px) {
-    font-size: 12px;
+    font-size: 16px;
   }
 `;
 
