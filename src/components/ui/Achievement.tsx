@@ -45,6 +45,7 @@ const Title = styled.h2`
   color: #fff;
   font-size: 26px;
   line-height: 1.5;
+  font-weight: 700;
   @media (max-width: 768px) {
     font-size: 24px;
   }

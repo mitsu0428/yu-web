@@ -14,6 +14,7 @@ export const Component = ({ subtitle, explainText }: Props) => {
       <ExplainText className={font.notoSansJP400.className}>
         {explainText}
       </ExplainText>
+      <Hr />
     </Container>
   );
 };
@@ -23,8 +24,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top: 32px;
-  border: 1px solid #fff;
   border-radius: 8px;
   padding: 16px;
 `;
@@ -54,4 +53,16 @@ const ExplainText = styled.p`
   @media (max-width: 480px) {
     font-size: 12px;
   }
+`;
+
+const Hr = styled.hr`
+  border-width: 0 0 0.5px;
+  border-image: linear-gradient(
+      90deg,
+      hsla(0, 0%, 35%, 0),
+      hsla(0, 0%, 35%, 0.5) 15%,
+      hsla(0, 0%, 35%, 0) 35%
+    )
+    0 0 100%;
+  border-style: solid;
 `;

@@ -4,14 +4,11 @@ import styled from "styled-components";
 export const Component = () => {
   return (
     <Wrapper>
-      <>
-        <p>Pharcyde</p>
-        <p>ready to show...</p>
-      </>
-      <>
-        <p>bar kaze</p>
-        <p>ready to show...</p>
-      </>
+      <h2>Pharcyde</h2>
+      <p>ready to show...</p>
+      <br />
+      <h2>bar kaze</h2>
+      <p>ready to show...</p>
     </Wrapper>
   );
 };

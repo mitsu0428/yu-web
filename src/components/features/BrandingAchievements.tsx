@@ -16,6 +16,11 @@ export const Component = () => {
         imagePath="/achievements/chachatokyo.jpg"
       />
       <Achievements.Component
+        title="Lil taro boy"
+        explainText="music, artist"
+        imagePath="/achievements/liltaroboy.jpeg"
+      />
+      <Achievements.Component
         title="zin international"
         explainText="fashion, material"
         imagePath="/achievements/zininternational.jpg"

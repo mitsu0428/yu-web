@@ -31,7 +31,7 @@ const Home = () => {
         subtitle="# Branding"
         explainText="ブランディング支援, デザイン, 撮影"
       />
-      <CenterText.Component text="撮影/レタッチ 領域" />
+      <CenterText.Component text="ブランディング 領域" />
       <BrandingAchievements.Component />
       <Hr />
 

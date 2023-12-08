@@ -102,16 +102,3 @@ const VerticalText = styled.h2`
     font-size: 24px;
   }
 `;
-
-const Description = styled.p`
-  color: #fff;
-  margin-left: 32px;
-  font-weight: 800;
-  font-size: 14px;
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
-  @media (max-width: 480px) {
-    font-size: 10px;
-  }
-`;
