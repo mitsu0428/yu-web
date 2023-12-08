@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import LoadingIndicator from "../ui/icons/LoadingIcon";
-import font from "../../../styles/NextFont";
+import font from "../../styles/NextFont";
 
-const FooterComponents = () => {
+export const Component = () => {
   return (
     <Container>
-      {/* <LoadingIndicator /> */}
-      <Footer className={font.roboto.className}>© 2022 mi2</Footer>
+      <Footer className={font.roboto.className}>
+        <LoadingIndicator />
+        (c) 2023 YU WEB, All Right Resereved
+      </Footer>
     </Container>
   );
 };
-
-export default FooterComponents;
 
 const Container = styled.div`
   width: 100%;

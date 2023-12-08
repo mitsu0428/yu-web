@@ -1,32 +1,37 @@
 import React from "react";
 import styled from "styled-components";
-import FooterComponents from "./components/layout/FooterComponents";
-import FrontDescription from "./components/layout/FrontDescription";
-import Hamburger from "./components/ui/Hamburger";
-import Button from "./components/ui/Button";
-import TitleContainer from "./components/elements/TitleContainer";
-import SnsArea from "./components/page/SnsArea";
-import SeoSettings from "./components/libs/SeoSettings";
+import * as SeoSettings from "../components/libs/SeoSettings";
+import * as Headings from "../components/layout/Headings";
+import * as Footer from "../components/layout/Footer";
+import * as Menu from "../components/ui/Menu";
+
+import Button from "../components/ui/Button";
+import * as TitleWrapper from "../components/elements/TitleWrapper";
+import SnsArea from "../components/page/SnsArea";
 
 const Home = () => {
   return (
     <Main>
-      <SeoSettings />
-      <Hamburger />
-      <FrontDescription />
+      <SeoSettings.Component />
+      <Menu.Component />
+      <Headings.Component />
       <Hr />
-      <SnsArea />
-      <Hr />
-      <TitleContainer
+
+      <TitleWrapper.Component
         subtitle="# Front-end developer"
         explainText=" Web制作, デザイン, フロントエンド開発"
       />
+
       <Hr />
-      <TitleContainer
+
+      <TitleWrapper.Component
         subtitle="# Social Media Marketing"
         explainText="撮影, デザイン, ブランディング支援"
       />
-      <FooterComponents />
+
+      <SnsArea />
+      <Hr />
+      <Footer.Component />
     </Main>
   );
 };

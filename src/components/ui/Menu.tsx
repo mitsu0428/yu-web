@@ -9,9 +9,9 @@ import {
   FaStickyNote,
 } from "react-icons/fa";
 import useMenuAnimation from "../hooks/useMenuAnimation";
-import font from "../../../styles/NextFont";
+import font from "../../styles/NextFont";
 
-export default function Hamburger() {
+export const Component = () => {
   const [isOpen, setIsOpen] = useState(false);
   const scope = useMenuAnimation(isOpen);
 
@@ -92,24 +92,24 @@ export default function Hamburger() {
       </StyledUl>
     </StyledNav>
   );
-}
+};
 
 const StyledNav = styled.nav`
   z-index: 100;
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 16px;
   bottom: 0;
-  left: 0;
+  right: 0;
 `;
 
 const StyledContainer = styled.div``;
 
 const StyledButton = styled(motion.button)`
-  background: #b76cfd;
+  background: orange;
   opacity: 0.8;
   color: white;
-  width: 50%;
+  width: 200px;
   height: 75px;
   padding: 8px;
   border-radius: 8px;

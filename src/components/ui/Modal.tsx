@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, colors } from "@mui/material";
-import font from "../../../styles/NextFont";
+import font from "../../styles/NextFont";
 
 type Props = {
   close: (e: any) => void;

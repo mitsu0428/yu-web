@@ -1,13 +1,13 @@
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import font from "../../../../styles/NextFont";
+import font from "../../../styles/NextFont";
 
-function LinkedinComtainer() {
+function IconsInstagram() {
   return (
     <URL
-      href="https://www.linkedin.com/in/mitsuhiro-okada"
+      href="https://www.instagram.com/mi2__pic/?hl=ja"
       target="_blank"
       whileHover={{ scale: 1.2 }}
       onHoverStart={(e) => {}}
@@ -17,12 +17,12 @@ function LinkedinComtainer() {
         size={30}
         color={"#000"}
       />
-      <CustomText className={font.roboto.className}>Linkedin</CustomText>
+      <CustomText className={font.roboto.className}>Instagram</CustomText>
     </URL>
   );
 }
 
-export default LinkedinComtainer;
+export default IconsInstagram;
 
 const URL = styled(motion.a)`
   width: 100%;
@@ -47,7 +47,7 @@ const CustomText = styled.p`
   }
 `;
 
-const Icon = styled(FaLinkedin)`
+const Icon = styled(FaInstagram)`
   transition: transform 0.3s ease-in-out;
   &:hover {
     transform: scale(1.6);

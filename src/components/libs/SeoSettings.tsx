@@ -1,16 +1,16 @@
 import React from "react";
 import Head from "next/head";
 
-interface MetaData {
+type MetaData = {
   pageTitle?: string;
   pageDescription?: string;
   pagePath?: string;
   pageImg?: string;
   pageImgWidth?: number;
   pageImgHeight?: number;
-}
+};
 
-const SeoSettings = ({
+export const Component = ({
   pageTitle,
   pageDescription,
   pagePath,
@@ -113,5 +113,3 @@ const SeoSettings = ({
     </Head>
   );
 };
-
-export default SeoSettings;

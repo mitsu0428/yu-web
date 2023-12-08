@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import font from "../../../styles/NextFont";
+import font from "../../styles/NextFont";
 
 type Props = {
   subtitle: string;
   explainText: string;
 };
 
-function TitleContainer({ subtitle, explainText }: Props) {
+export const Component = ({ subtitle, explainText }: Props) => {
   return (
     <Container>
       <Subtitle className={font.roboto.className}>{subtitle}</Subtitle>
@@ -16,9 +16,7 @@ function TitleContainer({ subtitle, explainText }: Props) {
       </ExplainText>
     </Container>
   );
-}
-
-export default TitleContainer;
+};
 
 const Container = styled.div`
   width: 100%;

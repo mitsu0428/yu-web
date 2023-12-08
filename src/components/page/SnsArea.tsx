@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import ImageContainer from "../elements/ImageContainer";
 import IconsInstagram from "../ui/icons/IconsInstagram";
 import IconsTwitter from "../ui/icons/IconsTwitter";
 import IconsLinkedin from "../ui/icons/IconsLinkedin";
@@ -8,7 +7,6 @@ import IconsLinkedin from "../ui/icons/IconsLinkedin";
 function SnsArea() {
   return (
     <Container>
-      <ImageContainer />
       <Sns>
         <Container>
           <IconsInstagram />

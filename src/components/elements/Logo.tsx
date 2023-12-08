@@ -2,20 +2,20 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 
-const ImageContainer = () => {
+export const Component = () => {
   return (
-    <ImageWrapper>
-      <ImageComponent
-        src="/images/mitsuhiro-1.jpg"
-        alt="Mitsuhiro Okada"
-        width={300}
-        height={300}
+    <Wrapper>
+      <StyledImage
+        src="/yu-logo/logo-tate.png"
+        alt="結う -web 公式ロゴ"
+        width={50}
+        height={50}
       />
-    </ImageWrapper>
+    </Wrapper>
   );
 };
 
-const ImageWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@ const ImageWrapper = styled.div`
   padding: 16px;
 `;
 
-const ImageComponent = styled(Image)`
+const StyledImage = styled(Image)`
   border-radius: 8px;
   margin: 0 20px;
   margin-top: 16px;
@@ -33,5 +33,3 @@ const ImageComponent = styled(Image)`
     margin: 0 10px;
   }
 `;
-
-export default ImageContainer;
