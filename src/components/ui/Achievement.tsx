@@ -13,12 +13,10 @@ export const Component = ({ title, explainText, imagePath }: Props) => {
   const isMovie = imagePath.match(/mov$/);
   return (
     <Wrapper>
-      <SubWrapper>
-        <Title className={font.roboto.className}>{title}</Title>
-        <ExplainText className={font.notoSansJP400.className}>
-          {explainText}
-        </ExplainText>
-      </SubWrapper>
+      <Title className={font.roboto.className}>{title}</Title>
+      <ExplainText className={font.notoSansJP400.className}>
+        {explainText}
+      </ExplainText>
       {isMovie ? (
         <StyledVideo
           src="/achievements/pharcyde.mov"
@@ -43,14 +41,9 @@ const Wrapper = styled.div`
   display: flex;
   padding: 32px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-content: center;
   flex-wrap: wrap;
-`;
-
-const SubWrapper = styled.div`
-  width: 100%;
+  margin-top: 32px;
 `;
 
 const StyledImage = styled(Image)`
@@ -67,7 +60,6 @@ const StyledVideo = styled.video`
 const Title = styled.h2`
   color: #fff;
   font-size: 26px;
-  line-height: 1.5;
   font-weight: 700;
   @media (max-width: 768px) {
     font-size: 24px;
@@ -80,7 +72,6 @@ const Title = styled.h2`
 const ExplainText = styled.p`
   color: #fff;
   font-size: 16px;
-  line-height: 1.5;
   @media (max-width: 768px) {
     font-size: 14px;
   }
