@@ -39,7 +39,6 @@ export const Component = ({ title, explainText, imagePath }: Props) => {
 const Wrapper = styled.div`
   width: 100%;
   display: flex;
-  padding: 32px;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
@@ -54,7 +53,6 @@ const StyledVideo = styled.video`
   width: 200px;
   height: 100%;
   object-fit: cover;
-  margin-left: 32px;
 `;
 
 const Title = styled.h2`

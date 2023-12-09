@@ -27,7 +27,6 @@ const Container = styled.div`
   flex-direction: column;
   text-align: left;
   border-radius: 8px;
-  padding: 8px;
 `;
 
 const Subtitle = styled.h2`
