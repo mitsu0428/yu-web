@@ -106,7 +106,7 @@ const StyledNav = styled.nav`
 const StyledContainer = styled.div``;
 
 const StyledButton = styled(motion.button)`
-  background: orange;
+  background: #54a2c0;
   opacity: 0.8;
   color: white;
   width: 200px;

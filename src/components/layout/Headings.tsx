@@ -15,11 +15,9 @@ export const Component = () => {
       </TitleWrapper>
       <Slider>
         <SlideText className={font.roboto.className}>
-          Web & Branding & Social Media Marketing,
-          寄り添いを大切にするWebブランディングのパートナー, #photographer,
-          #design, #web, since 2021 - mitsuhiro okada, front-end developer,
-          Social Media Marketing & branding, #photographer, #design, #web, since
-          2021
+          Web & Branding & Social Media Marketing, #photographer, #design, #web,
+          since 2021 - mitsuhiro okada, front-end developer, Social Media
+          Marketing & branding, #photographer, #design, #web, since 2021
         </SlideText>
       </Slider>
     </Wrapper>

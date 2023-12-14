@@ -7,6 +7,7 @@ import * as TitleWrapper from "../components/ui/TitleWrapper";
 import * as Text from "../components/ui/Text/DefaultText";
 import * as CenterText from "../components/ui/Text/CenterText";
 import * as Menu from "../components/ui/Menu";
+import * as YuTopPage from "../components/features/YuTopPage";
 import * as WebAchievements from "../components/features/WebAchievements";
 import * as BrandingAchievements from "../components/features/BrandingAchievements";
 
@@ -25,7 +26,8 @@ const Home = () => {
       <SeoSettings.Component />
       <Menu.Component />
       <Headings.Component />
-      <Hr />
+
+      <YuTopPage.Component />
 
       <TitleWrapper.Component subtitle="# News" />
       <Text.Component texts={newsTexts} />
