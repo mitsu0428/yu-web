@@ -19,7 +19,7 @@ html {
 }
 body {
   color: #fff;
-  background: linear-gradient(to bottom, #000000, orange);
+  background: linear-gradient(to bottom, #000000, #54a2c0);
   background-size: 100% 100%;
   background-attachment: fixed;
 }
