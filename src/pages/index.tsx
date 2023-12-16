@@ -15,10 +15,10 @@ import Button from "../components/ui/Button";
 
 const Home = () => {
   const newsTexts = [
-    "2021.10.10 something",
-    "2021.10.10 something",
-    "2021.10.10 something",
-    "2021.10.10 something",
+    "2021.08.01 『Cha Cha TOKYO』撮影会",
+    "2021.09.05 『G.I.Ps』サポート開始",
+    "2023.03.24 『bar kaze』サポート開始",
+    "2023.03.17 結う -web 開業",
   ];
 
   return (
