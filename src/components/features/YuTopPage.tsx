@@ -6,12 +6,6 @@ import font from "../../styles/NextFont";
 export const Component = () => {
   return (
     <Container>
-      <StyledImage
-        src="/illustration/branding.png"
-        alt="結う -web イメージ画像"
-        width={300}
-        height={300}
-      />
       <TextWrapper>
         <Text className={font.roboto.className}>寄り添いを大切にする</Text>
         <Text className={font.roboto.className}>
