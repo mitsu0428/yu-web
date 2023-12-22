@@ -14,13 +14,7 @@ import getUuid from "uuid-by-string";
 
 const GOLDENRATIO = 1.61803398875;
 
-type Image = {
-  url: string;
-  position: [number, number, number];
-  rotation: [number, number, number];
-};
-
-export const App = ({ images: images }: { images: Image[] }) => (
+export const App = ({ images }) => (
   <Canvas
     dpr={[1, 1.5]}
     camera={{ fov: 70, position: [0, 2, 15] }}
