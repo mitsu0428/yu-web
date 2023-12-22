@@ -25,7 +25,7 @@ export const Component = () => {
         onClick={() => setIsOpen(!isOpen)}
         className={font.roboto.className}
       >
-        Discover SNS
+        Contact
         <StyledContainer
           className="menu-open"
           style={{ transformOrigin: "50% 55%" }}

@@ -29,6 +29,7 @@ export const Component = () => {
 const Wrapper = styled.div`
   width: 100%;
   position: absolute;
+  z-index: 100;
 `;
 
 const TitleWrapper = styled.div`
