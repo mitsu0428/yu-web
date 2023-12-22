@@ -2,7 +2,7 @@
   "window.zoomLevel": -1,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.prettier": true
+    "source.fixAll.prettier": "explicit"
   },
   "editor.fontSize": 16,
   "editor.letterSpacing": -0.4,

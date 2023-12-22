@@ -98,9 +98,8 @@ const StyledNav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 200px;
-  padding: 16px;
   bottom: 0;
-  right: 0;
+  right: 1rem;
 `;
 
 const StyledContainer = styled.div``;
