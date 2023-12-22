@@ -33,6 +33,8 @@ const Wrapper = styled.div`
   position: absolute;
   z-index: 100;
   padding: 32px;
+  top: 0;
+  left: 0;
 `;
 
 const TitleWrapper = styled.div`
