@@ -70,14 +70,13 @@ const Container = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   width: 50%;
+  margin-left: 32px;
+  text-align: left;
 `;
 
 const Text = styled.p`
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
   gap: 8px;
   @media (max-width: 768px) {

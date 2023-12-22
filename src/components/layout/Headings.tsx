@@ -51,6 +51,7 @@ const TitleSubWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  gap: 32px;
 `;
 
 const slide = keyframes`
@@ -76,6 +77,7 @@ const Slider = styled.div`
 `;
 
 const SlideText = styled.h2`
+  font-size: 24px;
   white-space: nowrap;
   animation: ${slide} 15s linear infinite;
   @media (max-width: 768px) {
