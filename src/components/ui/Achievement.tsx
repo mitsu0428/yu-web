@@ -6,21 +6,11 @@ import font from "../../styles/NextFont";
 type Props = {
   title: string;
   explainText: string;
-  imagePath: string;
-  width?: number;
-  height?: number;
+  imagePath?: string;
 };
 
-export const Component = ({
-  title,
-  explainText,
-  imagePath,
-  width,
-  height,
-}: Props) => {
-  const isMovie = imagePath.match(/mov$/);
-  const CustomWidth = width ? width : 200;
-  const CustomHeight = height ? height : 250;
+export const Component = ({ title, explainText, imagePath }: Props) => {
+  const isMovie = imagePath?.match(/mov$/);
 
   return (
     <Wrapper>
@@ -37,10 +27,10 @@ export const Component = ({
         />
       ) : (
         <StyledImage
-          src={imagePath}
+          src={imagePath || ""}
           alt={title}
-          width={CustomWidth}
-          height={CustomHeight}
+          width={600}
+          height={400}
         />
       )}
     </Wrapper>
@@ -65,6 +55,7 @@ const StyledVideo = styled.video`
   width: 200px;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
 `;
 
 const Title = styled.h2`

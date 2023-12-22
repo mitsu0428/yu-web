@@ -18,6 +18,7 @@ export const App = ({ images }) => (
   <Canvas
     dpr={[1, 1.5]}
     camera={{ fov: 70, position: [0, 2, 15] }}
+    style={{ borderRadius: "8px" }}
   >
     <color
       attach="background"

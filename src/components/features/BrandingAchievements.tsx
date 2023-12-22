@@ -8,22 +8,22 @@ export const Component = () => {
       <Achievements.Component
         title="bar kaze -円山町"
         explainText="bar, restaurant"
-        imagePath="/achievements/barkaze.jpg"
+        // imagePath="/achievements/barkaze.jpg"
       />
       <Achievements.Component
         title="茶々-ChaCha TOKYO-"
         explainText="restaurant, cafe"
-        imagePath="/achievements/chachatokyo.jpg"
+        // imagePath="/achievements/chachatokyo.jpg"
       />
       <Achievements.Component
         title="Lil taro boy"
         explainText="music, artist"
-        imagePath="/achievements/liltaroboy.jpeg"
+        // imagePath="/achievements/liltaroboy.jpeg"
       />
       <Achievements.Component
         title="zin international"
         explainText="fashion, material"
-        imagePath="/achievements/zininternational.jpg"
+        // imagePath="/achievements/zininternational.jpg"
       />
     </Wrapper>
   );
