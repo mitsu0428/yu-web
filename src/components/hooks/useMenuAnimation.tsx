@@ -6,7 +6,7 @@ function useMenuAnimation(isOpen: boolean) {
   const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
   React.useEffect(() => {
-    animate(".arrow", { rotate: isOpen ? 180 : 0 }, { duration: 0.2 });
+    animate(".menu-open", { rotate: isOpen ? 180 : 0 }, { duration: 0.2 });
 
     animate(
       "ul",

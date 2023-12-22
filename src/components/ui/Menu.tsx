@@ -25,19 +25,11 @@ export const Component = () => {
         onClick={() => setIsOpen(!isOpen)}
         className={font.roboto.className}
       >
-        News/Blog
+        Discover SNS
         <StyledContainer
-          className="arrow"
+          className="menu-open"
           style={{ transformOrigin: "50% 55%" }}
-        >
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 20 20"
-          >
-            <path d="M0 7 L 20 7 L 10 16" />
-          </svg>
-        </StyledContainer>
+        />
       </StyledButton>
       <StyledUl
         style={{
@@ -99,27 +91,29 @@ const StyledNav = styled.nav`
   position: fixed;
   width: 200px;
   bottom: 0;
-  left: 1rem;
+  left: 0;
+  padding: 32px;
 `;
 
 const StyledContainer = styled.div``;
 
 const StyledButton = styled(motion.button)`
-  background: #54a2c0;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
   opacity: 0.8;
   color: white;
   width: 200px;
-  height: 75px;
-  padding: 8px;
+  height: 50px;
+  padding: 16px;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   border: none;
+  text-align: left;
 `;
 
 const StyledUl = styled.ul`
   padding: 16px;
-  width: 100%;
+  width: 200px;
   height: 200px;
   list-style: none;
   background: white;
@@ -131,7 +125,6 @@ const StyledUl = styled.ul`
 const StyledLi = styled.li`
   display: block;
   transform-origin: -20px 50%;
-  text-align: left;
   color: black;
 `;
 
@@ -139,17 +132,11 @@ const StyledLink = styled.a`
   color: black;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 600;
   display: flex;
   align-items: center;
-
   &:hover {
     color: #000;
     text-decoration: none;
-  }
-
-  svg {
-    margin-right: 8px;
   }
 `;
 
