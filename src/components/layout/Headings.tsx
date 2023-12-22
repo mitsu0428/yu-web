@@ -7,8 +7,10 @@ export const Component = () => {
   return (
     <Wrapper>
       <TitleWrapper>
-        <Logo.Component />
-        <Title className={font.notoSansJP700.className}>結う -web</Title>
+        <TitleSubWrapper>
+          <Logo.Component />
+          <Title className={font.notoSansJP700.className}>結う -web</Title>
+        </TitleSubWrapper>
         <VerticalText className={font.roboto.className}>
           Front-End & Web & Branding
         </VerticalText>
@@ -26,6 +28,7 @@ export const Component = () => {
 
 const Wrapper = styled.div`
   width: 100%;
+  position: absolute;
 `;
 
 const TitleWrapper = styled.div`
@@ -33,9 +36,17 @@ const TitleWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  position: relative;
   @media (max-width: 768px) {
     flex-direction: column;
   }
+`;
+
+const TitleSubWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 `;
 
 const slide = keyframes`
@@ -61,7 +72,6 @@ const Slider = styled.div`
 `;
 
 const SlideText = styled.h2`
-  margin-top: 32px;
   white-space: nowrap;
   animation: ${slide} 15s linear infinite;
   @media (max-width: 768px) {
@@ -84,11 +94,8 @@ const Title = styled.h1`
 
 const VerticalText = styled.h2`
   position: absolute;
-  top: 0;
+  top: 64px;
   right: 0;
-  text-shadow: 0 0 7px #fff;
-  margin-top: 32px;
-  margin-right: 32px;
   writing-mode: vertical-lr;
   text-align: center;
   font-size: 36px;

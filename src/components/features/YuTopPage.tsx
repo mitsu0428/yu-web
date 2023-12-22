@@ -28,7 +28,7 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: row;
   overflow: hidden;
-  height: 450px;
+  height: 100vh;
 `;
 
 const StyledImage = styled(Image)`

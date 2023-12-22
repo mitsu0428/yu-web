@@ -99,7 +99,7 @@ const StyledNav = styled.nav`
   position: fixed;
   width: 200px;
   bottom: 0;
-  right: 1rem;
+  left: 1rem;
 `;
 
 const StyledContainer = styled.div``;
