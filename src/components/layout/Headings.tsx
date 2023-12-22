@@ -52,6 +52,9 @@ const TitleSubWrapper = styled.div`
   justify-content: space-between;
   flex-direction: row;
   gap: 32px;
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
 `;
 
 const slide = keyframes`
