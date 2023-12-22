@@ -7,10 +7,21 @@ type Props = {
   title: string;
   explainText: string;
   imagePath: string;
+  width?: number;
+  height?: number;
 };
 
-export const Component = ({ title, explainText, imagePath }: Props) => {
+export const Component = ({
+  title,
+  explainText,
+  imagePath,
+  width,
+  height,
+}: Props) => {
   const isMovie = imagePath.match(/mov$/);
+  const CustomWidth = width ? width : 200;
+  const CustomHeight = height ? height : 250;
+
   return (
     <Wrapper>
       <Title className={font.roboto.className}>{title}</Title>
@@ -28,8 +39,8 @@ export const Component = ({ title, explainText, imagePath }: Props) => {
         <StyledImage
           src={imagePath}
           alt={title}
-          width={450}
-          height={300}
+          width={CustomWidth}
+          height={CustomHeight}
         />
       )}
     </Wrapper>
@@ -46,6 +57,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledImage = styled(Image)`
+  width: 100%;
   border-radius: 8px;
 `;
 
