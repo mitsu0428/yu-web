@@ -34,11 +34,7 @@ export const App = ({ images: images }: { images: Image[] }) => (
       args={["#191920", 0, 15]}
     />
     <group position={[0, -0.5, 0]}>
-      <Frames
-        images={images}
-        p={new THREE.Vector3()}
-        q={new THREE.Quaternion()}
-      />
+      <Frames images={images} />
       <mesh rotation={[-Math.PI / 2, 0, 0]}>
         <planeGeometry args={[50, 50]} />
         <MeshReflectorMaterial
@@ -62,12 +58,8 @@ export const App = ({ images: images }: { images: Image[] }) => (
 
 function Frames({
   images,
-  p,
-  q,
-}: {
-  images: Image[];
-  p: THREE.Vector3;
-  q: THREE.Quaternion;
+  q = new THREE.Quaternion(),
+  p = new THREE.Vector3(),
 }) {
   const ref = useRef();
   const clicked = useRef();
