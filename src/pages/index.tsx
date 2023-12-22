@@ -6,12 +6,9 @@ import * as Footer from "../components/layout/Footer";
 import * as TitleWrapper from "../components/ui/TitleWrapper";
 import * as Text from "../components/ui/Text/DefaultText";
 import * as CenterText from "../components/ui/Text/CenterText";
-import * as Menu from "../components/ui/Menu";
 import * as YuTopPage from "../components/features/YuTopPage";
 import * as WebAchievements from "../components/features/WebAchievements";
 import * as BrandingAchievements from "../components/features/BrandingAchievements";
-
-import Button from "../components/ui/Button";
 
 const Home = () => {
   const newsTexts = [
@@ -24,7 +21,6 @@ const Home = () => {
   return (
     <Main>
       <SeoSettings.Component />
-      <Menu.Component />
       <Headings.Component />
 
       <YuTopPage.Component />

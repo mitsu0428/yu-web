@@ -2,12 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaStickyNote,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaStickyNote } from "react-icons/fa";
 import useMenuAnimation from "../hooks/useMenuAnimation";
 import font from "../../styles/NextFont";
 
@@ -61,17 +56,6 @@ export const Component = () => {
         </StyledLi>
         <StyledLi>
           <StyledLink
-            href="https://twitter.com/mi2__user"
-            target="_blank"
-            className={font.roboto.className}
-          >
-            <FaTwitter />
-            Twitter
-          </StyledLink>
-          <Hr />
-        </StyledLi>
-        <StyledLi>
-          <StyledLink
             href="https://note.com/mitsuhiro_3232"
             target="_blank"
             className={font.roboto.className}
@@ -92,15 +76,13 @@ const StyledNav = styled.nav`
   width: 200px;
   bottom: 0;
   left: 0;
-  padding: 32px;
+  padding: 0 32px;
 `;
 
 const StyledContainer = styled.div``;
 
 const StyledButton = styled(motion.button)`
-  background: linear-gradient(90deg, #ff8a00, #e52e71);
   opacity: 0.8;
-  color: white;
   width: 200px;
   height: 50px;
   padding: 16px;
@@ -114,7 +96,6 @@ const StyledButton = styled(motion.button)`
 const StyledUl = styled.ul`
   padding: 16px;
   width: 200px;
-  height: 200px;
   list-style: none;
   background: white;
   display: flex;

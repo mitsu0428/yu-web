@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import * as Logo from "../ui/Logo";
 import font from "../../styles/NextFont";
+import * as Menu from "../ui/Menu";
 
 export const Component = () => {
   return (
@@ -22,6 +23,7 @@ export const Component = () => {
           Marketing & branding, #photographer, #design, #web, since 2021
         </SlideText>
       </Slider>
+      <Menu.Component />
     </Wrapper>
   );
 };
