@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
 import font from "../../styles/NextFont";
 import * as IG from "./ImageGallery";
@@ -62,7 +61,6 @@ export const Component = () => {
 const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
   height: 100vh;
   flex-direction: row;
@@ -71,19 +69,15 @@ const Container = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
-  border-radius: 8px;
-`;
-
 const TextWrapper = styled.div`
   display: flex;
   align-items: center;
-  text-align: left;
   flex-direction: column;
+  width: 50%;
 `;
 
 const Text = styled.p`
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 500;
   gap: 8px;
   @media (max-width: 768px) {

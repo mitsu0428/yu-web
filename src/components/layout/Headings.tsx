@@ -30,6 +30,7 @@ const Wrapper = styled.div`
   width: 100%;
   position: absolute;
   z-index: 100;
+  padding: 32px;
 `;
 
 const TitleWrapper = styled.div`
@@ -83,10 +84,8 @@ const SlideText = styled.h2`
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 1200;
-  margin-right: 64px;
   @media (max-width: 768px) {
     font-size: 22px;
-    margin-right: 0;
   }
   @media (max-width: 480px) {
     font-size: 20px;
