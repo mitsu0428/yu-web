@@ -26,9 +26,12 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   overflow: hidden;
   height: 100vh;
+  flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledImage = styled(Image)`
@@ -38,9 +41,9 @@ const StyledImage = styled(Image)`
 const TextWrapper = styled.div`
   display: flex;
   align-items: center;
-  flex-direction: column;
   text-align: left;
   margin-left: 32px;
+  flex-direction: column;
 `;
 
 const Text = styled.p`
