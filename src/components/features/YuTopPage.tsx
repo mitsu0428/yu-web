@@ -19,20 +19,20 @@ export const Component = () => {
       position: [-0.8, 0, -0.6],
       rotation: [0, 0, 0],
       // url: pexel(416430),
-      url: "/yu-logo/logo-tate.png",
+      url: "/images/sorette.png",
     },
     {
       position: [0.8, 0, -0.6],
       rotation: [0, 0, 0],
       // url: pexel(310452),
-      url: "/yu-logo/logo-tate.png",
+      url: "/images/kaze.png",
     },
     // Left
     {
       position: [-1.75, 0, 0.25],
       rotation: [0, Math.PI / 2.5, 0],
       // url: pexel(327482),
-      url: "/yu-logo/logo-tate.png",
+      url: "/images/cosmic_theta.jpg",
     },
     {
       position: [-2.15, 0, 1.5],
@@ -57,13 +57,13 @@ export const Component = () => {
       position: [2.15, 0, 1.5],
       rotation: [0, -Math.PI / 2.5, 0],
       // url: pexel(911738),
-      url: "/yu-logo/logo-tate.png",
+      url: "/images/hikakuchan.png",
     },
     {
       position: [2, 0, 2.75],
       rotation: [0, -Math.PI / 2.5, 0],
       // url: pexel(1738986),
-      url: "/yu-logo/logo-tate.png",
+      url: "/achievements/zininternational.jpg",
     },
   ];
   return (
