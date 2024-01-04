@@ -72,11 +72,7 @@ export const Component = () => {
 
 const StyledNav = styled.nav`
   z-index: 100;
-  position: fixed;
   width: 200px;
-  bottom: 0;
-  left: 0;
-  padding: 0 32px;
 `;
 
 const StyledContainer = styled.div``;
