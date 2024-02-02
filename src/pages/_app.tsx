@@ -5,6 +5,7 @@ import Loading from "../components/features/Loading";
 import GoogleTagManager, {
   GoogleTagManagerId,
 } from "../components/libs/GoogleTagManager";
+import "ress";
 
 export default function App({ Component, pageProps }: AppProps) {
   // const [loading, setLoading] = React.useState(true);

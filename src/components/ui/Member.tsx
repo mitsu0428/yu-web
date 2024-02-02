@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 0 20px;
   margin-top: 16px;
 

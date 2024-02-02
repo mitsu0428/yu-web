@@ -24,7 +24,7 @@ const URL = styled(motion.a)`
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-left: 16px;
 `;
 const Icon = styled(FaLinkedin)`

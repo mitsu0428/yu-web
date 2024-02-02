@@ -11,15 +11,26 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-html {
-  color-scheme: white dark;
-}
 body {
-  color: #fff;
-  background: #a9a9a9;
+  color: rgb(18, 18, 18);
+  background: #edecee;
   background-size: 100% 100%;
   background-attachment: fixed;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
 }

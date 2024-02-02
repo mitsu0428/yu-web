@@ -24,7 +24,7 @@ const Container = styled.div`
   flex-direction: column;
   text-align: left;
   margin-top: 32px;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 16px;
 `;
 

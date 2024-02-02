@@ -116,7 +116,7 @@ const ModalContent = styled.div`
   max-width: 600px;
   max-height: 600px;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 4px;
 `;
 
 const CloseButton = styled.button`
@@ -132,7 +132,7 @@ const CustomButton = styled.button`
   background-color: #000000;
   color: #000000;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -143,7 +143,7 @@ const CustomButton = styled.button`
 const CustomLink = styled.a`
   color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;

@@ -48,14 +48,14 @@ const Wrapper = styled.div`
 
 const StyledImage = styled(Image)`
   width: 100%;
-  border-radius: 8px;
+  border-radius: 4px;
 `;
 
 const StyledVideo = styled.video`
   width: 200px;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
 `;
 
 const Title = styled.h2`

@@ -82,7 +82,7 @@ const StyledButton = styled(motion.button)`
   width: 200px;
   height: 50px;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 600;
   border: none;

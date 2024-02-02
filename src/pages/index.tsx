@@ -23,7 +23,7 @@ const Home = () => {
       <SeoSettings.Component />
       <Headings.Component />
 
-      <YuTopPage.Component />
+      {/* <YuTopPage.Component /> */}
 
       <TitleWrapper.Component subtitle="# News" />
       <Text.Component texts={newsTexts} />

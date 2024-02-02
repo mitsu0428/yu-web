@@ -74,7 +74,7 @@ const CustomButton = styled(motion.button)`
   font-size: 16px;
   padding: 16px;
   margin-top: 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   height: 72px;
 
   -webkit-box-sizing: border-box;
