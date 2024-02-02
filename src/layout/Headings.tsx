@@ -1,27 +1,21 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import * as Logo from "../ui/Logo";
-import font from "../../styles/NextFont";
+import font from "../styles/NextFont";
 
 export const Component = () => {
   return (
     <Wrapper>
       <TitleWrapper>
-        <TitleSubWrapper>
+        <LogoWrap>
           <Logo.Component />
           <Title className={font.notoSansJP700.className}>結う -web</Title>
-        </TitleSubWrapper>
+        </LogoWrap>
+
         <VerticalText className={font.roboto.className}>
-          Front-End & Web & Branding
+          Web & Branding & Marketing
         </VerticalText>
       </TitleWrapper>
-      <Slider>
-        <SlideText className={font.roboto.className}>
-          Web & Branding & Social Media Marketing, #photographer, #design, #web,
-          since 2021 - mitsuhiro okada, front-end developer, Social Media
-          Marketing & branding, #photographer, #design, #web, since 2021
-        </SlideText>
-      </Slider>
     </Wrapper>
   );
 };
@@ -30,61 +24,27 @@ const Wrapper = styled.div`
   width: 100%;
   position: absolute;
   z-index: 100;
-  padding: 32px;
   top: 0;
   left: 0;
+  padding: 16px;
 `;
 
 const TitleWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
   position: relative;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 `;
 
-const TitleSubWrapper = styled.div`
+const LogoWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+
   gap: 32px;
   @media (max-width: 768px) {
     gap: 16px;
-  }
-`;
-
-const slide = keyframes`
-  0% {
-    transform: translateX(100%);
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-`;
-
-const Slider = styled.div`
-  width: 100%;
-  overflow: hidden;
-`;
-
-const SlideText = styled.h2`
-  font-size: 24px;
-  white-space: nowrap;
-  animation: ${slide} 15s linear infinite;
-  @media (max-width: 768px) {
-    animation: ${slide} 10s linear infinite;
   }
 `;
 
@@ -104,7 +64,6 @@ const VerticalText = styled.h2`
   top: 64px;
   right: 0;
   writing-mode: vertical-lr;
-  text-align: center;
   font-size: 36px;
   white-space: nowrap;
   @media (max-width: 768px) {

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaStickyNote } from "react-icons/fa";
 import useMenuAnimation from "../hooks/useMenuAnimation";
-import font from "../../styles/NextFont";
+import font from "../styles/NextFont";
 
 export const Component = () => {
   const [isOpen, setIsOpen] = useState(false);

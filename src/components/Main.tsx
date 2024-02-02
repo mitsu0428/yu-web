@@ -1,14 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import * as SeoSettings from "./lib/SeoSettings";
-import * as Headings from "./layout/Headings";
-import * as Footer from "./layout/Footer";
-import * as TitleWrapper from "./ui/TitleWrapper";
-import * as Text from "./ui/Text/DefaultText";
-import * as CenterText from "./ui/Text/CenterText";
-import * as YuTopPage from "./YuTopPage";
-import * as WebAchievements from "./WebAchievements";
-import * as BrandingAchievements from "./BrandingAchievements";
+import * as SeoSettings from "../lib/SeoSettings";
+import * as Headings from "../layout/Headings";
+import * as TopView from "../components/TopView";
+import * as AboutView from "../components/AboutView";
+import * as WorksView from "../components/WorksView";
+import * as FooterView from "./FooterView";
 
 export const Component = () => {
   const newsTexts = [
@@ -22,46 +19,18 @@ export const Component = () => {
     <Main>
       <SeoSettings.Component />
       <Headings.Component />
-
-      {/* <YuTopPage.Component /> */}
-
-      <TitleWrapper.Component subtitle="# News" />
-      <Text.Component texts={newsTexts} />
-
-      <TitleWrapper.Component
-        subtitle="# Front-End & Web"
-        explainText="Web制作, LP制作, フロントエンド開発"
-      />
-      <CenterText.Component text="Webサイト/LP制作 領域" />
-      <WebAchievements.Component />
-      <Hr />
-
-      <TitleWrapper.Component
-        subtitle="# Branding"
-        explainText="ブランディング支援, デザイン, 撮影"
-      />
-      <CenterText.Component text="ブランディング 領域" />
-      <BrandingAchievements.Component />
-      <Hr />
-
-      <Footer.Component />
+      <TopView.Component />
+      <AboutView.Component />
+      <WorksView.Component />
+      <FooterView.Component />
     </Main>
   );
 };
 
+// memo: 空間的な広さを感じさせるため
 const Main = styled.main`
-  padding: 16px;
-`;
-
-const Hr = styled.hr`
-  margin-top: 16px;
-  border-width: 0 0 1px;
-  border-image: linear-gradient(
-      90deg,
-      hsla(0, 0%, 35%, 0),
-      hsla(0, 0%, 35%, 0.5) 50%,
-      hsla(0, 0%, 35%, 0) 100%
-    )
-    0 0 100%;
-  border-style: solid;
+  padding: 64px;
+  @media (max-width: 768px) {
+    padding: 32px;
+  }
 `;

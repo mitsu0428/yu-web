@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LoadingIndicator from "../ui/icons/LoadingIcon";
-import font from "../../styles/NextFont";
+import font from "../styles/NextFont";
 
 export const Component = () => {
   return (
@@ -14,12 +14,9 @@ export const Component = () => {
 
 const Footer = styled.footer`
   width: 100%;
-  height: 200px;
-  color: #fff;
-  text-shadow: 0 0 7px #fff;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 16px;
 `;

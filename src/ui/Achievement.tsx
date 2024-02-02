@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import font from "../../styles/NextFont";
+import font from "../styles/NextFont";
 
 type Props = {
   title: string;

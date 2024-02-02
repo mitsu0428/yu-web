@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as Achievements from "./ui/Achievement";
+import * as Achievements from "../ui/Achievement";
 
 export const Component = () => {
   return (
