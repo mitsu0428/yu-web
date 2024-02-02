@@ -1,10 +1,10 @@
 import "../styles/globals.css";
 import React from "react";
 import type { AppProps } from "next/app";
-import Loading from "../components/Features/Loading";
+import Loading from "../components/features/Loading";
 import GoogleTagManager, {
   GoogleTagManagerId,
-} from "../components/libs/GoogleTagManager";
+} from "../components/lib/GoogleTagManager";
 import "ress";
 
 export default function App({ Component, pageProps }: AppProps) {

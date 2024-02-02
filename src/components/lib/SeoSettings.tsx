@@ -20,7 +20,7 @@ export const Component = ({
 }: Partial<MetaData>) => {
   const defaultTitle = "結う -web | yu web";
   const defaultDescription =
-    "結う webは、寄り添いを大切にするWebブランディングのパートナーです。";
+    "『あなたの想いをwebに結ぶ』 | ホテル、飲食店等のブランディング経験とエンジニアとしての技術でビジネスを多面的から支援。";
 
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription ? pageDescription : defaultDescription;

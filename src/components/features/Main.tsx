@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as SeoSettings from "../libs/SeoSettings";
+import * as SeoSettings from "../lib/SeoSettings";
 import * as Headings from "../layout/Headings";
 import * as Footer from "../layout/Footer";
 import * as TitleWrapper from "../ui/TitleWrapper";
