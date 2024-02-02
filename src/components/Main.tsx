@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import * as SeoSettings from "../lib/SeoSettings";
-import * as Headings from "../layout/Headings";
-import * as Footer from "../layout/Footer";
-import * as TitleWrapper from "../ui/TitleWrapper";
-import * as Text from "../ui/Text/DefaultText";
-import * as CenterText from "../ui/Text/CenterText";
+import * as SeoSettings from "./lib/SeoSettings";
+import * as Headings from "./layout/Headings";
+import * as Footer from "./layout/Footer";
+import * as TitleWrapper from "./ui/TitleWrapper";
+import * as Text from "./ui/Text/DefaultText";
+import * as CenterText from "./ui/Text/CenterText";
 import * as YuTopPage from "./YuTopPage";
 import * as WebAchievements from "./WebAchievements";
 import * as BrandingAchievements from "./BrandingAchievements";

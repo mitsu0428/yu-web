@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import font from "../../styles/NextFont";
+import font from "../styles/NextFont";
 import * as IG from "./ImageGallery";
-import * as Menu from "../ui/Menu";
+import * as Menu from "./ui/Menu";
 
 export const Component = () => {
   const pexel = (id: number) =>
