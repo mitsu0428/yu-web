@@ -4,7 +4,6 @@ import styled from "styled-components";
 import * as SeoSettings from "../lib/SeoSettings";
 
 import * as Header from "./Header";
-import * as SNS from "./SNS";
 import * as Concept from "./Concept";
 import * as ContactPage from "./ContactForm";
 import * as Footer from "./Footer";
@@ -15,7 +14,6 @@ export const Component = () => {
       <SeoSettings.Component />
 
       <Header.Component />
-      <SNS.Component />
       <Concept.Component />
       <ContactPage.Component />
       <Footer.Component />
