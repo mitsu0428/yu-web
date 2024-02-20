@@ -4,9 +4,12 @@ import styled from "styled-components";
 import * as SeoSettings from "../lib/SeoSettings";
 
 import * as Header from "./Header";
-import * as Concept from "./Concept";
-import * as ContactPage from "./ContactForm";
 import * as Footer from "./Footer";
+
+import * as LandingView from "./LandingView";
+import * as Concept from "./Concept";
+import * as Works from "./Works";
+import * as ContactPage from "./ContactForm";
 
 export const Component = () => {
   return (
@@ -14,7 +17,9 @@ export const Component = () => {
       <SeoSettings.Component />
 
       <Header.Component />
+      <LandingView.Component />
       <Concept.Component />
+      <Works.Component />
       <ContactPage.Component />
       <Footer.Component />
     </Main>

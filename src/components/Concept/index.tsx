@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import * as Headtag from "../../ui/HeadTag";
+import * as SlideInFromLeft from "../SlideInFromLeft";
 
 export const Component = () => {
   return (
     <Wrap>
-      <Title>Concept</Title>
+      <SlideInFromLeft.Component>
+        <Headtag.H2>コンセプト</Headtag.H2>
+      </SlideInFromLeft.Component>
     </Wrap>
   );
 };
@@ -12,10 +16,5 @@ export const Component = () => {
 // memo: Headerの高さに合わせてTOPを調整する
 const Wrap = styled.div`
   width: calc(100% - 64px);
-  margin-top: 100px;
-`;
-
-const Title = styled.h1`
-  font-size: 36px;
-  margin-bottom: 16px;
+  margin: 32px 0;
 `;
