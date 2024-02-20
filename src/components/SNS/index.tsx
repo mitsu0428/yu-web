@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import * as Instagram from "../ui/icons/IconsInstagram";
-import * as Twitter from "../ui/icons/IconsTwitter";
-import * as Linkedin from "../ui/icons/IconsLinkedin";
+import * as Instagram from "../..//ui/icons/IconsInstagram";
+import * as Twitter from "../..//ui/icons/IconsTwitter";
+import * as Linkedin from "../..//ui/icons/IconsLinkedin";
 
 export const Component = () => {
   return (

@@ -19,7 +19,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/features/ImageGallery.js"
+    "src/components/ImageGallery.js"
   ],
   "exclude": ["node_modules"]
 }

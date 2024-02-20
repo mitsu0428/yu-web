@@ -1,0 +1,65 @@
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import * as Logo from "../../ui/Logo";
+import font from "../../styles/NextFont";
+
+export const Component = () => {
+  return (
+    <Wrapper>
+      <TitleWrapper>
+        <LogoWrap>
+          <Logo.Component />
+        </LogoWrap>
+
+        <VerticalText className={font.roboto.className}>
+          Web & Branding & Marketing
+        </VerticalText>
+      </TitleWrapper>
+    </Wrapper>
+  );
+};
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  padding: 16px;
+`;
+
+const TitleWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+`;
+
+const LogoWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  gap: 32px;
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
+`;
+
+const VerticalText = styled.h2`
+  position: absolute;
+  top: 72px;
+  right: 0;
+  writing-mode: vertical-lr;
+  font-size: 36px;
+  white-space: nowrap;
+  @media (max-width: 768px) {
+    top: 56px;
+    font-size: 30px;
+  }
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+`;

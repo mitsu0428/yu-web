@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.prettier": "explicit"

@@ -24,19 +24,17 @@ body {
 h1 {
   font-size: 60px;
   font-weight: 700;
-  letter-spacing: 0.1em;
   color: #3f3f3f;
 }
 
 h2 {
   font-size: 32px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   color: #3f3f3f;
 }
 
 p {
   font-size: 16px;
-  letter-spacing: 0.1em;
   color: #3f3f3f;
 }
