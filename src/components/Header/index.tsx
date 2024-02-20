@@ -7,9 +7,7 @@ export const Component = () => {
   return (
     <Wrapper>
       <TitleWrapper>
-        <LogoWrap>
-          <Logo.Component />
-        </LogoWrap>
+        <Logo.Component />
 
         <VerticalText className={font.roboto.className}>
           Web & Branding & Marketing
@@ -36,29 +34,13 @@ const TitleWrapper = styled.div`
   width: 100%;
 `;
 
-const LogoWrap = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-
-  gap: 32px;
-  @media (max-width: 768px) {
-    gap: 16px;
-  }
-`;
-
 const VerticalText = styled.h2`
   position: absolute;
-  top: 72px;
+  top: 100px;
   right: 0;
   writing-mode: vertical-lr;
   font-size: 36px;
   white-space: nowrap;
-  @media (max-width: 768px) {
-    top: 56px;
-    font-size: 30px;
-  }
   @media (max-width: 480px) {
     font-size: 24px;
   }
