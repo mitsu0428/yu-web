@@ -10,7 +10,7 @@ export const Component = () => {
         <Logo.Component />
 
         <VerticalText className={font.roboto.className}>
-          Web & Branding & Marketing
+          Web, SNS, Branding, Marketing
         </VerticalText>
       </TitleWrapper>
     </Wrapper>

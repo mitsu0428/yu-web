@@ -15,6 +15,11 @@ export const Component = () => {
 
 // memo: Headerの高さに合わせてTOPを調整する
 const Wrap = styled.div`
-  width: calc(100% - 64px);
+  width: 100%;
   margin: 32px 0;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  padding: 32px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 `;
