@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import * as Logo from "../Logo";
-import font from "../../styles/NextFont";
+import * as CustomFont from "../../styles/NextFont";
 
 export const Component = () => {
   return (
@@ -9,7 +9,7 @@ export const Component = () => {
       <TitleWrapper>
         <Logo.Component />
 
-        <VerticalText className={font.roboto.className}>
+        <VerticalText className={CustomFont.Font.NotoSerif700.className}>
           Web, SNS, Branding, Marketing
         </VerticalText>
       </TitleWrapper>
@@ -40,8 +40,12 @@ const VerticalText = styled.h2`
   right: 0;
   writing-mode: vertical-lr;
   font-size: 36px;
+  letter-spacing: 0.1em;
   white-space: nowrap;
-  @media (max-width: 480px) {
+  background-color: #fff;
+  padding: 8px;
+
+  @media (max-width: 768px) {
     font-size: 24px;
   }
 `;

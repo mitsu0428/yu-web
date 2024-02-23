@@ -1,26 +1,24 @@
-import { Roboto } from "@next/font/google";
-import { Noto_Sans_JP } from "@next/font/google";
+import { Roboto, Noto_Serif, Zen_Kurenaido } from "@next/font/google";
 
-const roboto = Roboto({
+const Roboto300 = Roboto({
   subsets: ["cyrillic-ext", "greek"],
   weight: "300",
 });
 
-const notoSansJP400 = Noto_Sans_JP({
+const NotoSerif700 = Noto_Serif({
+  subsets: ["cyrillic-ext", "greek"],
+  weight: "700",
+  display: "swap",
+});
+
+const ZenKurenaido = Zen_Kurenaido({
   weight: "400",
   display: "swap",
   preload: false,
 });
-const notoSansJP700 = Noto_Sans_JP({
-  weight: "700",
-  display: "swap",
-  preload: false,
-});
 
-const font = {
-  roboto,
-  notoSansJP400,
-  notoSansJP700,
+export const Font = {
+  Roboto300,
+  NotoSerif700,
+  ZenKurenaido,
 };
-
-export default font;

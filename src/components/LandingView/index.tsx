@@ -1,29 +1,74 @@
 import React from "react";
 import styled from "styled-components";
 import * as Headtag from "../../ui/HeadTag";
-import * as PTag from "../../ui/PTag";
+import * as CustomFont from "../../styles/NextFont";
+import Image from "next/image";
 
 export const Component = () => {
+  const images = [
+    {
+      src: "/images/barkaze.jpg",
+      alt: "bar kaze 公式サイト",
+      width: 1500,
+      height: 1500,
+    },
+    {
+      src: "/images/zininternational.jpg",
+      alt: "bar kaze 公式サイト",
+      width: 1500,
+      height: 1500,
+    },
+    {
+      src: "/images/chachatokyo.jpg",
+      alt: "bar kaze 公式サイト",
+      width: 1500,
+      height: 1500,
+    },
+    {
+      src: "/images/liltaroboy2.jpeg",
+      alt: "Lil taro boy 撮影",
+      width: 1500,
+      height: 1500,
+    },
+    {
+      src: "/images/風景.jpg",
+      alt: "風景レタッチ",
+      width: 1500,
+      height: 1500,
+    },
+    {
+      src: "/images/liltaroboy.jpeg",
+      alt: "bar kaze 公式サイト",
+      width: 1500,
+      height: 1500,
+    },
+    {
+      src: "/images/barkazeイベント.jpg",
+      alt: "bar kaze 公式サイト",
+      width: 1500,
+      height: 1500,
+    },
+  ];
+
   return (
     <Wrap>
-      <Headtag.H2>大切にしてる想い</Headtag.H2>
-      <PTag.pSmall>
-        『あなたの色でwebは完成する』
-        <br />
-        ここには、サイトのコンセプトや、制作実績などを掲載します。
-        <br />
-        ホテル、飲食店等の映像、ブランディング経験と技術でビジネスを多面的から支援。
-        <br />
-        優秀な技術者が集まり、結果や数字と真摯に向き合い、試行錯誤を重ねる。
-        <br />
-        web領域における伴走型パートナー。
-        <br />
-        ブランディングは、何があり、何を提供するか、潜在的なお客様とのお約束ごと。
-        <br />
-        ブランドにかける想いをテクニカルに表現するツール。
-        <br />
-        事業にかける想いをwebに繋げます。
-      </PTag.pSmall>
+      <Headtag.H2 className={CustomFont.Font.ZenKurenaido.className}>
+        YU WEB
+      </Headtag.H2>
+      <SeparateViewer>
+        {images.map((image, index) => (
+          <Item key={index}>
+            <ImageParent>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+              />
+            </ImageParent>
+          </Item>
+        ))}
+      </SeparateViewer>
     </Wrap>
   );
 };
@@ -36,4 +81,25 @@ const Wrap = styled.div`
   padding: 32px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+`;
+
+const SeparateViewer = styled.div`
+  column-count: 3;
+  height: auto !important;
+  break-inside: avoid;
+`;
+
+const Item = styled.div`
+  width: 100%;
+  height: auto !important;
+  break-inside: avoid;
+`;
+
+const ImageParent = styled.div`
+  width: 100%;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;

@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import * as Headtag from "../../ui/HeadTag";
 import * as SlideInFromLeft from "../SlideInFromLeft";
+import * as CustomFont from "../../styles/NextFont";
 
 export const Component = () => {
   return (
     <Wrap>
       <SlideInFromLeft.Component>
-        <Headtag.H2>お問い合わせ</Headtag.H2>
+        <Headtag.H2 className={CustomFont.Font.ZenKurenaido.className}>
+          お問い合わせ
+        </Headtag.H2>
       </SlideInFromLeft.Component>
     </Wrap>
   );

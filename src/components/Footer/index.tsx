@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 import * as SNS from "../SNS";
 
-import font from "../../styles/NextFont";
+import * as CustomFont from "../../styles/NextFont";
 
 export const Component = () => {
   return (
-    <Footer className={font.roboto.className}>
+    <Footer className={CustomFont.Font.Roboto300.className}>
       <SNS.Component />
       (c) 2023 YU WEB, All Right Resereved
     </Footer>
