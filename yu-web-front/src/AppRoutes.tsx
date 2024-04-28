@@ -4,17 +4,17 @@ import {
   Routes,
   type RouteProps,
 } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
+import * as Home from "./components/Home";
+import * as About from "./components/About";
 
 const routes = [
   {
     path: "/",
-    Component: Home,
+    Component: Home.Component,
   },
   {
     path: "/about",
-    Component: About,
+    Component: About.Component,
   },
 ] as const satisfies RouteProps[];
 
