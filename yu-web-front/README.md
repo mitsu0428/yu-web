@@ -1,3 +1,8 @@
 ## 結う -web の公式サイト
 
-- TBD.
+### 構成
+
+- vite
+
+- React
+- React Router
