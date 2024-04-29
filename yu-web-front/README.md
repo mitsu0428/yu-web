@@ -8,3 +8,5 @@
 - React Router
 
 - vanilla-extract
+
+- biome
