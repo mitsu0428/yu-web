@@ -6,3 +6,5 @@
 
 - React
 - React Router
+
+- vanilla-extract
